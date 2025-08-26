@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - DeweloperJawneCeny Plugin WordPress</title>
+    <meta name="description" content="Zobacz plugin WordPress DeweloperJawneCeny w akcji. Poznaj interfejs i funkcjonalności automatyzacji zgodności z ustawą o jawności cen mieszkań.">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h1 class="section-title">Zobacz plugin w akcji</h1>
+            <p class="section-subtitle">Poznaj prawdziwy interfejs WordPress, który używają deweloperzy</p>
+            
+            <div class="demo__showcase">
+                <!-- Dashboard -->
+                <div class="demo__item">
+                    <div class="demo__visual">
+                        <div class="wp-mockup">
+                            <div class="wp-header">
+                                <div class="wp-title">📊 Pulpit - DeweloperJawneCeny</div>
+                            </div>
+                            <div class="wp-content">
+                                <div class="wp-section">
+                                    <h3>Szybkie Akcje</h3>
+                                    <button class="wp-button wp-button--primary">🔄 Generuj pliki XML/CSV</button>
+                                    <button class="wp-button wp-button--secondary">📁 Publikacja danych</button>
+                                </div>
+                                <div class="wp-section">
+                                    <h3>Automatyzacja</h3>
+                                    <div class="automation-status">
+                                        <span class="status-enabled">✅ Włączone</span>
+                                        <p><strong>Częstotliwość:</strong> codziennie o północy UTC</p>
+                                        <p><strong>Następne generowanie:</strong> <span class="next-gen">26.01.2025, 00:00</span></p>
+                                    </div>
+                                </div>
+                                <div class="stats-grid">
+                                    <div class="stat-box">
+                                        <div class="stat-number">47</div>
+                                        <div class="stat-label">Zasobów</div>
+                                    </div>
+                                    <div class="stat-box">
+                                        <div class="stat-number">12</div>
+                                        <div class="stat-label">Plików</div>
+                                    </div>
+                                    <div class="stat-box">
+                                        <div class="stat-number">100%</div>
+                                        <div class="stat-label">Zgodność</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo__description">
+                        <h3>📊 Pulpit główny - pełna kontrola</h3>
+                        <p>Centrum dowodzenia pluginem. Zobacz status automatyzacji, generuj pliki jednym kliknięciem i monitoruj zgodność z ustawą.</p>
+                        <ul class="feature-list">
+                            <li>✅ Automatyzacja z harmonogramem</li>
+                            <li>✅ Szybkie akcje jednym kliknięciem</li>
+                            <li>✅ Monitoring statusu w czasie rzeczywistym</li>
+                            <li>✅ Statystyki zasobów i plików</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dane dostawcy -->
+                <div class="demo__item demo__item--reverse">
+                    <div class="demo__visual">
+                        <div class="wp-mockup">
+                            <div class="wp-header">
+                                <div class="wp-title">🏢 Dane Dostawcy</div>
+                            </div>
+                            <div class="wp-content">
+                                <table class="wp-form-table">
+                                    <tr>
+                                        <th>Nazwa firmy *</th>
+                                        <td><input type="text" class="wp-input" value="Deweloper Sp. z o.o." /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>NIP *</th>
+                                        <td><input type="text" class="wp-input" value="123-456-78-90" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Adres email *</th>
+                                        <td><input type="text" class="wp-input" value="kontakt@deweloper.pl" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Miasto *</th>
+                                        <td><input type="text" class="wp-input" value="Warszawa" /></td>
+                                    </tr>
+                                </table>
+                                <button class="wp-button wp-button--primary">Zapisz dane</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo__description">
+                        <h3>🏢 Dane dostawcy - podstawa zgodności</h3>
+                        <p>Wprowadź dane firmy raz - plugin automatycznie używa ich we wszystkich generowanych plikach zgodnie z wymogami ustawy.</p>
+                        <ul class="feature-list">
+                            <li>✅ Dane firmy używane w plikach XML/CSV</li>
+                            <li>✅ Walidacja NIP i adresu email</li>
+                            <li>✅ Zgodność z wymogami ustawy</li>
+                            <li>✅ Automatyczne wypełnianie dokumentów</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Zasoby -->
+                <div class="demo__item">
+                    <div class="demo__visual">
+                        <div class="wp-mockup">
+                            <div class="wp-header">
+                                <div class="wp-title">🏠 Zasoby</div>
+                                <div class="wp-actions">
+                                    <button class="wp-button">+ Dodaj zasób</button>
+                                    <button class="wp-button">📥 Import CSV</button>
+                                </div>
+                            </div>
+                            <div class="wp-content">
+                                <div class="resources-table">
+                                    <div class="resource-row">
+                                        <div class="resource-info">
+                                            <strong>M-47</strong> | Lokal mieszkalny
+                                            <div class="resource-details">65.5 m² | 3 pokoje</div>
+                                        </div>
+                                        <div class="resource-price">450,000 zł</div>
+                                        <div class="resource-status status-active">Aktywny</div>
+                                        <div class="resource-actions">
+                                            <button class="wp-button-small">📝</button>
+                                            <button class="wp-button-small">📊</button>
+                                        </div>
+                                    </div>
+                                    <div class="resource-row">
+                                        <div class="resource-info">
+                                            <strong>M-48</strong> | Lokal mieszkalny
+                                            <div class="resource-details">72.1 m² | 4 pokoje</div>
+                                        </div>
+                                        <div class="resource-price">520,000 zł</div>
+                                        <div class="resource-status status-changed">Zmieniony</div>
+                                        <div class="resource-actions">
+                                            <button class="wp-button-small">📝</button>
+                                            <button class="wp-button-small">📊</button>
+                                        </div>
+                                    </div>
+                                    <div class="resource-row">
+                                        <div class="resource-info">
+                                            <strong>PS-12</strong> | Miejsce postojowe
+                                            <div class="resource-details">Garaż podziemny</div>
+                                        </div>
+                                        <div class="resource-price">35,000 zł</div>
+                                        <div class="resource-status status-sold">Sprzedany</div>
+                                        <div class="resource-actions">
+                                            <button class="wp-button-small">📝</button>
+                                            <button class="wp-button-small">📊</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo__description">
+                        <h3>🏠 Zasoby - serce systemu</h3>
+                        <p>Dodawaj mieszkania, domy, miejsca postojowe. Import masowy z Excel/CSV. Każda zmiana ceny jest automatycznie śledzona.</p>
+                        <ul class="feature-list">
+                            <li>✅ Wszystkie rodzaje nieruchomości</li>
+                            <li>✅ Masowy import z Excel/CSV</li>
+                            <li>✅ Automatyczne śledzenie zmian cen</li>
+                            <li>✅ Historia cen każdego zasobu</li>
+                            <li>✅ Statusy: aktywny, sprzedany, zarezerwowany</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Publikacja danych -->
+                <div class="demo__item demo__item--reverse">
+                    <div class="demo__visual">
+                        <div class="wp-mockup">
+                            <div class="wp-header">
+                                <div class="wp-title">📁 Publikacja Danych</div>
+                            </div>
+                            <div class="wp-content">
+                                <div class="wp-section">
+                                    <h3>Ostatnie pliki</h3>
+                                    <div class="files-list">
+                                        <div class="file-item">
+                                            <div class="file-info">
+                                                <span class="file-icon">📊</span>
+                                                <div>
+                                                    <strong>ceny_mieszkan_2025_01.csv</strong>
+                                                    <div class="file-meta">Wygenerowano: 1.01.2025, 00:00</div>
+                                                </div>
+                                            </div>
+                                            <div class="file-actions">
+                                                <button class="wp-button-small">📥 Pobierz</button>
+                                                <button class="wp-button-small">🔗 Link publiczny</button>
+                                            </div>
+                                        </div>
+                                        <div class="file-item">
+                                            <div class="file-info">
+                                                <span class="file-icon">📄</span>
+                                                <div>
+                                                    <strong>dane_mieszkan_2025_01.xml</strong>
+                                                    <div class="file-meta">Wygenerowano: 1.01.2025, 00:00</div>
+                                                </div>
+                                            </div>
+                                            <div class="file-actions">
+                                                <button class="wp-button-small">📥 Pobierz</button>
+                                                <button class="wp-button-small">🔗 Link publiczny</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wp-section">
+                                    <div class="automation-info">
+                                        🤖 <strong>Automatyczne generowanie:</strong> Włączone
+                                        <div class="automation-details">
+                                            Następne pliki: 1.02.2025 o północy
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo__description">
+                        <h3>📁 Publikacja - automatyka pracy</h3>
+                        <p>Plugin automatycznie generuje pliki CSV i XML, publikuje je pod wymaganymi adresami URL i archiwizuje poprzednie wersje.</p>
+                        <ul class="feature-list">
+                            <li>✅ Automatyczna generacja co miesiąc</li>
+                            <li>✅ Publiczne linki zgodne z ustawą</li>
+                            <li>✅ Format CSV i XML</li>
+                            <li>✅ Archiwizacja historii</li>
+                            <li>✅ Powiadomienia o nowych plikach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo__cta">
+                <h3>Gotowy na automatyzację?</h3>
+                <p>Zacznij już dziś - pierwsze 4 zasoby za darmo</p>
+                <div class="demo__cta-buttons">
+                    <a href="index.html#cennik" class="btn btn--primary btn--large">Sprawdź cennik</a>
+                    <a href="mailto:bartosz.kulasiewicz@gmail.com" class="btn btn--secondary btn--large">Zapytaj o demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

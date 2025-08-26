@@ -1,0 +1,68 @@
+// Simple include functionality for HTML
+document.addEventListener('DOMContentLoaded', function() {
+    // Determine base path for includes
+    const currentPath = window.location.pathname;
+    let includesPath = 'includes/';
+    
+    if (currentPath.includes('/artykuly/')) {
+        includesPath = '../includes/';
+    }
+
+    // Load header
+    const headerPlaceholder = document.getElementById('header-placeholder');
+    if (headerPlaceholder) {
+        fetch(includesPath + 'header.html')
+            .then(response => response.text())
+            .then(data => {
+                headerPlaceholder.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+            });
+    }
+
+    // Load footer
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (footerPlaceholder) {
+        fetch(includesPath + 'footer.html')
+            .then(response => response.text())
+            .then(data => {
+                footerPlaceholder.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+            });
+    }
+});
+
+// Navigation functions
+function navigateToSection(sectionId) {
+    // Check if we're on the main page
+    if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/' || window.location.pathname === '/website/') {
+        // We're on the main page, scroll to section
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const headerHeight = 80; // Approximate header height
+            const targetPosition = element.offsetTop - headerHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    } else {
+        // We're on a different page, navigate to main page with anchor
+        window.location.href = 'index.html#' + sectionId;
+    }
+}
+
+function navigateToPage(pageName) {
+    // Check current directory level
+    const currentPath = window.location.pathname;
+    let basePath = '';
+    
+    if (currentPath.includes('/artykuly/')) {
+        basePath = '../';
+    }
+    
+    window.location.href = basePath + pageName;
+}

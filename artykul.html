@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="article-title">Artykuł - DeweloperJawneCeny</title>
+    <meta name="description" content="" id="article-description">
+    <meta name="keywords" content="" id="article-keywords">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="" id="og-title">
+    <meta property="og:description" content="" id="og-description">
+    <meta property="og:type" content="article">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Article -->
+    <article class="article-page">
+        <div class="container">
+            <div class="article-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Strona główna</a> / <a href="artykuly.html">Artykuły</a> / <span id="breadcrumb-title">Artykuł</span>
+                </div>
+                <h1 id="main-title">Ładowanie artykułu...</h1>
+                <div class="article-meta">
+                    <span class="article-date" id="article-date">-</span>
+                    <span class="article-read-time" id="article-read-time">-</span>
+                    <span class="article-author">Bartosz Kulasiewicz</span>
+                </div>
+            </div>
+            
+            <div class="article-content" id="article-content">
+                <div class="loading-placeholder">
+                    <p>Ładowanie treści artykułu...</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <div class="container">
+            <h2>📖 Powiązane artykuły</h2>
+            <div class="related-grid" id="related-articles">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/articles-data.js"></script>
+    <script src="assets/js/article-loader.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
