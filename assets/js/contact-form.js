@@ -21,14 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = new FormData(form);
         const data = {
             email: formData.get('email'),
-            subject: formData.get('subject'),
             message: formData.get('message')
         };
         
         // Create mailto link
-        const mailtoSubject = `[DeweloperJawneCeny] ${data.subject} - od ${data.email}`;
+        const mailtoSubject = `[DeweloperJawneCeny] Zapytanie od ${data.email}`;
         const mailtoBody = `Od: ${data.email}
-Temat: ${data.subject}
 
 Wiadomość:
 ${data.message}
