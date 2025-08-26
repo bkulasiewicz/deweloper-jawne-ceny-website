@@ -1,10 +1,19 @@
-// Contact form handler
-document.addEventListener('DOMContentLoaded', function() {
+// Contact form handler for Netlify Forms
+function initContactForm() {
+    console.log('Initializing contact form');
+    
     const contactForm = document.getElementById('contact-form');
-    if (!contactForm) return;
+    console.log('Contact form found:', contactForm);
+    
+    if (!contactForm) {
+        console.log('Contact form not found, retrying in 500ms...');
+        setTimeout(initContactForm, 500);
+        return;
+    }
 
+    console.log('Adding submit listener to contact form');
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+        console.log('Form submitted via Netlify Forms');
         
         const form = this;
         const submitBtn = form.querySelector('button[type="submit"]');
@@ -17,51 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
         btnLoading.style.display = 'inline';
         submitBtn.disabled = true;
         
-        // Collect form data
-        const formData = new FormData(form);
-        const data = {
-            email: formData.get('email'),
-            message: formData.get('message')
-        };
+        // Show submitting message
+        formMessage.innerHTML = `
+            <div class="alert alert--info">
+                <strong>📧 Wysyłanie wiadomości...</strong>
+            </div>
+        `;
         
-        // Create mailto link
-        const mailtoSubject = `[DeweloperJawneCeny] Zapytanie od ${data.email}`;
-        const mailtoBody = `Od: ${data.email}
-
-Wiadomość:
-${data.message}
-
----
-Wysłano z formularza kontaktowego na stronie DeweloperJawneCeny`;
-        
-        const mailtoLink = `mailto:bartosz.kulasiewicz@gmail.com?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`;
-        
-        // Simulate sending delay
-        setTimeout(() => {
-            // Reset button state
-            btnText.style.display = 'inline';
-            btnLoading.style.display = 'none';
-            submitBtn.disabled = false;
-            
-            // Show success message
-            formMessage.innerHTML = `
-                <div class="alert alert--success">
-                    <strong>✅ Formularz przygotowany!</strong><br>
-                    Kliknij w link email aby wysłać wiadomość.<br>
-                    <small>Jeśli link nie zadziałał, napisz bezpośrednio na: bartosz.kulasiewicz@gmail.com</small>
-                </div>
-            `;
-            
-            // Open mailto
-            window.location.href = mailtoLink;
-            
-            // Clear form
-            form.reset();
-            
-            // Hide message after 10 seconds
-            setTimeout(() => {
-                formMessage.innerHTML = '';
-            }, 10000);
-        }, 1000);
+        // Let Netlify handle the form submission naturally
+        // No e.preventDefault() - let the form submit normally to Netlify
     });
-});
+}
+
+// Start initialization when DOM is loaded
+document.addEventListener('DOMContentLoaded', initContactForm);
