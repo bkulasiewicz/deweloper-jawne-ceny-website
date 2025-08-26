@@ -21,6 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
+    // Load contact section
+    const contactPlaceholder = document.getElementById('contact-placeholder');
+    if (contactPlaceholder) {
+        fetch(includesPath + 'contact-section.html')
+            .then(response => response.text())
+            .then(data => {
+                contactPlaceholder.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading contact section:', error);
+            });
+    }
+
     // Load footer
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
