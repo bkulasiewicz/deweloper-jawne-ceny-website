@@ -79,3 +79,30 @@ function navigateToPage(pageName) {
     
     window.location.href = basePath + pageName;
 }
+
+// Mobile menu toggle function
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav__links');
+    if (navLinks) {
+        navLinks.classList.toggle('nav--open');
+    }
+}
+
+// Close mobile menu
+function closeMobileMenu() {
+    const navLinks = document.querySelector('.nav__links');
+    if (navLinks) {
+        navLinks.classList.remove('nav--open');
+    }
+}
+
+// Enhanced navigation functions that close mobile menu
+function navigateToSectionMobile(sectionId) {
+    closeMobileMenu();
+    setTimeout(() => navigateToSection(sectionId), 100);
+}
+
+function navigateToPageMobile(pageName) {
+    closeMobileMenu();
+    setTimeout(() => navigateToPage(pageName), 100);
+}
