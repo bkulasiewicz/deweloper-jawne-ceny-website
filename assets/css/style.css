@@ -33,6 +33,377 @@ html, body {
     max-width: 100%;
 }
 
+/* Feature text styling */
+.feature-text {
+    line-height: 1.6;
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Frontend Mockup Styling */
+.frontend-mockup {
+    position: relative;
+}
+
+.website-header {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.website-header .wp-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.website-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.website-nav span {
+    color: #ecf0f1;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.website-nav span:hover {
+    color: #3498db;
+}
+
+.page-title {
+    margin-bottom: 25px;
+}
+
+.page-title h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.page-subtitle {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin: 0;
+}
+
+.frontend-apartments-table {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.apartment-row {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.apartment-row:last-child {
+    border-bottom: none;
+}
+
+.apartment-row:hover {
+    background-color: #f8f9fa;
+}
+
+.apartment-info {
+    flex: 1;
+}
+
+.apartment-number {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.apartment-details {
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.apartment-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #27ae60;
+    margin-right: 20px;
+    min-width: 120px;
+    text-align: right;
+}
+
+.apartment-status {
+    min-width: 90px;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.apartment-status.available {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.apartment-status.reserved {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.apartment-status.sold {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.frontend-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.frontend-btn:hover {
+    background-color: #2980b9;
+}
+
+.integration-indicator {
+    position: absolute;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+}
+
+.integration-indicator.gutenberg {
+    top: 120px;
+    right: 20px;
+    background-color: #9b59b6;
+}
+
+.integration-indicator.image-map {
+    top: 160px;
+    right: 20px;
+    background-color: #e67e22;
+}
+
+.data-source {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    z-index: 10;
+}
+
+/* Frontend Layout */
+.frontend-layout {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.image-map-section {
+    flex: 1;
+}
+
+.apartments-list-section {
+    flex: 1;
+}
+
+.image-map-section h4,
+.apartments-list-section h4 {
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Image Map Pro Visualization */
+.image-map-container {
+    position: relative;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.estate-map {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.house-clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.house-clickable:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+.house-clickable:hover rect {
+    filter: brightness(1.1);
+}
+
+.map-tooltip {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.house-clickable:hover + .map-tooltip,
+.image-map-container:hover .map-tooltip {
+    opacity: 1;
+}
+
+.tooltip-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.tooltip-apt {
+    margin-bottom: 3px;
+    color: #e0e0e0;
+}
+
+.image-map-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e67e22;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    z-index: 15;
+}
+
+.gutenberg-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #9b59b6;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    z-index: 15;
+}
+
+.apartments-list-section {
+    position: relative;
+}
+
+.data-source {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Estate Map Specific Styling */
+.house-clickable.available rect {
+    fill: #e8f5e8;
+    stroke: #27ae60;
+}
+
+.house-clickable.mixed rect {
+    fill: #fff3cd;
+    stroke: #f39c12;
+}
+
+.house-clickable.sold rect {
+    fill: #f8d7da;
+    stroke: #e74c3c;
+}
+
+/* Responsive adjustments for frontend mockup */
+@media (max-width: 968px) {
+    .frontend-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .image-map-container {
+        height: 250px;
+    }
+    
+    .estate-map {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .website-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .apartment-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .apartment-price {
+        text-align: left;
+    }
+    
+    .frontend-layout {
+        gap: 15px;
+    }
+    
+    .data-source {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -1258,6 +1629,169 @@ html, body {
     gap: 5px;
 }
 
+/* Updated resources table styling to match real implementation */
+.resources-table {
+    width: 100%;
+    min-width: 700px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.resource-row {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 6px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    min-height: 50px;
+}
+
+.resource-row:hover {
+    background: #f7f9fc;
+    border-color: #2271b1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.resource-info {
+    flex: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.resource-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.resource-title strong {
+    font-size: 13px;
+    color: #1d2327;
+    font-weight: 600;
+}
+
+.resource-number {
+    color: #646970;
+    font-size: 12px;
+}
+
+.resource-details {
+    font-size: 12px;
+    color: #50575e;
+}
+
+.resource-pricing {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    min-width: 200px;
+}
+
+.price-main, .price-total {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.price-label {
+    font-size: 10px;
+    color: #646970;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.price-value {
+    font-size: 13px;
+    color: #1d2327;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.resource-status {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.status-badge {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid;
+    line-height: 1;
+}
+
+.status-badge.status-dostepny {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-color: #bee5eb;
+}
+
+.status-badge.status-rezerwacja {
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffeaa7;
+}
+
+.status-badge.status-sprzedany {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f1aeb5;
+}
+
+.date-info {
+    font-size: 9px;
+    color: #646970;
+    text-align: center;
+    line-height: 1;
+}
+
+.resource-actions {
+    flex: 0 0 110px;
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.wp-button-small {
+    padding: 4px 8px;
+    font-size: 11px;
+    line-height: 1;
+    min-height: auto;
+    border-radius: 3px;
+}
+
+.wp-button-small.wp-button-primary {
+    background-color: #2271b1;
+    color: white;
+    border-color: #2271b1;
+}
+
+.wp-button-small.wp-button-primary:hover {
+    background-color: #135e96;
+    border-color: #135e96;
+}
+
+/* Ensure mockup container has enough width */
+.wp-mockup {
+    min-width: 750px;
+}
+
+.wp-content {
+    overflow-x: auto;
+}
+
 /* Files List */
 .files-list {
     background: #f9f9f9;
@@ -2216,6 +2750,308 @@ html, body {
     
     .contact {
         padding: 60px 0;
+    }
+}
+
+/* Minimal Showcase Styles */
+.minimal-showcase {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.minimal-showcase h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.showcase-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.visual-stack {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main table in center */
+.apartments-table-minimal {
+    position: relative;
+    z-index: 2;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    max-width: 500px;
+}
+
+.table-header {
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.minimal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.minimal-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f1f3f4;
+    text-align: left;
+}
+
+.minimal-table td:last-child {
+    text-align: center;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status-dot.status-available {
+    background: #28a745;
+}
+
+.status-dot.status-reserved {
+    background: #ffc107;
+}
+
+.status-dot.status-sold {
+    background: #dc3545;
+}
+
+.mini-btn {
+    background: #007cba;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Overlapping elements */
+.gutenberg-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+.block-picker {
+    background: #3498db;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transform: rotate(-5deg);
+}
+
+.block-picker small {
+    display: block;
+    opacity: 0.8;
+    font-size: 0.7rem;
+    margin-top: 4px;
+}
+
+.history-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+.mini-modal {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #007cba;
+    transform: rotate(2deg);
+    min-width: 200px;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+.history-line {
+    font-size: 0.75rem;
+    margin: 4px 0;
+    color: #6c757d;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #dc3545;
+}
+
+.new-price {
+    color: #007cba;
+    font-weight: 600;
+}
+
+.integrations-overlay {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.integration-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.integration-arrow {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.data-source-badge {
+    position: absolute;
+    bottom: 50%;
+    left: -20px;
+    z-index: 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transform: rotate(-10deg);
+}
+
+.source-lines {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, white, transparent);
+    opacity: 0.6;
+}
+
+.source-lines::before,
+.source-lines::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, white, transparent);
+    opacity: 0.4;
+}
+
+.source-lines::before {
+    top: -20px;
+    transform: rotate(15deg);
+}
+
+.source-lines::after {
+    top: 20px;
+    transform: rotate(-15deg);
+}
+
+/* Integration Highlight */
+.integration-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .visual-stack {
+        height: 300px;
+    }
+    
+    .minimal-showcase {
+        padding: 20px;
+    }
+    
+    .apartments-table-minimal {
+        padding: 15px;
+    }
+    
+    .gutenberg-overlay {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .history-overlay {
+        bottom: 10px;
+        left: 10px;
+    }
+    
+    .data-source-badge {
+        left: -10px;
+        padding: 8px 12px;
+        font-size: 0.7rem;
+    }
+    
+    .integration-highlight {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .integrations-overlay {
+        display: none;
+    }
+    
+    .minimal-table td:nth-child(2) {
+        font-size: 0.75rem;
+    }
+    
+    .visual-stack {
+        height: 250px;
     }
 }
 
