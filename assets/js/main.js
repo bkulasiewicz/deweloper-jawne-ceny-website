@@ -103,43 +103,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile menu toggle
+    // Mobile menu toggle (if added later)
     const mobileMenuButton = document.querySelector('.mobile-menu-toggle');
     if (mobileMenuButton) {
         mobileMenuButton.addEventListener('click', function() {
             const navLinks = document.querySelector('.nav__links');
             navLinks.classList.toggle('nav__links--open');
-            mobileMenuButton.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const navLinksAll = document.querySelectorAll('.nav__links a');
-        navLinksAll.forEach(link => {
-            link.addEventListener('click', function() {
-                const navLinks = document.querySelector('.nav__links');
-                navLinks.classList.remove('nav__links--open');
-                mobileMenuButton.classList.remove('active');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navLinks = document.querySelector('.nav__links');
-            const isClickInside = mobileMenuButton.contains(event.target) || navLinks.contains(event.target);
-            
-            if (!isClickInside && navLinks.classList.contains('nav__links--open')) {
-                navLinks.classList.remove('nav__links--open');
-                mobileMenuButton.classList.remove('active');
-            }
-        });
-        
-        // Close mobile menu on ESC key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                const navLinks = document.querySelector('.nav__links');
-                navLinks.classList.remove('nav__links--open');
-                mobileMenuButton.classList.remove('active');
-            }
         });
     }
 
