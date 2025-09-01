@@ -12,10 +12,25 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow-x: hidden;
+}
+
+/* Global overflow protection */
+.demo, .wp-mockup, .demo__visual {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* Buttons */
@@ -958,6 +973,7 @@ body {
     align-items: center;
     margin-bottom: 100px;
     gap: 60px;
+    overflow-x: hidden;
 }
 
 .demo__item--reverse {
@@ -967,11 +983,14 @@ body {
 .demo__visual {
     flex: 1;
     max-width: 600px;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .demo__description {
     flex: 1;
     max-width: 500px;
+    min-width: 0;
 }
 
 .demo__description h3 {
@@ -1076,6 +1095,8 @@ body {
 .wp-form-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
+    overflow-x: auto;
 }
 
 .wp-form-table th {
@@ -1093,12 +1114,14 @@ body {
 
 .wp-input {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
+    min-width: 0;
     padding: 8px 12px;
     border: 1px solid #8c8f94;
     border-radius: 4px;
     font-size: 14px;
     background: white;
+    box-sizing: border-box;
 }
 
 /* Automation Status */
@@ -1152,15 +1175,17 @@ body {
     background: #f9f9f9;
     border-radius: 4px;
     overflow: hidden;
+    overflow-x: auto;
 }
 
 .resource-row {
     display: grid;
-    grid-template-columns: 2fr 1fr 100px 80px;
+    grid-template-columns: minmax(200px, 2fr) minmax(80px, 1fr) minmax(80px, 100px) minmax(60px, 80px);
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #e1e4e8;
     background: white;
+    min-width: 0;
 }
 
 .resource-row:nth-child(even) {
@@ -1295,8 +1320,9 @@ body {
 @media (max-width: 768px) {
     .demo__item {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         margin-bottom: 60px;
+        overflow-x: hidden;
     }
     
     .demo__item--reverse {
@@ -1306,6 +1332,13 @@ body {
     .wp-mockup {
         margin: 0 auto;
         max-width: 100%;
+        overflow-x: auto;
+        min-width: 0;
+    }
+    
+    .wp-content {
+        min-width: 0;
+        overflow-x: auto;
     }
     
     .stats-grid {
@@ -1317,11 +1350,23 @@ body {
         grid-template-columns: 1fr;
         gap: 10px;
         text-align: center;
+        min-width: 280px;
     }
     
     .demo__cta-buttons {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+    .demo__item {
+        gap: 20px;
+    }
+    
+    .wp-mockup {
+        min-width: 300px;
     }
 }
 
