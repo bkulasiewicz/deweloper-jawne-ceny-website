@@ -20,13 +20,14 @@ function loadArticlesList() {
     articles.forEach(article => {
         articlesHTML += `
             <article class="article-item">
-                <div class="article-icon">${article.emoji}</div>
+                <div class="article-icon">📖</div>
                 <div class="article-content">
                     <h2><a href="artykul.html?id=${article.id}">${article.title}</a></h2>
-                    <p>${article.description}</p>
+                    <p>${article.excerpt}</p>
                     <div class="article-meta">
                         <span class="article-date">${article.date}</span>
                         <span class="article-read-time">${article.readTime}</span>
+                        <span class="article-category">${article.category}</span>
                     </div>
                 </div>
             </article>
