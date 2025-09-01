@@ -637,6 +637,28 @@ html, body {
     margin-bottom: 32px;
 }
 
+.card__features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card__features li {
+    padding: 8px 0;
+    color: #4a5568;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.card__features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #48bb78;
+    font-weight: bold;
+}
+
 .card__features .feature {
     padding: 8px 0;
     color: #4a5568;
