@@ -27,6 +27,9 @@ function loadArticle(articleId) {
     document.getElementById('og-title').setAttribute('content', article.title);
     document.getElementById('og-description').setAttribute('content', article.description);
     
+    // Update canonical URL
+    document.getElementById('canonical-url').setAttribute('href', `https://www.deweloperjawneceny.pl/artykul.html?id=${articleId}`);
+    
     // Update breadcrumb
     document.getElementById('breadcrumb-title').textContent = article.title;
     
