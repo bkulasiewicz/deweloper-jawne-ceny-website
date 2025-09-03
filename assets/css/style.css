@@ -539,6 +539,12 @@ html, body {
     overflow: hidden;
 }
 
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -597,11 +603,9 @@ html, body {
 
 /* Dashboard Preview */
 .hero__visual {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
+    position: relative;
     width: 400px;
+    flex-shrink: 0;
 }
 
 .dashboard-preview {
