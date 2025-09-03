@@ -55,7 +55,7 @@ function navigateToSection(sectionId) {
         // We're on the main page, scroll to section
         const element = document.getElementById(sectionId);
         if (element) {
-            const headerHeight = 80; // Approximate header height
+            const headerHeight = document.querySelector('.header') ? document.querySelector('.header').offsetHeight : 80;
             const targetPosition = element.offsetTop - headerHeight;
             window.scrollTo({
                 top: targetPosition,

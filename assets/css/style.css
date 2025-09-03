@@ -3055,7 +3055,3 @@ html, body {
     }
 }
 
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
