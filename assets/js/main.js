@@ -87,13 +87,68 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile menu toggle (if added later)
+    // Enhanced Mobile menu functionality
     const mobileMenuButton = document.querySelector('.mobile-menu-toggle');
-    if (mobileMenuButton) {
-        mobileMenuButton.addEventListener('click', function() {
-            const navLinks = document.querySelector('.nav__links');
-            navLinks.classList.toggle('nav__links--open');
+    const navLinks = document.querySelector('.nav__links');
+    const header = document.querySelector('.header');
+    
+    if (mobileMenuButton && navLinks) {
+        // Toggle menu on button click
+        mobileMenuButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleMobileMenu();
         });
+        
+        // Note: Menu closing is now handled by navigation functions with proper timing
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!header.contains(e.target) && navLinks.classList.contains('nav--open')) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Close menu on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navLinks.classList.contains('nav--open')) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Prevent body scroll when menu is open
+        function toggleBodyScroll(prevent) {
+            if (prevent) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        
+        function toggleMobileMenu() {
+            const isOpen = navLinks.classList.contains('nav--open');
+            if (isOpen) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+        
+        function openMobileMenu() {
+            navLinks.classList.add('nav--open');
+            mobileMenuButton.classList.add('menu--open');
+            toggleBodyScroll(true);
+        }
+        
+        function closeMobileMenu() {
+            navLinks.classList.remove('nav--open');
+            mobileMenuButton.classList.remove('menu--open');
+            toggleBodyScroll(false);
+        }
+        
+        // Make functions globally available for HTML onclick
+        window.toggleMobileMenu = toggleMobileMenu;
+        window.closeMobileMenu = closeMobileMenu;
+        window.openMobileMenu = openMobileMenu;
     }
 
     // Stats counter animation

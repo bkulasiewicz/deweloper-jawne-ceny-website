@@ -48,28 +48,51 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Navigation functions
+// Navigation functions with smooth menu closing
 function navigateToSection(sectionId) {
-    // Check if we're on the main page
-    if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/' || window.location.pathname === '/website/') {
-        // We're on the main page, scroll to section
-        const element = document.getElementById(sectionId);
-        if (element) {
-            const headerHeight = document.querySelector('.header') ? document.querySelector('.header').offsetHeight : 80;
-            const targetPosition = element.offsetTop - headerHeight;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
+    // Debug - sprawdź ścieżkę
+    console.log('DEBUG navigateToSection:', {
+        sectionId,
+        pathname: window.location.pathname,
+        href: window.location.href
+    });
+    
+    // Ustaw backup timer
+    setupMenuCloseBackup();
+    
+    // Nowy elastyczny warunek - sprawdź czy element istnieje na stronie
+    const element = document.getElementById(sectionId);
+    if (element) {
+        // Element istnieje - rób smooth scroll
+        console.log('DEBUG: Element found, doing smooth scroll');
+        const headerHeight = document.querySelector('.header') ? document.querySelector('.header').offsetHeight : 80;
+        const targetPosition = element.offsetTop - headerHeight;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+        
+        // Close menu after scroll animation (800ms for smooth UX)
+        setTimeout(() => {
+            console.log('DEBUG: Closing menu after scroll');
+            closeMobileMenuSmoothly();
+        }, 800);
     } else {
-        // We're on a different page, navigate to main page with anchor
+        // Element nie istnieje - przekieruj na index.html
+        console.log('DEBUG: Element not found, redirecting');
         window.location.href = 'index.html#' + sectionId;
+        // Menu will close when page changes, but add quick close for safety
+        setTimeout(() => {
+            closeMobileMenuSmoothly();
+        }, 200);
     }
 }
 
 function navigateToPage(pageName) {
-    // Check current directory level
+    // Ustaw backup timer
+    setupMenuCloseBackup();
+    
+    // Start navigation immediately
     const currentPath = window.location.pathname;
     let basePath = '';
     
@@ -78,6 +101,11 @@ function navigateToPage(pageName) {
     }
     
     window.location.href = basePath + pageName;
+    
+    // Close menu quickly since page will change anyway (200ms)
+    setTimeout(() => {
+        closeMobileMenuSmoothly();
+    }, 200);
 }
 
 // Mobile menu toggle function
@@ -88,21 +116,36 @@ function toggleMobileMenu() {
     }
 }
 
-// Close mobile menu
-function closeMobileMenu() {
+// Simple helper to close mobile menu smoothly
+function closeMobileMenuSmoothly() {
     const navLinks = document.querySelector('.nav__links');
+    const mobileMenuButton = document.querySelector('.mobile-menu-toggle');
+    
     if (navLinks) {
         navLinks.classList.remove('nav--open');
     }
+    if (mobileMenuButton) {
+        mobileMenuButton.classList.remove('menu--open');
+    }
+    document.body.style.overflow = '';
+    console.log('DEBUG: Menu closed');
 }
 
-// Enhanced navigation functions that close mobile menu
-function navigateToSectionMobile(sectionId) {
-    closeMobileMenu();
-    setTimeout(() => navigateToSection(sectionId), 100);
-}
+// Backup timer - fallback zabezpieczenie
+let menuCloseBackupTimer = null;
 
-function navigateToPageMobile(pageName) {
-    closeMobileMenu();
-    setTimeout(() => navigateToPage(pageName), 100);
+function setupMenuCloseBackup() {
+    // Wyczyść poprzedni timer
+    if (menuCloseBackupTimer) {
+        clearTimeout(menuCloseBackupTimer);
+    }
+    
+    // Ustaw nowy timer - jeśli menu nie zamknie się w 2 sekundy, wymuś zamknięcie
+    menuCloseBackupTimer = setTimeout(() => {
+        const navLinks = document.querySelector('.nav__links');
+        if (navLinks && navLinks.classList.contains('nav--open')) {
+            console.log('DEBUG: Backup timer - force closing menu');
+            closeMobileMenuSmoothly();
+        }
+    }, 2000);
 }
