@@ -18,19 +18,22 @@ function loadArticlesList() {
         .sort((a, b) => new Date(b.date) - new Date(a.date));
     
     articles.forEach(article => {
+        // Format date as "2025 styczeń 9"
+        const date = new Date(article.date);
+        const months = [
+            'styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec',
+            'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień'
+        ];
+        const formattedDate = `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+        
         articlesHTML += `
-            <article class="article-item">
-                <div class="article-icon">📖</div>
-                <div class="article-content">
-                    <h2><a href="artykul.html?id=${article.id}">${article.title}</a></h2>
+            <a href="artykul.html?id=${article.id}" class="article-item-link">
+                <article class="article-item">
+                    <h2>${article.title}</h2>
                     <p>${article.excerpt}</p>
-                    <div class="article-meta">
-                        <span class="article-date">${article.date}</span>
-                        <span class="article-read-time">${article.readTime}</span>
-                        <span class="article-category">${article.category}</span>
-                    </div>
-                </div>
-            </article>
+                    <div class="article-date">${formattedDate}</div>
+                </article>
+            </a>
         `;
     });
     
