@@ -76,8 +76,6 @@ window.articlesData = {
             • Filtry i wyszukiwarka - łatwe znajdowanie mieszkań przez klientów<br>
             • Zgodność prawna - automatyczne spełnianie wymagań ustawy
 
-            Przykład oszczędności: Deweloper XYZ z 450 mieszkaniami w 3 inwestycjach przed wdrożeniem spędzał 8 godzin tygodniowo na aktualizacje. Po wdrożeniu pluginu: 15 minut tygodniowo z automatycznymi powiadomieniami. Oszczędności: 85% czasu, 100% zgodność prawna, 0 błędów.
-
             <br><br>
 
             <h2>Integracja z istniejącą stroną WordPress</h2>
@@ -99,31 +97,19 @@ window.articlesData = {
 
             <br><br>
 
-            <h2>Instalacja i konfiguracja WordPress pluginu</h2>
+            <h2>Jak korzystać z WordPress wtyczki</h2>
             
-            Krok 1: Instalacja pluginu
-            1. Zaloguj się do panelu WordPress
-            2. Przejdź do Wtyczki - Dodaj nową
-            3. Wgraj plik pluginu lub zainstaluj przez marketplace
-            4. Aktywuj plugin
+            Po aktywacji wtyczki w panelu WordPress pojawi się nowa sekcja. Wtyczka oferuje prosty interfejs do zarządzania danymi mieszkań i automatycznej zgodności z ustawą.
 
-            Krok 2: Konfiguracja podstawowa
-            1. W menu WordPress znajdź "Ceny Mieszkań"
-            2. Skonfiguruj podstawowe ustawienia: waluta (PLN), format wyświetlania cen, pola wymagane przez ustawę, ustawienia SEO
-            3. Zapisz ustawienia
+            Główne funkcje wtyczki:<br>
+            • Generowanie plików XML/CSV jednym kliknięciem<br>
+            • Automatyczna publikacja danych zgodnie z harmonogramem<br>
+            • Lista mieszkań z aktualnych cenami i statusami<br>
+            • Historia zmian cen dla każdego mieszkania<br>
+            • Monitoring statusu zgodności prawnej<br>
+            • Automatyczne zasilanie danych na stronę przez bloki Gutenberg
 
-            Krok 3: Import danych
-            1. Przygotuj plik Excel/CSV z danymi mieszkań
-            2. Użyj funkcji "Import masowy"
-            3. Zmapuj kolumny z pliku na pola pluginu
-            4. Przeprowadź import testowy (5 mieszkań)
-            5. Sprawdź wyniki i zaimportuj wszystkie dane
-
-            Szacowany czas wdrożenia:<br>
-            • Mała inwestycja (do 50 mieszkań): 2-4 godziny<br>
-            • Średnia inwestycja (50-200 mieszkań): 1 dzień<br>
-            • Duża inwestycja (200+ mieszkań): 2-3 dni<br>
-            • Wieloprojektowy deweloper: 3-5 dni (z automatyzacją)
+            Wtyczka automatycznie generuje pliki wymagane przez dane.gov.pl i śledzi zgodność z wymaganiami ustawy. Wszystkie dane są synchronizowane i aktualizowane bez dodatkowej pracy.
 
             <br><br>
 
