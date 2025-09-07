@@ -166,14 +166,14 @@ window.articlesData = {
 
             <br><br>
 
-            Dlatego właśnie powstała wtyczka **DeweloperJawneCeny** – narzędzie, które w kilka minut automatyzuje proces publikacji i gwarantuje zgodność z wymogami prawnymi.
+            Dlatego właśnie powstała wtyczka DeweloperJawneCeny – narzędzie, które w kilka minut automatyzuje proces publikacji i gwarantuje zgodność z wymogami prawnymi.
 
             <br><br>
 
             <h2>Jak zdobyć wtyczkę?</h2>
             
-            • **Wersja darmowa** dostępna jest w katalogu wtyczek WordPress pod nazwą **DeweloperJawneCeny**<br>
-            • **Wersja profesjonalna** (pełna automatyzacja, wsparcie, dodatkowe funkcje) dostępna jest po kontakcie przez <a href="#kontakt">formularz kontaktowy</a>
+            • Wersja darmowa dostępna jest w katalogu wtyczek WordPress pod nazwą DeweloperJawneCeny<br>
+            • Wersja profesjonalna (pełna automatyzacja, wsparcie, dodatkowe funkcje) dostępna jest po kontakcie przez <a href="#kontakt">formularz kontaktowy</a>
 
             Po zakupie klient otrzymuje link do pobrania wtyczki.
 
@@ -192,7 +192,7 @@ window.articlesData = {
 
             <h3>Krok 2. Konfiguracja podstawowa</h3>
             
-            1. W menu WordPress pojawi się sekcja **DeweloperJawneCeny**<br>
+            1. W menu WordPress pojawi się sekcja DeweloperJawneCeny<br>
             2. Dodaj pierwszy zasób – np. mieszkanie w inwestycji:<br>
                • Numer lokalu, powierzchnia, liczba pokoi, piętro, cena<br>
                • Status: dostępne / sprzedane / zarezerwowane<br>
@@ -202,7 +202,7 @@ window.articlesData = {
 
             <h3>Krok 3. Włączenie automatyzacji</h3>
             
-            1. Przejdź do zakładki **Pulpit** w panelu wtyczki<br>
+            1. Przejdź do zakładki Pulpit w panelu wtyczki<br>
             2. Kliknij „Włącz automatyzację"<br>
             3. Od tego momentu system sam zajmie się generowaniem i publikacją plików XML/CSV
 
@@ -211,7 +211,7 @@ window.articlesData = {
             <h3>Krok 4. Publikacja danych na stronie</h3>
             
             1. Wtyczka automatycznie publikuje pliki pod unikalnym adresem URL<br>
-            2. Ten adres znajdziesz w zakładce **Publikacja danych** w panelu wtyczki<br>
+            2. Ten adres znajdziesz w zakładce Publikacja danych w panelu wtyczki<br>
             3. Możesz dodać link do plików na stronie inwestycji lub w stopce strony<br>
             4. Dane są zawsze aktualne i zgodne z wymogami prawnymi
 
@@ -219,7 +219,7 @@ window.articlesData = {
 
             <h3>Krok 5. Automatyzacja aktualizacji</h3>
             
-            • Wtyczka **generuje i aktualizuje pliki zawsze o północy**<br>
+            • Wtyczka generuje i aktualizuje pliki zawsze o północy<br>
             • Dzięki temu Twoje dane są codziennie synchronizowane z minimalnym wysiłkiem<br>
             • Pełna historia cen i zmian dostępna jest w logach
 
@@ -227,60 +227,60 @@ window.articlesData = {
 
             <h2>Najczęstsze błędy deweloperów – jak ich uniknąć?</h2>
             
-            ❌ **Błędy, które możesz popełnić:**<br>
+            ❌ Błędy, które możesz popełnić:<br>
             • Ręczne aktualizowanie plików w Excelu → ryzyko pomyłek<br>
             • Brak harmonogramu publikacji → naruszenie ustawy<br>
             • Nieprzechowywanie historii cen → brak dowodu w razie kontroli
 
             <br><br>
 
-            ✅ **Dzięki DeweloperJawneCeny wszystkie te ryzyka są wyeliminowane.**
+            ✅ Dzięki DeweloperJawneCeny wszystkie te ryzyka są wyeliminowane.
 
             <br><br>
 
             <h2>Dla kogo jest ta automatyzacja?</h2>
             
-            • **Działy sprzedaży i marketingu** – mniej pracy manualnej, szybka aktualizacja danych<br>
-            • **Zarządy spółek deweloperskich** – pewność zgodności prawnej i mniejsze ryzyko kar<br>
-            • **Specjaliści IT** – łatwa integracja bez dodatkowych systemów<br>
-            • **Mniejsze spółki** – oszczędność czasu i kosztów
+            • Działy sprzedaży i marketingu – mniej pracy manualnej, szybka aktualizacja danych<br>
+            • Zarządy spółek deweloperskich – pewność zgodności prawnej i mniejsze ryzyko kar<br>
+            • Specjaliści IT – łatwa integracja bez dodatkowych systemów<br>
+            • Mniejsze spółki – oszczędność czasu i kosztów
 
             <br><br>
 
             <h2>Najczęściej zadawane pytania</h2>
 
-            **1. Czy muszę mieć specjalistyczną wiedzę IT, aby wdrożyć wtyczkę?**<br>
+            1. Czy muszę mieć specjalistyczną wiedzę IT, aby wdrożyć wtyczkę?<br>
             Nie. Instalacja i konfiguracja zajmuje kilka minut.
 
             <br><br>
 
-            **2. Czy mogę używać wtyczki na wielu inwestycjach jednocześnie?**<br>
-            Tak, możesz dodawać wiele inwestycji i zarządzać nimi w jednym panelu, ale **jedna wtyczka obsługuje jedną stronę internetową**.
+            2. Czy mogę używać wtyczki na wielu inwestycjach jednocześnie?<br>
+            Tak, możesz dodawać wiele inwestycji i zarządzać nimi w jednym panelu, ale jedna wtyczka obsługuje jedną stronę internetową.
 
             <br><br>
 
-            **3. Co z aktualizacjami?**<br>
+            3. Co z aktualizacjami?<br>
             Wtyczka jest aktualizowana zgodnie z nowymi wytycznymi rządowymi.
 
             <br><br>
 
-            **4. A jeśli mam już stronę w WordPress?**<br>
+            4. A jeśli mam już stronę w WordPress?<br>
             Integracja nie wymaga przebudowy strony.
 
             <br><br>
 
-            **5. Co, jeśli potrzebuję pomocy przy wdrożeniu?**<br>
-            Oferujemy usługę **Wdrożenie Express** – instalacja i konfiguracja w 24h.
+            5. Co, jeśli potrzebuję pomocy przy wdrożeniu?<br>
+            Oferujemy usługę Wdrożenie Express – instalacja i konfiguracja w 24h.
 
             <br><br>
 
             <h2>Podsumowanie</h2>
             
-            Dzięki wtyczce **DeweloperJawneCeny** proces publikacji cen mieszkań w WordPress jest szybki i w pełni zautomatyzowany. Od włączenia automatyzacji w zakładce „Pulpit", przez automatyczne generowanie plików o północy, aż po publikację w zakładce „Publikacja danych" – wszystko działa bezobsługowo.
+            Dzięki wtyczce DeweloperJawneCeny proces publikacji cen mieszkań w WordPress jest szybki i w pełni zautomatyzowany. Od włączenia automatyzacji w zakładce „Pulpit", przez automatyczne generowanie plików o północy, aż po publikację w zakładce „Publikacja danych" – wszystko działa bezobsługowo.
 
             <br><br>
 
-            👉 **Zyskujesz:**<br>
+            👉 Zyskujesz:<br>
             • pełną zgodność z ustawą<br>
             • oszczędność czasu i pieniędzy<br>
             • bezpieczeństwo prawne<br>
