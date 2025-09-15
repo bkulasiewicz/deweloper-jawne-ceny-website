@@ -289,8 +289,135 @@ window.articlesData = {
             <br><br>
 
             <h2>Rozpocznij automatyzację już dziś</h2>
-            
+
             Chcesz zobaczyć jak działa automatyzacja publikacji cen mieszkań w praktyce? Skontaktuj się z nami, aby obejrzeć demo wtyczki i poznać szczegóły wersji profesjonalnej. Nasi eksperci odpowiedzą na wszystkie pytania i pomogą wybrać najlepsze rozwiązanie dla Twojej firmy.
+        `
+    },
+    'nowa-konfiguracja-warstwy-frontendowej-wtyczka-deweloperjawneceny': {
+        title: 'Nowa funkcjonalność: pełna i prosta konfiguracja warstwy frontendowej w wtyczce DeweloperJawneCeny',
+        excerpt: 'Poznaj nową funkcjonalność wtyczki DeweloperJawneCeny - konfigurator warstwy frontendowej pozwalający w pełni dostosować wygląd tabel, list i przycisków do identyfikacji wizualnej Twojej strony.',
+        date: '2025-09-15',
+        keywords: 'konfiguracja warstwy frontendowej WordPress, personalizacja wtyczki DeweloperJawneCeny, dostosowanie wyglądu tabel mieszkań, konfigurator kolorów WordPress plugin, shortcode generator mieszkania, responsive design wtyczka nieruchomości, SEO optymalizacja ofert mieszkaniowych',
+        category: 'WordPress & Konfiguracja',
+        description: 'Nowa funkcjonalność wtyczki DeweloperJawneCeny umożliwia pełną konfigurację warstwy frontendowej. Dostosuj kolory, layout i funkcjonalność bez kodowania.',
+        content: `
+            <p>Jednym z kluczowych elementów ustawy o jawności cen mieszkań 2025 jest obowiązek prezentowania ofert w sposób przejrzysty i zrozumiały dla klienta. W odpowiedzi na potrzeby deweloperów oraz agencji nieruchomości wtyczka DeweloperJawneCeny została wzbogacona o nową funkcjonalność – warstwę frontendową z pełną możliwością konfiguracji.</p>
+
+            <p>Dzięki temu rozwiązaniu każdy użytkownik w prosty sposób dopasuje wygląd oraz układ tabel, list i przycisków do swojej strony WWW. Co ważne – bez potrzeby kodowania i skomplikowanych integracji.</p>
+
+            <h2>Co daje nowa warstwa frontendowa?</h2>
+
+            <p>Nowa sekcja konfiguracji wtyczki pozwala na:</p>
+            • wybór typu wyświetlania ofert (tabela, lista, karty mieszkań)<br>
+            • personalizację kolorów i stylów (nagłówki, statusy, przyciski, ramki)<br>
+            • określanie, które informacje mają być widoczne (np. numer lokalu, metraż, cena, status)<br>
+            • dopasowanie wyglądu przycisków CTA (np. „Zarezerwuj" czy „Skontaktuj się")<br>
+            • generowanie gotowego shortcode, który można od razu wkleić na stronę
+
+            <br><br>
+
+            <p>Dzięki temu cała prezentacja mieszkań staje się spójna z identyfikacją wizualną marki, a klient szybko i wygodnie znajdzie najważniejsze informacje o lokalu.</p>
+
+            <h2>Podstawowe ustawienia – wybór stylu prezentacji</h2>
+
+            <p>W pierwszej części konfiguratora można zdecydować, w jaki sposób będą wyświetlane lokale:</p>
+            • Tabela – klasyczny układ, idealny dla klientów lubiących zestawienia<br>
+            • Lista uproszczona – kompaktowy widok, czytelny na urządzeniach mobilnych<br>
+            • Karty mieszkań – nowoczesny układ z przyciskami CTA i kolorowymi statusami
+
+            <br><br>
+
+            <p>Każda opcja pozwala inaczej budować doświadczenie użytkownika na stronie.</p>
+
+            <h2>Personalizacja – kolory, nagłówki i statusy</h2>
+
+            <p>Nowa funkcjonalność umożliwia pełną personalizację graficzną:</p>
+            • ustawienia kolorów nagłówków, tła, ramki i przycisków<br>
+            • możliwość wyróżniania statusów lokali (np. „Dostępny", „Zarezerwowany", „Sprzedany") różnymi kolorami<br>
+            • wybór rozmiarów fontów i grubości obramowania<br>
+            • dopasowanie kolorystyki przycisków CTA (np. „Historia cen", „Pokaż szczegóły")
+
+            <br><br>
+
+            <p>To sprawia, że deweloperzy mogą zachować estetyczną spójność strony i podkreślić ważne informacje dla klientów.</p>
+
+            <h2>Widoczność kolumn – decydujesz, co pokażesz</h2>
+
+            <p>Dużym udogodnieniem jest możliwość samodzielnego wyboru kolumn, jakie mają pojawić się w tabeli czy na liście. Administrator zaznacza tylko te informacje, które uważa za najistotniejsze, np.:</p>
+            • numer lokalu<br>
+            • typ (mieszkanie, lokal usługowy)<br>
+            • powierzchnia<br>
+            • status<br>
+            • cena całkowita<br>
+            • cena za m²<br>
+            • piętro<br>
+            • liczba pokoi<br>
+            • opcja „Historia cen"
+
+            <br><br>
+
+            <p>Dzięki temu na stronie nie ma przeładowania informacjami – użytkownik widzi dokładnie to, co najważniejsze.</p>
+
+            <h2>Automatyczne shortcode'y</h2>
+
+            <p>Każda konfiguracja generuje gotowy shortcode, który można skopiować i wkleić w dowolne miejsce na stronie WordPress. To oznacza:</p>
+            • brak konieczności pisania kodu<br>
+            • szybkie wdrożenie na dowolnej podstronie<br>
+            • możliwość testowania różnych wersji prezentacji ofert (np. tabela na stronie głównej, karty na landing page)
+
+            <br><br>
+
+            <p>To ogromna oszczędność czasu dla deweloperów i marketerów.</p>
+
+            <h2>Dlaczego to ważne w kontekście ustawy o jawności cen mieszkań?</h2>
+
+            <p>Ustawa wymaga, aby ceny mieszkań były prezentowane w sposób przejrzysty, łatwo dostępny i niebudzący wątpliwości. Nowa funkcjonalność wtyczki DeweloperJawneCeny gwarantuje:</p>
+            • spełnienie wymogów prawnych<br>
+            • profesjonalny wygląd strony<br>
+            • ułatwienie klientom podejmowania decyzji<br>
+            • budowanie zaufania dzięki transparentności
+
+            <br><br>
+
+            <p>To przewaga konkurencyjna dla deweloperów, którzy chcą być krok przed zmianami w prawie.</p>
+
+            <h2>Podsumowanie</h2>
+
+            <p>Nowa funkcjonalność konfiguracji frontendowej w wtyczce DeweloperJawneCeny to narzędzie, które:</p>
+            • pozwala w pełni dostosować wygląd oferty mieszkaniowej do strony WWW<br>
+            • umożliwia łatwą personalizację kolorów, nagłówków i przycisków<br>
+            • daje kontrolę nad tym, które informacje są widoczne<br>
+            • generuje gotowe shortcode'y – szybkie wdrożenie bez programisty<br>
+            • wspiera deweloperów w dostosowaniu się do ustawy o jawności cen mieszkań 2025
+
+            <br><br>
+
+            <p>Dzięki temu prezentacja mieszkań jest nie tylko zgodna z prawem, ale również atrakcyjna i intuicyjna dla klientów.</p>
+
+            <h2>Najczęściej zadawane pytania</h2>
+
+            <p>1. Czy muszę znać HTML lub CSS, żeby skonfigurować warstwę frontendową?<br>
+            Nie, cała konfiguracja odbywa się przez intuicyjny panel – wystarczy kilka kliknięć.</p>
+
+            <br><br>
+
+            <p>2. Czy mogę przygotować kilka różnych konfiguracji dla różnych stron?<br>
+            Tak, każda konfiguracja generuje własny shortcode. Możesz wstawić różne widoki w różnych miejscach serwisu.</p>
+
+            <br><br>
+
+            <p>3. Czy mogę zmienić kolory statusów lokali?<br>
+            Tak, w panelu personalizacji możesz ustawić dowolne kolory dla statusów „Dostępny", „Zarezerwowany" i „Sprzedany".</p>
+
+            <br><br>
+
+            <p>4. Jak to wpływa na SEO?<br>
+            Przejrzysta prezentacja ofert poprawia czas spędzany na stronie, obniża współczynnik odrzuceń i zwiększa widoczność w Google.</p>
+
+            <br><br>
+
+            <p>5. Czy wtyczka jest zgodna z ustawą o jawności cen mieszkań?<br>
+            Tak, to jedno z jej głównych zadań – ułatwia prezentację ofert w sposób przejrzysty, zgodny z nowymi przepisami.</p>
         `
     }
 };
