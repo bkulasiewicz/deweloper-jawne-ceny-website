@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Contact form handling
-    const contactButtons = document.querySelectorAll('a[href="#kontakt"], a[href="mailto:bartosz.kulasiewicz@gmail.com"]');
+    const contactButtons = document.querySelectorAll('a[href="#kontakt"], a[href="mailto:kontakt@deweloperjawneceny.pl"]');
     contactButtons.forEach(button => {
         if (button.href.includes('mailto:')) {
             // Track email clicks
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Simulate loading
                 setTimeout(() => {
-                    alert('Dziękujemy za zainteresowanie! Skontaktuj się z nami: bartosz.kulasiewicz@gmail.com');
+                    alert('Dziękujemy za zainteresowanie! Skontaktuj się z nami: kontakt@deweloperjawneceny.pl');
                     this.textContent = originalText;
                     this.disabled = false;
                 }, 1000);
