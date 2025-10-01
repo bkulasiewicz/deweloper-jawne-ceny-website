@@ -419,5 +419,139 @@ window.articlesData = {
             <p>5. Czy wtyczka jest zgodna z ustawą o jawności cen mieszkań?<br>
             Tak, to jedno z jej głównych zadań – ułatwia prezentację ofert w sposób przejrzysty, zgodny z nowymi przepisami.</p>
         `
+    },
+    'nowe-funkcjonalnosci-wtyczki-lista-mieszkan-domow': {
+        title: 'Nowe funkcjonalności wtyczki DeweloperJawneCeny – szybkie dodawanie listy mieszkań i domów do WordPressa',
+        excerpt: 'Nowa wersja wtyczki DeweloperJawneCeny przynosi rewolucyjne możliwości: dodawanie listy mieszkań jednym kliknięciem, pełną personalizację komponentów oraz zaawansowane filtrowanie ofert.',
+        date: '2025-09-20',
+        keywords: 'lista mieszkań WordPress, wtyczka DeweloperJawneCeny funkcje, dodawanie ofert mieszkaniowych, filtry mieszkań WordPress, historia cen mieszkań, karta lokalu PDF, personalizacja komponentów WordPress, widget filtrów nieruchomości',
+        category: 'WordPress & Funkcjonalności',
+        description: 'Poznaj najnowsze funkcjonalności wtyczki DeweloperJawneCeny: szybkie dodawanie list mieszkań, pełna personalizacja, zaawansowane filtrowanie i historia cen w jednym rozwiązaniu.',
+        content: `
+            <p>Nowe funkcjonalności wtyczki DeweloperJawneCeny – szybkie dodawanie listy mieszkań i domów do WordPressa</p>
+
+            <h2>Dlaczego wtyczka DeweloperJawneCeny to przełom dla deweloperów?</h2>
+
+            <p>Od 2025 roku w życie wchodzi ustawa o jawności cen mieszkań, która zobowiązuje deweloperów do prezentowania ofert sprzedaży w sposób czytelny, porównywalny i łatwo dostępny online.</p>
+
+            <p>W odpowiedzi na te potrzeby stworzyliśmy wtyczkę DeweloperJawneCeny, która pozwala deweloperom i agencjom nieruchomości w prosty sposób wdrożyć zgodne z ustawą rozwiązania na stronach opartych o WordPress.</p>
+
+            <p>Nowa wersja wtyczki przynosi zupełnie nowe możliwości:</p>
+
+            • dodanie listy mieszkań lub domów jednym kliknięciem<br>
+            • pełną personalizację komponentów z poziomu panelu administratora<br>
+            • zaawansowane filtrowanie i wyszukiwanie ofert<br>
+            • historię cen mieszkań w modalu<br>
+            • obsługę kart lokalu (PDF)
+
+            <br><br>
+
+            <h2>1. Jednym kliknięciem dodasz listę mieszkań lub domów</h2>
+
+            <p>Nowa funkcja „Lista zasobów" umożliwia natychmiastowe wstawienie gotowej listy mieszkań lub domów na stronę WordPress.</p>
+
+            <p>Bez dodatkowego kodowania, bez ręcznych konfiguracji. Wystarczy jedno kliknięcie, aby na stronie pojawiła się:</p>
+
+            • tabela z ofertami mieszkań (idealna do porównywania parametrów)<br>
+            • lub siatka kart (listing) – nowoczesny układ z kartami ofert
+
+            <br><br>
+
+            <p>Takie rozwiązanie pozwala deweloperowi zaoszczędzić czas i szybko spełnić wymogi ustawy o jawności cen mieszkań.</p>
+
+            <h2>2. Pełna personalizacja z panelu WordPress</h2>
+
+            <p>Nie trzeba znać CSS ani programowania – wszystkie elementy można dostosować w panelu administracyjnym.</p>
+
+            <p>Wtyczka daje pełną kontrolę nad:</p>
+
+            • kolorami i typografią<br>
+            • ilością kolumn i ich nazwami<br>
+            • wyglądem kart i tabel<br>
+            • przyciskami (np. „Karta lokalu" czy „Historia cen")<br>
+            • modalami i efektami hover
+
+            <br><br>
+
+            <p>To oznacza, że każda firma deweloperska może stworzyć unikalną prezentację swojej oferty, zgodną z identyfikacją wizualną marki.</p>
+
+            <h2>3. Zaawansowane filtrowanie i wyszukiwanie</h2>
+
+            <p>Nowa funkcjonalność to widget filtrów zasobów, który pozwala klientom łatwo znaleźć odpowiednie mieszkanie.</p>
+
+            <p>Dostępne są filtry:</p>
+
+            • cena (min–max)<br>
+            • metraż (powierzchnia)<br>
+            • liczba pokoi<br>
+            • piętro<br>
+            • status oferty (dostępne, sprzedane, rezerwacja)<br>
+            • numer lokalu
+
+            <br><br>
+
+            <p>Filtry są dostępne także w formie linków (URL) – oznacza to, że dział sprzedaży może wysłać klientowi gotowy link np. do mieszkań 3-pokojowych poniżej 700 000 zł.</p>
+
+            <h2>4. Historia cen i karta lokalu (PDF)</h2>
+
+            <p>Każdy lokal można wyświetlić w atrakcyjnej formie:</p>
+
+            • Karta lokalu w PDF – z rzutem i szczegółami<br>
+            • Historia cen – w przejrzystym modalu, który ładuje dane w tle (AJAX)
+
+            <br><br>
+
+            <p>To funkcjonalność, która nie tylko spełnia wymogi prawne, ale też buduje zaufanie klientów.</p>
+
+            <h2>5. Dlaczego to rozwiązanie jest idealne dla deweloperów?</h2>
+
+            <p>Nowa wersja wtyczki DeweloperJawneCeny sprawia, że:</p>
+
+            • Zgodność z ustawą o jawności cen mieszkań – wtyczka przygotowana specjalnie pod przepisy 2025<br>
+            • SEO-friendly – dane renderowane po stronie serwera (WordPress SSR)<br>
+            • łatwość wdrożenia – instalacja i konfiguracja zajmuje kilka minut<br>
+            • personalizacja – każda inwestycja może mieć własny design<br>
+            • wygoda dla klientów – zaawansowane filtry i szybkie linki skracają drogę do zakupu
+
+            <br><br>
+
+            <h2>Podsumowanie</h2>
+
+            <p>Nowa wersja wtyczki DeweloperJawneCeny sprawia, że:</p>
+
+            • dodanie listy mieszkań lub domów to kwestia jednego kliknięcia<br>
+            • każdy deweloper może personalizować wygląd i funkcje komponentów<br>
+            • klienci otrzymują wygodne filtrowanie, historię cen i karty lokalu<br>
+            • strona spełnia wymogi ustawy o jawności cen mieszkań 2025
+
+            <br><br>
+
+            <p>To rozwiązanie, które oszczędza czas, poprawia konwersję i zwiększa wiarygodność dewelopera.</p>
+
+            <h2>FAQ – najczęściej zadawane pytania</h2>
+
+            <p>Czy wtyczka działa na każdej stronie WordPress?<br>
+            Tak, wystarczy zainstalować ją jak standardową wtyczkę i można korzystać z bloków w edytorze Gutenberg.</p>
+
+            <br><br>
+
+            <p>Czy muszę znać się na programowaniu, żeby z niej korzystać?<br>
+            Nie. Wszystko skonfigurujesz w panelu WordPress, bez pisania kodu.</p>
+
+            <br><br>
+
+            <p>Czy wtyczka poprawi SEO mojej strony?<br>
+            Tak. Dane są renderowane po stronie serwera, co oznacza, że Google i inne wyszukiwarki łatwo je indeksują.</p>
+
+            <br><br>
+
+            <p>Czy mogę mieć osobne listy dla mieszkań i domów?<br>
+            Tak. Możesz dodać oddzielne bloki z różnymi filtrami i wyglądem.</p>
+
+            <br><br>
+
+            <p>Czy historia cen nie spowolni strony?<br>
+            Nie. Dane ładują się w tle (AJAX) tylko wtedy, gdy użytkownik kliknie przycisk.</p>
+        `
     }
 };
