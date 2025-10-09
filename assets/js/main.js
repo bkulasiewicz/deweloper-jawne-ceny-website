@@ -1,24 +1,5 @@
-// Pricing toggle functionality
+// Main functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const billingToggle = document.getElementById('billing-toggle');
-    const priceAmounts = document.querySelectorAll('.price__amount');
-
-    if (billingToggle) {
-        billingToggle.addEventListener('change', function() {
-            const isYearly = this.checked;
-            
-            priceAmounts.forEach(function(element) {
-                const monthlyPrice = element.dataset.monthly;
-                const yearlyPrice = element.dataset.yearly;
-                
-                if (monthlyPrice && yearlyPrice) {
-                    element.textContent = isYearly ? yearlyPrice + ' zł' : monthlyPrice + ' zł';
-                }
-            });
-        });
-    }
-
-
     // Add scroll effect to header
     window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
