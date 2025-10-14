@@ -422,39 +422,66 @@ html, body {
 }
 
 .btn--primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
+    color: white !important;
 }
 
 .btn--primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    color: white !important;
 }
 
 .btn--secondary {
     background: transparent;
-    color: #667eea;
-    border: 2px solid #667eea;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn--secondary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.btn--secondary span {
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .btn--secondary:hover {
-    background: #667eea;
-    color: white;
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
 }
 
 .btn--outline {
-    background: #8b5fbf;
+    background: #764FA7;
     color: #ffffff !important;
-    border: 2px solid #8b5fbf;
+    border: 2px solid #764FA7;
     font-weight: 600;
     text-shadow: none;
 }
 
 .btn--outline:hover {
-    background: #764ba2;
+    background: #687AE5;
     color: white !important;
-    border: 2px solid #764ba2;
+    border: 2px solid #687AE5;
     transform: translateY(-2px);
 }
 
@@ -482,17 +509,36 @@ html, body {
     padding: 15px 0;
 }
 
+.nav__brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav__logo {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+.nav__brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav__brand h1 {
     font-size: 24px;
     font-weight: 700;
     color: #2d3748;
     margin-bottom: 2px;
+    line-height: 1;
 }
 
 .nav__brand span {
     font-size: 12px;
     color: #718096;
     font-weight: 500;
+    line-height: 1;
 }
 
 .nav__links {
@@ -501,15 +547,15 @@ html, body {
     gap: 32px;
 }
 
-.nav__links a {
+.nav__links a:not(.btn) {
     text-decoration: none;
     color: #4a5568;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.nav__links a:hover {
-    color: #667eea;
+.nav__links a:not(.btn):hover {
+    color: #687AE5;
 }
 
 /* Mobile Menu */
@@ -585,7 +631,7 @@ html, body {
 }
 
 .highlight {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -676,7 +722,7 @@ html, body {
     display: block;
     font-size: 24px;
     font-weight: 700;
-    color: #667eea;
+    color: #687AE5;
     margin-bottom: 4px;
 }
 
@@ -858,7 +904,7 @@ html, body {
 .step__number {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -946,7 +992,7 @@ html, body {
 }
 
 .toggle input:checked + .toggle__slider {
-    background-color: #667eea;
+    background-color: #687AE5;
 }
 
 .toggle input:checked + .toggle__slider:before {
@@ -975,7 +1021,7 @@ html, body {
 }
 
 .pricing__card--featured {
-    border-color: #667eea;
+    border-color: #687AE5;
     transform: scale(1.05);
 }
 
@@ -988,7 +1034,7 @@ html, body {
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     color: white;
     padding: 8px 20px;
     border-radius: 20px;
@@ -1037,16 +1083,6 @@ html, body {
     padding: 8px 0;
     color: #4a5568;
     font-size: 14px;
-    position: relative;
-    padding-left: 20px;
-}
-
-.card__features li:before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #48bb78;
-    font-weight: bold;
 }
 
 .card__features .feature {
@@ -1142,7 +1178,7 @@ html, body {
 /* CTA Section */
 .cta {
     padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     color: white;
     text-align: center;
 }
@@ -1167,21 +1203,22 @@ html, body {
 
 .cta .btn--primary {
     background: white;
-    color: #667eea;
+    color: #687AE5;
 }
 
 .cta .btn--primary:hover {
     background: #f7fafc;
+    transform: translateY(-2px);
 }
 
 .cta .btn--secondary {
-    border-color: white;
-    color: white;
+    background: white;
+    color: #687AE5;
 }
 
 .cta .btn--secondary:hover {
-    background: white;
-    color: #667eea;
+    background: #f7fafc;
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -1296,7 +1333,19 @@ html, body {
     .mobile-menu-toggle {
         display: flex;
     }
-    
+
+    .nav__logo {
+        height: 44px;
+    }
+
+    .nav__brand h1 {
+        font-size: 20px;
+    }
+
+    .nav__brand span {
+        font-size: 11px;
+    }
+
     .nav__links {
         position: absolute;
         top: 100%;
@@ -1346,8 +1395,8 @@ html, body {
     }
     
     .nav__links a:hover {
-        background: rgba(102, 126, 234, 0.08);
-        color: #667eea;
+        background: rgba(104, 122, 229, 0.08);
+        color: #687AE5;
         transform: translateX(4px);
     }
     
@@ -1480,7 +1529,19 @@ html, body {
     .container {
         padding: 0 12px;
     }
-    
+
+    .nav__logo {
+        height: 37px;
+    }
+
+    .nav__brand h1 {
+        font-size: 18px;
+    }
+
+    .nav__brand span {
+        font-size: 10px;
+    }
+
     .hero__title {
         font-size: 28px;
     }
@@ -2127,7 +2188,7 @@ html, body {
 
 .article-card__image {
     height: 200px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2674,7 +2735,7 @@ html, body {
 }
 
 .contact__item a {
-    color: #667eea;
+    color: #687AE5;
     text-decoration: none;
 }
 
@@ -2725,8 +2786,8 @@ html, body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #687AE5;
+    box-shadow: 0 0 0 3px rgba(104, 122, 229, 0.1);
 }
 
 .form-group textarea {
@@ -2844,7 +2905,7 @@ html, body {
 }
 
 .pricing__cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     color: white;
     padding: 40px;
     border-radius: 12px;
@@ -3089,14 +3150,14 @@ html, body {
 }
 
 .integration-box {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
     font-size: 0.8rem;
     font-weight: 500;
     position: relative;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(104, 122, 229, 0.3);
 }
 
 .integration-arrow {
@@ -3113,14 +3174,14 @@ html, body {
     bottom: 50%;
     left: -20px;
     z-index: 1;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     color: white;
     padding: 12px 16px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 0.8rem;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(104, 122, 229, 0.4);
     transform: rotate(-10deg);
 }
 
@@ -3157,7 +3218,7 @@ html, body {
 
 /* Integration Highlight */
 .integration-highlight {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
     color: white;
     padding: 20px;
     border-radius: 12px;

@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ustawa o Jawności Cen Mieszkań 2025 - Plugin WordPress | DeweloperJawneCeny</title>
-    <meta name="description" content="➤ Automatyzacja zgodności z ustawą o jawności cen mieszkań dla deweloperów. Plugin WordPress. 1499 zł netto jednorazowo - bez abonamentów. Zgodny z przepisami UOKiK.">
-    <meta name="keywords" content="ustawa o jawności cen mieszkań, plugin wordpress, deweloper, automatyzacja, zgodność prawna">
+    <title>Ustawa o Jawności Cen Mieszkań 2025 - Wtyczka WordPress | DeweloperJawneCeny</title>
+    <meta name="description" content="➤ Automatyzacja zgodności z ustawą o jawności cen mieszkań dla deweloperów. Wtyczka WordPress. 1499 zł netto jednorazowo - bez abonamentów. Zgodny z przepisami UOKiK.">
+    <meta name="keywords" content="ustawa o jawności cen mieszkań, wtyczka wordpress, deweloper, automatyzacja, zgodność prawna">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.deweloperjawneceny.pl/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="DeweloperJawneCeny - Plugin WordPress dla deweloperów">
+    <meta property="og:title" content="DeweloperJawneCeny - Wtyczka WordPress dla deweloperów">
     <meta property="og:description" content="Automatyzacja zgodności z ustawą o jawności cen mieszkań. Zarządzaj cenami, generuj pliki XML/CSV automatycznie.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.deweloperjawneceny.pl/">
-    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/android-chrome-512x512.png">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
@@ -34,7 +42,7 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "DeweloperJawneCeny",
-      "description": "Plugin WordPress zapewniający pełną zgodność z ustawą o jawności cen mieszkań. Automatyzacja zarządzania cenami i generowania plików XML/CSV.",
+      "description": "Wtyczka WordPress zapewniająca pełną zgodność z ustawą o jawności cen mieszkań. Automatyzacja zarządzania cenami i generowania plików XML/CSV.",
       "url": "https://www.deweloperjawneceny.pl/",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "WordPress",
@@ -49,7 +57,7 @@
         "name": "DeweloperJawneCeny",
         "url": "https://www.deweloperjawneceny.pl/"
       },
-      "keywords": "ustawa o jawności cen mieszkań, plugin wordpress, deweloper, automatyzacja, zgodność prawna"
+      "keywords": "ustawa o jawności cen mieszkań, wtyczka wordpress, deweloper, automatyzacja, zgodność prawna"
     }
     </script>
 </head>
@@ -62,17 +70,14 @@
         <div class="container">
             <div class="hero__content">
                 <h1 class="hero__title">
-                    Automatyzacja <span class="highlight">ustawy o jawności cen</span> mieszkań dla WordPress
+                    Wtyczka <span class="highlight">WordPress</span> do <span class="highlight">automatycznej</span> publikacji cen mieszkań zgodnie z <span class="highlight">ustawą</span>
                 </h1>
-                <p class="hero__subtitle">
-                    Plugin WordPress zapewniający pełną automatyzację zgodności z ustawą o jawności cen mieszkań.
-                </p>
                 <div class="hero__cta">
                     <a href="demo.html" class="btn btn--primary btn--large">Zobacz demo</a>
-                    <a href="#funkcje" class="btn btn--secondary btn--large">Zobacz funkcje</a>
+                    <a href="#funkcje" class="btn btn--secondary btn--large"><span>Zobacz funkcje</span></a>
                 </div>
                 <div class="hero__badge">
-                    ⚡ Gotowy w 5 minut • 🔒 Zgodny z przepisami • 💰 Bez abonamentów
+                    Gotowy w 5 minut • Zgodny z przepisami • Bez abonamentów
                 </div>
             </div>
             <div class="hero__visual">
@@ -84,24 +89,19 @@
                         <span>WordPress Admin</span>
                     </div>
                     <div class="dashboard-preview__content">
-                        <h3>🏠 DeweloperJawneCeny</h3>
+                        <h3>DeweloperJawneCeny</h3>
                         <div class="preview-stats">
                             <div class="stat">
-                                <span class="stat__number">47</span>
-                                <span class="stat__label">Zasobów aktywnych</span>
+                                <span class="stat__number">1732</span>
+                                <span class="stat__label">Zgłaszanych lokali</span>
                             </div>
                             <div class="stat">
                                 <span class="stat__number">✅</span>
                                 <span class="stat__label">Automatyzacja włączona</span>
                             </div>
-                            <div class="stat">
-                                <span class="stat__number">3</span>
-                                <span class="stat__label">Pliki wygenerowane</span>
-                            </div>
                         </div>
-                        <div class="preview-actions">
-                            <button class="preview-btn">📊 Dodaj zasób</button>
-                            <button class="preview-btn">📄 Generuj pliki</button>
+                        <div class="preview-actions" style="justify-content: flex-end;">
+                            <button class="preview-btn">Dodaj lokal</button>
                         </div>
                     </div>
                 </div>
@@ -113,27 +113,37 @@
     <!-- Features Section -->
     <section id="funkcje" class="features">
         <div class="container">
-            <h2 class="section-title">Wszystko czego potrzebujesz</h2>
+            <h2 class="section-title">Zaprojektowana z myślą o deweloperach</h2>
             <div class="features__grid">
                 <div class="feature-card">
-                    <div class="feature-card__icon">📊</div>
                     <h3>Zarządzanie zasobami</h3>
-                    <p>Intuicyjny panel do dodawania mieszkań, domów, miejsc postojowych. Import masowy z CSV.</p>
+                    <p>Zarządzaj mieszkaniami, domami i miejscami postojowymi w jednym panelu.</p>
+                    <p>Intuicyjna struktura pozwala na szybkie dodawanie i edycję danych.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-card__icon">📄</div>
-                    <h3>Automatyczne pliki XML/CSV</h3>
-                    <p>System sam generuje pliki w wymaganym przez ustawę formacie. Publikacja zgodnie z harmonogramem.</p>
+                    <h3>Automatyczna publikacja zgodna z ustawą</h3>
+                    <p>System generuje i publikuje pliki XML/CSV w wymaganym formacie.</p>
+                    <p>Publikacja odbywa się cyklicznie, bez potrzeby ręcznej obsługi.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-card__icon">📈</div>
                     <h3>Historia cen</h3>
-                    <p>Automatyczne śledzenie zmian cen z datami. Pełna dokumentacja dla organów kontroli.</p>
+                    <p>System automatycznie zapisuje każdą zmianę ceny wraz z datą.</p>
+                    <p>Pełna historia cen dostępna dla weryfikacji i kontroli.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-card__icon">⚙️</div>
                     <h3>Szybka konfiguracja</h3>
-                    <p>Skonfiguruj dane firmy, inwestycji i rozpocznij publikację w kilka minut.</p>
+                    <p>Skonfiguruj dane firmy i inwestycji w kilku prostych krokach.</p>
+                    <p>Publikacja cen możliwa natychmiast po uruchomieniu wtyczki.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Personalizowana prezentacja mieszkań</h3>
+                    <p>Pełna personalizacja tabel i kafelków prezentujących oferty.</p>
+                    <p>Dostosuj kolory, typografię i układ, by idealnie pasowały do motywu Twojej strony.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Filtry wyszukiwania</h3>
+                    <p>Dodaj interaktywny widget filtrów na stronę inwestycji.</p>
+                    <p>Użytkownicy mogą łatwo wyszukiwać mieszkania według wybranych parametrów.</p>
                 </div>
             </div>
         </div>
@@ -147,7 +157,7 @@
                 <div class="step">
                     <div class="step__number">1</div>
                     <div class="step__content">
-                        <h3>Instalujesz plugin</h3>
+                        <h3>Instalujesz wtyczkę</h3>
                         <p>Standardowa instalacja WordPress. Gotowy w 2 minuty.</p>
                     </div>
                 </div>
@@ -206,7 +216,7 @@
                     <h3>Gotowy na automatyzację?</h3>
                     <p>Skontaktuj się z nami. Odpowiemy na wszystkie pytania i pomożemy z wdrożeniem.</p>
                     <a href="#kontakt" class="pricing__contact-link">
-                        💬 Skontaktuj się z nami
+                        Skontaktuj się z nami
                     </a>
                 </div>
 
@@ -222,7 +232,7 @@
                             <p>Każda strona inwestycji wymaga osobnej aktywacji za 1499 zł netto.</p>
                         </div>
                         <div class="faq__item">
-                            <strong>Czy plugin będzie aktualizowany?</strong>
+                            <strong>Czy wtyczka będzie aktualizowana?</strong>
                             <p>Tak, wszystkie aktualizacje prawne i techniczne są włączone w cenę.</p>
                         </div>
                     </div>
