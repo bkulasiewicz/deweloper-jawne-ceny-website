@@ -35,7 +35,7 @@ Oficjalna strona internetowa pluginu WordPress **DeweloperJawneCeny** do automat
 
 ## 📊 SEO
 
-- Optymalizacja pod kluczowe frazy: "ustawa jawność cen mieszkań", "wordpress plugin deweloper"
+- Optymalizacja pod kluczowe frazy: "ustawa jawność cen mieszkań", "wtyczka wordpress deweloper"
 - Strukturowane dane Schema.org
 - Open Graph meta tags
 - Szybkie ładowanie i Core Web Vitals
@@ -51,4 +51,4 @@ Strona automatycznie deployowana na **Netlify** przy każdym push do main branch
 
 ---
 
-© 2025 DeweloperJawneCeny - WordPress Plugin dla zgodności z ustawą o jawności cen mieszkań
+© 2025 DeweloperJawneCeny - Wtyczka WordPress dla zgodności z ustawą o jawności cen mieszkań

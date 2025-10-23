@@ -1,12 +1,12 @@
 // Articles data - SEO-friendly content
 window.articlesData = {
     'ustawa-o-jawnosci-cen-mieszkan-2025': {
-        title: 'Ustawa o jawności cen mieszkań 2025 - WordPress plugin dla deweloperów',
-        excerpt: 'Kompletny przewodnik wdrożenia ustawy o jawności cen mieszkań przez WordPress. Plugin dla deweloperów, automatyzacja, integracja i zgodność prawna.',
+        title: 'Ustawa o jawności cen mieszkań 2025 - Wtyczka WordPress dla deweloperów',
+        excerpt: 'Kompletny przewodnik wdrożenia ustawy o jawności cen mieszkań przez WordPress. Wtyczka dla deweloperów, automatyzacja, integracja i zgodność prawna.',
         date: '2025-01-09',
-        keywords: 'ustawa jawność cen mieszkań 2025, WordPress plugin deweloper nieruchomości, automatyzacja cen mieszkań WordPress, ustawa jawność cen WordPress wtyczka, jak wdrożyć ustawę WordPress, plugin do publikacji cen mieszkań, automatyzacja zgłaszania cen deweloper, WordPress deweloper inwestycyjny, wtyczka zgodność prawna nieruchomości',
+        keywords: 'ustawa jawność cen mieszkań 2025, wtyczka WordPress deweloper nieruchomości, automatyzacja cen mieszkań WordPress, ustawa jawność cen WordPress wtyczka, jak wdrożyć ustawę WordPress, wtyczka do publikacji cen mieszkań, automatyzacja zgłaszania cen deweloper, WordPress deweloper inwestycyjny, wtyczka zgodność prawna nieruchomości',
         category: 'WordPress & Przepisy prawne',
-        description: 'Jak wdrożyć ustawę o jawności cen mieszkań przez WordPress plugin. Automatyzacja dla deweloperów, integracja z istniejącą stroną i zgodność prawna.',
+        description: 'Jak wdrożyć ustawę o jawności cen mieszkań przez wtyczkę WordPress. Automatyzacja dla deweloperów, integracja z istniejącą stroną i zgodność prawna.',
         content: `
             <p>Ustawa o jawności cen mieszkań została uchwalona przez Sejm 21 maja 2025 roku, podpisana przez Prezydenta 5 czerwca 2025 roku i weszła w życie 11 lipca 2025 roku. Wprowadza obowiązek publikacji cen mieszkań przez deweloperów na ich stronach internetowych. Dla deweloperów z WordPress istnieją gotowe rozwiązania automatyzujące zgodność prawną.</p>
 
@@ -59,15 +59,15 @@ window.articlesData = {
 
             WordPress w liczbach dla branży nieruchomości:<br>
             • Ponad 60% polskich firm deweloperskich używa WordPress<br>
-            • Średni czas wdrożenia pluginu: 2-3 dni<br>
+            • Średni czas wdrożenia wtyczki: 2-3 dni<br>
             • Koszt utrzymania: o 70% niższy niż rozwiązania dedykowane<br>
             • Czas aktualizacji cen: z 4 godzin do 5 minut
 
             <br><br>
 
-            <h2>Korzyści WordPress pluginu dla zgodności z ustawą</h2>
-            
-            Kluczowe funkcje WordPress pluginu:<br>
+            <h2>Korzyści wtyczki WordPress dla zgodności z ustawą</h2>
+
+            Kluczowe funkcje wtyczki WordPress:<br>
             • Import masowy z Excel/CSV - wczytaj wszystkie mieszkania jednym kliknięciem<br>
             • Automatyczna synchronizacja - integracja z systemami CRM i ERP<br>
             • Responsive design - optymalizacja mobilna i desktop<br>
@@ -78,8 +78,8 @@ window.articlesData = {
             <br><br>
 
             <h2>Integracja z istniejącą stroną WordPress</h2>
-            
-            Jeśli już posiadasz stronę WordPress, integracja pluginu do publikacji cen mieszkań jest bezproblemowa i nie wymaga zmian w istniejącym designie.
+
+            Jeśli już posiadasz stronę WordPress, integracja wtyczki do publikacji cen mieszkań jest bezproblemowa i nie wymaga zmian w istniejącym designie.
 
             Kompatybilność z popularnymi motywami:<br>
             • Avada - pełna integracja z Fusion Builder<br>
@@ -89,8 +89,8 @@ window.articlesData = {
             • Motywy niestandardowe - uniwersalne shortcodes
 
             Zachowanie SEO i wydajności:<br>
-            • Plugin nie wpływa negatywnie na prędkość strony<br>
-            • Kompatybilny z cachingiem (WP Rocket, W3 Total Cache)<br>
+            • Wtyczka nie wpływa negatywnie na prędkość strony<br>
+            • Kompatybilna z cachingiem (WP Rocket, W3 Total Cache)<br>
             • Zoptymalizowany kod nie obciąża serwera<br>
             • Automatyczne sitemap.xml dla nowych mieszkań
 
@@ -115,25 +115,25 @@ window.articlesData = {
             <h2>Najczęściej zadawane pytania</h2>
             
             Czy moja istniejąca strona WordPress jest kompatybilna?
-            Tak - plugin działa z WordPress 5.0+ i wszystkimi popularnymi motywami. Nie wymaga zmian w istniejącej stronie.
+            Tak - wtyczka działa z WordPress 5.0+ i wszystkimi popularnymi motywami. Nie wymaga zmian w istniejącej stronie.
 
             Jak długo trwa wdrożenie na WordPress?
             1-3 dni roboczych w zależności od ilości mieszkań. Większość czasu to import i weryfikacja danych.
 
-            Czy plugin spowalnia stronę WordPress?
-            Nie - zoptymalizowany kod i cache sprawiają, że plugin nie wpływa na prędkość strony. Kompatybilny z WP Rocket, W3TC.
+            Czy wtyczka spowalnia stronę WordPress?
+            Nie - zoptymalizowany kod i cache sprawiają, że wtyczka nie wpływa na prędkość strony. Kompatybilna z WP Rocket, W3TC.
 
             Czy mogę zintegrować z moim CRM/ERP?
-            Tak - plugin oferuje API REST, webhooks i integracje z popularnymi systemami (Salesforce, HubSpot, systemy branżowe).
+            Tak - wtyczka oferuje API REST, webhooks i integracje z popularnymi systemami (Salesforce, HubSpot, systemy branżowe).
 
-            Ile kosztuje utrzymanie WordPress pluginu?
+            Ile kosztuje utrzymanie wtyczki WordPress?
             Od 99 PLN/miesiąc - znacznie taniej niż dedykowane rozwiązania. Brak kosztów programistów i utrzymania infrastruktury.
 
             <br><br>
 
             <h2>Automatyzacja WordPress</h2>
-            
-            WordPress plugin do publikacji cen mieszkań to nie tylko narzędzie do spełnienia wymogów ustawy - to strategiczna inwestycja w automatyzację procesów biznesowych Twojej firmy deweloperskiej.
+
+            Wtyczka WordPress do publikacji cen mieszkań to nie tylko narzędzie do spełnienia wymogów ustawy - to strategiczna inwestycja w automatyzację procesów biznesowych Twojej firmy deweloperskiej.
 
             Automatyzacja oferuje deweloperom:<br>
             • Efektywne zarządzanie danymi - centralne aktualizowanie cen z ERP/CRM<br>
@@ -148,11 +148,11 @@ window.articlesData = {
     },
     'jak-zautomatyzowac-publikacje-cen-mieszkan-wordpress': {
         title: 'Jak zautomatyzować publikację cen mieszkań w WordPress - Instrukcja krok po kroku',
-        excerpt: 'Praktyczny przewodnik po automatyzacji zgodności z ustawą przy użyciu pluginu WordPress. Od instalacji po pełne wdrożenie w 10 minut.',
+        excerpt: 'Praktyczny przewodnik po automatyzacji zgodności z ustawą przy użyciu wtyczki WordPress. Od instalacji po pełne wdrożenie w 10 minut.',
         date: '2025-09-02',
-        keywords: 'automatyzacja cen mieszkań WordPress, plugin WordPress deweloper, ustawa o jawności cen mieszkań automatyzacja, WordPress zgodność prawna nieruchomości, jak wdrożyć automatyzację cen WordPress, plugin do publikacji cen mieszkań automatyczny, dane.gov.pl integracja WordPress, automatyczne zgłaszanie cen deweloper',
+        keywords: 'automatyzacja cen mieszkań WordPress, wtyczka WordPress deweloper, ustawa o jawności cen mieszkań automatyzacja, WordPress zgodność prawna nieruchomości, jak wdrożyć automatyzację cen WordPress, wtyczka do publikacji cen mieszkań automatyczny, dane.gov.pl integracja WordPress, automatyczne zgłaszanie cen deweloper',
         category: 'Automatyzacja WordPress',
-        description: 'Kompletny przewodnik automatyzacji publikacji cen mieszkań w WordPress. Instrukcja krok po kroku - od instalacji pluginu po pełne wdrożenie zgodności prawnej w 10 minut.',
+        description: 'Kompletny przewodnik automatyzacji publikacji cen mieszkań w WordPress. Instrukcja krok po kroku - od instalacji wtyczki po pełne wdrożenie zgodności prawnej w 10 minut.',
         content: `
             <p>Ustawa o jawności cen mieszkań obowiązuje od 1 stycznia 2025 roku i nakłada na deweloperów obowiązek regularnego udostępniania danych o oferowanych lokalach w formie plików XML/CSV. Dla firm, które prowadzą strony na WordPressie, ręczne aktualizowanie cen oznacza ogrom pracy, ryzyko błędów i opóźnień.</p>
 
@@ -297,7 +297,7 @@ window.articlesData = {
         title: 'Nowa funkcjonalność: pełna i prosta konfiguracja warstwy frontendowej w wtyczce DeweloperJawneCeny',
         excerpt: 'Poznaj nową funkcjonalność wtyczki DeweloperJawneCeny - konfigurator warstwy frontendowej pozwalający w pełni dostosować wygląd tabel, list i przycisków do identyfikacji wizualnej Twojej strony.',
         date: '2025-09-15',
-        keywords: 'konfiguracja warstwy frontendowej WordPress, personalizacja wtyczki DeweloperJawneCeny, dostosowanie wyglądu tabel mieszkań, konfigurator kolorów WordPress plugin, shortcode generator mieszkania, responsive design wtyczka nieruchomości, SEO optymalizacja ofert mieszkaniowych',
+        keywords: 'konfiguracja warstwy frontendowej WordPress, personalizacja wtyczki DeweloperJawneCeny, dostosowanie wyglądu tabel mieszkań, konfigurator kolorów wtyczka WordPress, shortcode generator mieszkania, responsive design wtyczka nieruchomości, SEO optymalizacja ofert mieszkaniowych',
         category: 'WordPress & Konfiguracja',
         description: 'Nowa funkcjonalność wtyczki DeweloperJawneCeny umożliwia pełną konfigurację warstwy frontendowej. Dostosuj kolory, layout i funkcjonalność bez kodowania.',
         content: `
@@ -552,6 +552,121 @@ window.articlesData = {
 
             <p>Czy historia cen nie spowolni strony?<br>
             Nie. Dane ładują się w tle (AJAX) tylko wtedy, gdy użytkownik kliknie przycisk.</p>
+        `
+    },
+    'personalizacja-elementow-wyswietlania-ofert-wtyczka': {
+        title: 'Personalizacja elementów wyświetlania ofert wtyczki Deweloper Jawne Ceny — co możesz skonfigurować',
+        excerpt: 'Kompleksowy przewodnik po wszystkich możliwościach personalizacji wtyczki DeweloperJawneCeny. Dowiedz się, jak w pełni dostosować wyświetlanie ofert mieszkań bez kodowania.',
+        date: '2025-10-23',
+        keywords: 'personalizacja wtyczki DeweloperJawneCeny, konfiguracja bloków Gutenberg mieszkania, shortcode WordPress nieruchomości, filtry zasobów WordPress, pola marketingowe wtyczka, personalizacja tabel mieszkań, konfiguracja komponentów WordPress, bloki Gutenberg nieruchomości, dostosowanie wyświetlania ofert',
+        category: 'WordPress & Konfiguracja',
+        description: 'Pełny przewodnik po personalizacji elementów wyświetlania ofert w wtyczce DeweloperJawneCeny. Bloki Gutenberg, shortcodes, filtry i konfiguracja bez kodowania.',
+        content: `
+            <p>Wtyczka Deweloper Jawne Ceny udostępnia zestaw narzędzi pozwalających precyzyjnie kontrolować elementy prezentacji inwestycji i poszczególnych lokali na stronie internetowej. Poniżej opisane są wszystkie możliwości personalizacji dostępne w panelu wtyczki zgodnie z instrukcją obsługi.</p>
+
+            <h2>Konfiguracja przed publikacją — znaczenie ustawień inwestycji</h2>
+
+            <p>Przed wyświetleniem zasobów na stronie należy dodać dane dostawcy, inwestycję oraz zasoby. W formularzu inwestycji znajdują się dwie sekcje, które wpływają bezpośrednio na to, jakie pola i elementy będą dostępne i wyświetlane na stronie:</p>
+
+            • Konfiguracja komponentów — zaznaczenie opcji (np. części nieruchomości, pomieszczenia przynależne, prawa do korzystania, inne świadczenia pieniężne) odblokowuje dodatkowe pola cenowe przy dodawaniu lokali/domów i determinuje, które elementy będą dostępne w formularzach zasobów. Przykład: zaznaczenie „części nieruchomości" powoduje pojawienie się pola do wprowadzenia ceny za miejsce postojowe.<br>
+            • Pola marketingowe — wybór pól takich jak Piętro, Liczba pokoi, Dodatkowy opis, Ogród [m²], Plan mieszkania (PDF) włącza odpowiednie pola przy dodawaniu zasobów. Te pola służą wyłącznie do wyświetlania dodatkowych informacji na stronie (nie są raportowane do ministerstwa).
+
+            <br><br>
+
+            <h2>Bloki Gutenberg — gdzie i jakie elementy możesz personalizować</h2>
+
+            <p>Rekomendowany sposób wstawiania oferty to bloki Gutenberg. Poniżej lista bloków i dokładne elementy konfigurowalne, które wpływają na wygląd i zawartość prezentacji.</p>
+
+            <h3>A) Blok „Lista Zasobów" (tabela lub kafelki) — możliwości konfiguracyjne:</h3>
+
+            • Typy nieruchomości: wybór rodzajów do wyświetlenia (mieszkania, domy jednorodzinne, garaże, miejsca postojowe, komórki lokatorskie, lokale usługowe).<br>
+            • Sposób wyświetlania: tabela lub kafelki.<br>
+            • Widoczne kolumny / pola: wybór pól do pokazania (numer lokalu, rodzaj, powierzchnia, pokoje, piętro, cena całkowita, cena za m², cena z dodatkami, status, ogród, dodatkowy opis, plan mieszkania PDF).<br>
+            • Nazwy kolumn: możliwość zmiany etykiet nagłówków kolumn.<br>
+            • Kolejność kolumn: przeciągnij, aby ustawić kolejność kolumn.<br>
+            • Filtrowanie w edytorze: ograniczenie wyświetlanych zasobów według statusu, ceny, powierzchni, pięter lub liczby pokoi w widoku edytora.<br>
+            • Kolory: dostosowanie kolorów nagłówków, tekstu, podświetlenia wiersza, statusów, przycisków i okna historii cen.<br>
+            • Czcionki: wybór czcionek dla nagłówków i treści.<br>
+            • Nawigacja: tryb nawigacji: brak / klikalne wiersze prowadzące do karty lokalu / przycisk „Zobacz więcej".<br>
+            • Sortowanie: włączenie sortowania po kliknięciu w nagłówek kolumny dla użytkowników.<br>
+            • Przyciski akcji: konfiguracja przycisków „Historia Cen" (wyświetla okno z historią zmian cen) i „Karta Lokalu" (link do planu PDF).<br>
+            • Integracja z blokiem filtrów: możliwość połączenia z blokiem „Filtry Zasobów" (patrz niżej).
+
+            <br><br>
+
+            <h3>B) Blok „Filtry Zasobów" — możliwości konfiguracyjne:</h3>
+
+            • Grupy filtrów: dodawanie sekcji (nagłówków) i przycisków filtrów (np. piętra, zakresy powierzchni).<br>
+            • Etykiety filtrów: zmiana nazw przycisków (np. „Parter", „40–50 m²").<br>
+            • Warunki filtrowania: typ warunku: dokładna wartość / zakres (min–max) / minimum.<br>
+            • Kolory: ustawienia kolorów nagłówka, tła grup, podświetlenia, przycisków „Zastosuj" i „Wyczyść".<br>
+            • Czcionki: wybór czcionek dla nagłówka i treści filtru.<br>
+            • Odstępy: precyzyjne ustawienia odległości między filtrami, grupami i przyciskami.<br>
+            • Tytuł widgetu i teksty przycisków: opcjonalny nagłówek i możliwość zmiany treści przycisków.
+
+            <br><br>
+
+            <p><strong>WAŻNE:</strong> aby filtry działały z listą, w bloku „Lista Zasobów" trzeba włączyć opcję „Czytaj filtry z URL" i oba bloki muszą być na tej samej stronie. Klient wybiera filtry, a lista automatycznie się aktualizuje bez przeładowania strony.</p>
+
+            <br><br>
+
+            <h3>C) Blok „Szczegóły zasobu" (pojedyncze mieszkanie) — możliwości konfiguracyjne:</h3>
+
+            • Widoczne pola: wybór danych do wyświetlenia: numer lokalu, rodzaj, powierzchnia, cena całkowita, cena za m², cena z dodatkami, status, pokoje, piętro, ogród, dodatkowy opis, plan mieszkania PDF.<br>
+            • Nazwy pól: zmiana etykiet przy każdym polu.<br>
+            • Kolejność pól: przeciągnij, aby ustawić kolejność wyświetlania informacji.<br>
+            • Kolory: dostosowanie kolorów tła karty, tekstu, etykiet, statusów i przycisków.<br>
+            • Czcionki: wybór czcionek dla nagłówków i treści.<br>
+            • Przyciski akcji: konfiguracja przycisku „Historia Cen" (tekst, kolory) i przycisku pobierania planu PDF.<br>
+            • Okno historii cen: ustawienia wyglądu wyskakującego okna (tło, nagłówek, przycisk zamknięcia).<br>
+            • Odstępy i rozmiary: precyzyjne ustawienie paddingu karty, marginesów i rozmiarów czcionek.
+
+            <br><br>
+
+            <p><strong>WAŻNE:</strong> blok automatycznie wykrywa numer lokalu z adresu URL (np. /mieszkania/A1 → wyświetli dane lokalu A1).</p>
+
+            <br><br>
+
+            <h2>Shortcode — personalizacja dla stron z builderami (Divi, Elementor, ACF)</h2>
+
+            <p>Jeżeli strona korzysta z buildera, który nie obsługuje bloków Gutenberg, wtyczka oferuje shortcode. Shortcode odzwierciedla większość ustawień bloku Lista Zasobów i bloku Szczegóły zasobu:</p>
+
+            • Shortcode [resources_list] — w nim można dostosować: rodzaje nieruchomości, widoczne informacje (lista pól), sposób wyświetlania (tabela/kafelki), kolory, czcionki, nawigację (klikalne wiersze / przycisk „Zobacz więcej" / brak), sortowanie i filtrowanie. Generator Shortcode w menu wtyczki tworzy gotowy kod z wybranymi parametrami. (Uwaga: shortcode nie posiada zaawansowanych filtrów w panelu edytora tak jak blok Gutenberg — wyświetla dane wg ustawionych parametrów.)<br><br>
+            • Shortcode [resource_single] — karta pojedynczego lokalu; automatycznie wykrywa numer z URL (np. /mieszkania/A1). Możliwe do skonfigurowania elementy: widoczne pola, kolory karty, osobne kolory statusów („dostępny", „sprzedany", „zarezerwowany"), wygląd i tekst przycisków, odstępy i padding.
+
+            <br><br>
+
+            <h2>Pola marketingowe jako źródło dodatkowych elementów wyświetlanych</h2>
+
+            <p>W formularzu inwestycji aktywujesz pola marketingowe (Piętro, Liczba pokoi, Dodatkowy opis, Ogród [m²], Plan mieszkania PDF). Po ich zaznaczeniu te pola stają się dostępnymi elementami do pokazania w tabelach, kafelkach i kartach lokali — to bezpośredni sposób na rozbudowanie widoku oferty bez modyfikacji kodu.</p>
+
+            <h2>Wyświetlanie i edycja zasobów — wpływ na widok strony</h2>
+
+            <p>Zasoby dodawane w panelu (zakładka „Zasoby") są źródłem danych do wszystkich elementów widocznych na stronie. Możesz w dowolnym momencie edytować lub usuwać zasoby z poziomu karty zasobu — zmiany będą odzwierciedlone w wyświetlanych blokach/shortcode'ach zgodnie z ich konfiguracją.</p>
+
+            <h2>Elementy stylu interfejsu dostępne do konfiguracji (zbiór)</h2>
+
+            <p>Na podstawie instrukcji, elementy, które można personalizować bezpośrednio w panelu wtyczki lub w Generatorze Shortcode, to m.in.:</p>
+
+            • kolory nagłówków, tekstu, statusów, przycisków i okien<br>
+            • czcionki dla nagłówków i treści<br>
+            • nazwy i etykiety pól/kolumn<br>
+            • kolejność kolumn i pól (drag & drop)<br>
+            • sposób wyświetlania (tabela vs. kafelki)<br>
+            • nawigacja (klikalne wiersze / przycisk „Zobacz więcej" / brak)<br>
+            • wygląd i treść przycisków akcji („Historia Cen", „Karta Lokalu" / pobierz plan PDF)<br>
+            • odstępy/padding/marginesy i rozmiary czcionek w kartach zasobów oraz w oknie historii cen<br>
+            • tytuł widgetu/tekst przycisków w bloku filtrów oraz odstępy i layout filtrów
+
+            <br><br>
+
+            <h2>Podsumowanie — kto zyska na personalizacji i jak ją wykorzystać</h2>
+
+            <p>Deweloperzy i twórcy stron mogą wykorzystać sekcję Konfiguracja komponentów oraz Pola marketingowe w formularzu inwestycji, by odblokować i włączyć konkretne pola widoczne później na stronie. Dzięki konfigurowalnym blokom Gutenberg oraz shortcode'om można precyzyjnie określić, które elementy wyświetlać, w jakiej kolejności i w jakim stylu, bez konieczności ingerencji w kod źródłowy. Filtry zasobów w połączeniu z opcją „Czytaj filtry z URL" umożliwiają tworzenie stron z predefiniowanymi widokami filtrów, które automatycznie aktualizują listę zasobów bez przeładowania strony.</p>
+
+            <br><br>
+
+            <p>Dzięki pełnej kontroli nad personalizacją, każdy deweloper może stworzyć unikalne doświadczenie użytkownika, które nie tylko spełnia wymogi ustawy o jawności cen mieszkań, ale również wyróżnia się na tle konkurencji profesjonalnym wyglądem i funkcjonalnością.</p>
         `
     }
 };
