@@ -49,7 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Navigation functions with smooth menu closing
-function navigateToSection(sectionId) {
+function navigateToSection(sectionId, event) {
+    // Zapobiegaj domyślnemu zachowaniu linku (scroll do góry przy href="#")
+    if (event) {
+        event.preventDefault();
+    }
+
     // Ustaw backup timer
     setupMenuCloseBackup();
 

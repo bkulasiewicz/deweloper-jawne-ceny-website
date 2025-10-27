@@ -9,11 +9,11 @@
                     </div>
                 </a>
                 <div class="nav__links">
-                    <a href="#" onclick="navigateToSection('funkcje')">Funkcje</a>
-                    <a href="#" onclick="navigateToSection('cennik')">Cennik</a>
-                    <a href="#" onclick="navigateToSection('kontakt')">Kontakt</a>
-                    <a href="#" onclick="navigateToPage('artykuly.html')">Artykuły</a>
-                    <a href="#" onclick="navigateToPage('demo.html')" class="btn btn--primary">Prezentacja wtyczki</a>
+                    <a href="#funkcje" onclick="navigateToSection('funkcje', event)">Funkcje</a>
+                    <a href="#cennik" onclick="navigateToSection('cennik', event)">Cennik</a>
+                    <a href="#kontakt" onclick="navigateToSection('kontakt', event)">Kontakt</a>
+                    <a href="artykuly.html" onclick="navigateToPage('artykuly.html'); return false;">Artykuły</a>
+                    <a href="demo.html" onclick="navigateToPage('demo.html'); return false;" class="btn btn--primary">Prezentacja wtyczki</a>
                 </div>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
