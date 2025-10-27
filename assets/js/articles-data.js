@@ -148,11 +148,11 @@ window.articlesData = {
     },
     'jak-zautomatyzowac-publikacje-cen-mieszkan-wordpress': {
         title: 'Jak zautomatyzować publikację cen mieszkań w WordPress - Instrukcja krok po kroku',
-        excerpt: 'Praktyczny przewodnik po automatyzacji zgodności z ustawą przy użyciu wtyczki WordPress. Od instalacji po pełne wdrożenie w 10 minut.',
+        excerpt: 'Praktyczny przewodnik po automatyzacji zgodności z ustawą przy użyciu wtyczki WordPress. Od instalacji po pełne wdrożenie w 7 minut.',
         date: '2025-09-02',
         keywords: 'automatyzacja cen mieszkań WordPress, wtyczka WordPress deweloper, ustawa o jawności cen mieszkań automatyzacja, WordPress zgodność prawna nieruchomości, jak wdrożyć automatyzację cen WordPress, wtyczka do publikacji cen mieszkań automatyczny, dane.gov.pl integracja WordPress, automatyczne zgłaszanie cen deweloper',
         category: 'Automatyzacja WordPress',
-        description: 'Kompletny przewodnik automatyzacji publikacji cen mieszkań w WordPress. Instrukcja krok po kroku - od instalacji wtyczki po pełne wdrożenie zgodności prawnej w 10 minut.',
+        description: 'Kompletny przewodnik automatyzacji publikacji cen mieszkań w WordPress. Instrukcja krok po kroku - od instalacji wtyczki po pełne wdrożenie zgodności prawnej w 7 minut.',
         content: `
             <p>Ustawa o jawności cen mieszkań obowiązuje od 1 stycznia 2025 roku i nakłada na deweloperów obowiązek regularnego udostępniania danych o oferowanych lokalach w formie plików XML/CSV. Dla firm, które prowadzą strony na WordPressie, ręczne aktualizowanie cen oznacza ogrom pracy, ryzyko błędów i opóźnień.</p>
 
@@ -179,7 +179,7 @@ window.articlesData = {
 
             <br><br>
 
-            <h2>Instrukcja krok po kroku – pełne wdrożenie w 10 minut</h2>
+            <h2>Instrukcja krok po kroku – pełne wdrożenie w 7 minut</h2>
 
             <h3>Krok 1. Instalacja wtyczki</h3>
             
