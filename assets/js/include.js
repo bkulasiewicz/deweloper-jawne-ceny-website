@@ -50,38 +50,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Navigation functions with smooth menu closing
 function navigateToSection(sectionId) {
-    // Debug - sprawdź ścieżkę
-    console.log('DEBUG navigateToSection:', {
-        sectionId,
-        pathname: window.location.pathname,
-        href: window.location.href
-    });
-    
     // Ustaw backup timer
     setupMenuCloseBackup();
-    
-    // Nowy elastyczny warunek - sprawdź czy element istnieje na stronie
+
+    // Sprawdź czy element istnieje na stronie
     const element = document.getElementById(sectionId);
     if (element) {
-        // Element istnieje - rób smooth scroll
-        console.log('DEBUG: Element found, doing smooth scroll');
+        // Pobierz aktualną pozycję scroll i docelową pozycję
         const headerHeight = document.querySelector('.header') ? document.querySelector('.header').offsetHeight : 80;
-        const targetPosition = element.offsetTop - headerHeight;
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
+        const targetPosition = element.offsetTop - headerHeight - 20; // dodatkowy offset dla lepszego UX
+        const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Sprawdź czy już jesteśmy w okolicy docelowej sekcji (tolerancja ±100px)
+        const tolerance = 100;
+        if (Math.abs(currentPosition - targetPosition) < tolerance) {
+            // Już jesteśmy w docelowej sekcji - nie scrolluj, tylko zamknij menu
+            closeMobileMenuSmoothly();
+            return;
+        }
+
+        // Element istnieje i nie jesteśmy w jego okolicy - wykonaj smooth scroll
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
-        
-        // Close menu after scroll animation (800ms for smooth UX)
+
+        // Close menu after scroll animation
         setTimeout(() => {
-            console.log('DEBUG: Closing menu after scroll');
             closeMobileMenuSmoothly();
         }, 800);
     } else {
         // Element nie istnieje - przekieruj na index.html
-        console.log('DEBUG: Element not found, redirecting');
         window.location.href = 'index.html#' + sectionId;
-        // Menu will close when page changes, but add quick close for safety
+        // Menu will close when page changes
         setTimeout(() => {
             closeMobileMenuSmoothly();
         }, 200);
@@ -91,17 +92,30 @@ function navigateToSection(sectionId) {
 function navigateToPage(pageName) {
     // Ustaw backup timer
     setupMenuCloseBackup();
-    
+
     // Start navigation immediately
     const currentPath = window.location.pathname;
     let basePath = '';
-    
+
     if (currentPath.includes('/artykuly/')) {
         basePath = '../';
     }
-    
+
+    // Jeśli próbujemy przejść na index.html i już jesteśmy na index.html
+    if (pageName === 'index.html' && (currentPath === '/index.html' || currentPath === '/' || currentPath.endsWith('/deweloper-jawne-ceny-website/') || currentPath.endsWith('/deweloper-jawne-ceny-website/index.html'))) {
+        // Scroll do góry strony
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        setTimeout(() => {
+            closeMobileMenuSmoothly();
+        }, 200);
+        return;
+    }
+
     window.location.href = basePath + pageName;
-    
+
     // Close menu quickly since page will change anyway (200ms)
     setTimeout(() => {
         closeMobileMenuSmoothly();

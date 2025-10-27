@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Offset for fixed header */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -513,6 +518,15 @@ html, body {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.nav__brand--link {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav__brand--link:hover {
+    opacity: 0.8;
 }
 
 .nav__logo {
