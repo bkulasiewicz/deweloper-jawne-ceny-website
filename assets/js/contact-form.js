@@ -29,7 +29,7 @@ function initContactForm() {
         // Show submitting message
         formMessage.innerHTML = `
             <div class="alert alert--info">
-                <strong>📧 Wysyłanie wiadomości...</strong>
+                <strong>📧 Dziękujemy! Wkrótce prześlemy Ci link do zakupu pełnej wersji.</strong>
             </div>
         `;
         
