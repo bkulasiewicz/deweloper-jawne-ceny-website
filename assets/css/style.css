@@ -16,6 +16,7 @@ body {
     color: #1a1a1a;
     overflow-x: hidden;
     padding-top: 80px;
+    touch-action: pan-y pan-x; /* Płynny scroll na mobile */
 }
 
 html, body {
@@ -30,7 +31,6 @@ html, body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    overflow-x: hidden;
 }
 
 /* Global overflow protection */
@@ -865,6 +865,8 @@ html, body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .feature-card {
@@ -1393,6 +1395,11 @@ html, body {
 
 /* Mobile styles */
 @media (max-width: 768px) {
+    /* Fix scroll blocking issue on mobile */
+    .container {
+        overflow: visible;
+    }
+
     .mobile-menu-toggle {
         display: flex;
     }
