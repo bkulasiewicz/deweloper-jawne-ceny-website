@@ -1107,18 +1107,24 @@ html, body {
     color: #2d3748;
     text-align: left;
     font-family: 'Inter', sans-serif;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.faq-question:hover {
-    color: #3b82f6;
+.faq-question:hover span:first-child {
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .faq-icon {
     flex-shrink: 0;
     margin-left: 16px;
-    font-size: 20px;
-    color: #3b82f6;
+    font-size: 16px;
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     transition: transform 0.3s ease;
 }
 
