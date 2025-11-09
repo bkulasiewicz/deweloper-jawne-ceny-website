@@ -61,10 +61,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // FAQ accordion (if added later)
-    document.querySelectorAll('.faq__item').forEach(item => {
-        item.addEventListener('click', function() {
-            // Future: Add accordion functionality
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            const answer = this.nextElementSibling;
+
+            // Toggle aria-expanded
+            this.setAttribute('aria-expanded', !expanded);
+
+            // Toggle answer visibility with smooth animation
+            if (expanded) {
+                // Closing
+                answer.style.maxHeight = '0';
+                setTimeout(() => {
+                    answer.hidden = true;
+                }, 400); // Match CSS transition duration
+            } else {
+                // Opening
+                answer.hidden = false;
+                // Set max-height to scrollHeight for smooth animation
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
         });
     });
 
@@ -210,4 +228,20 @@ document.addEventListener('DOMContentLoaded', function() {
     //     const titleText = heroTitle.textContent;
     //     typeWriter(heroTitle, titleText, 50);
     // }
+
+    // Video overlay functionality
+    const videoOverlay = document.querySelector('.video-overlay');
+    const videoIframe = document.querySelector('.video-wrapper iframe');
+
+    if (videoOverlay && videoIframe) {
+        videoOverlay.addEventListener('click', function() {
+            // Hide overlay
+            this.classList.add('hidden');
+
+            // Get current src and add autoplay parameter
+            const currentSrc = videoIframe.src;
+            const separator = currentSrc.includes('?') ? '&' : '?';
+            videoIframe.src = currentSrc + separator + 'autoplay=1';
+        });
+    }
 });
