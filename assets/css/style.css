@@ -1785,6 +1785,98 @@ html, body {
     font-size: 0.9rem;
 }
 
+/* Reports Section */
+.demo__reports {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.reports__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #2d3748;
+}
+
+.reports__subtitle {
+    font-size: 18px;
+    color: #718096;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reports__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.report-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: #687AE5;
+}
+
+.report-header {
+    margin-bottom: 20px;
+}
+
+.report-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #e2e8f0;
+    color: #2d3748;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.report-badge--primary {
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
+    color: white;
+}
+
+.report-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+}
+
+.report-description {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 16px 0;
+}
+
+.report-card .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reports__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 /* WordPress Mockup */
 .wp-mockup {
     background: white;
