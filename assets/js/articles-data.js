@@ -656,5 +656,192 @@ window.articlesData = {
 
             <p>Dzięki pełnej kontroli nad personalizacją, każdy deweloper może stworzyć unikalne doświadczenie użytkownika, które nie tylko spełnia wymogi ustawy o jawności cen mieszkań, ale również wyróżnia się na tle konkurencji profesjonalnym wyglądem i funkcjonalnością.</p>
         `
+    },
+    'raportowanie-cen-mieszkan-dane-gov-pl-instrukcja': {
+        title: 'Raportowanie cen mieszkań do dane.gov.pl – instrukcja krok po kroku dla deweloperów',
+        excerpt: 'Kompletny przewodnik po raportowaniu cen mieszkań do portalu dane.gov.pl. Dowiedz się, jak spełnić obowiązki ustawowe ręcznie lub automatycznie i uniknąć kar.',
+        date: '2025-11-09',
+        keywords: 'raportowanie cen mieszkań dane.gov.pl, raportowanie danych deweloperskich, obowiązek publikacji cen mieszkań, API dane.gov.pl, jak raportować ceny mieszkań, wtyczka WordPress dane.gov.pl, automatyczne raportowanie danych, publikacja cen mieszkań, raportowanie cen nieruchomości, specyfikacja CSV dane.gov.pl, jak dodać zbiór danych na dane.gov.pl, błędy w raportowaniu danych deweloperskich, kary za brak raportowania cen mieszkań, integracja CRM z dane.gov.pl, automatyczne publikowanie cen lokali, przykładowy raport danych deweloperskich, jawność cen mieszkań ustawa 2025, raportowanie inwestycji deweloperskich krok po kroku, raportowanie mieszkań i domów jednorodzinnych, eksport danych CSV/XML deweloper',
+        category: 'Przepisy prawne & Raportowanie',
+        description: 'Praktyczny przewodnik po raportowaniu cen mieszkań do dane.gov.pl. Instrukcja krok po kroku dla deweloperów - metody ręczne i automatyczne, wymagania prawne i unikanie kar.',
+        content: `
+            <p>Wraz z wejściem w życie nowelizacji ustawy o jawności cen mieszkań, na deweloperów i inne podmioty prowadzące sprzedaż lokali mieszkalnych nałożono obowiązek publikowania cen oraz codziennego raportowania ich do portalu dane.gov.pl.</p>
+
+            <p>Zachowanie zgodności z tym wymogiem nie tylko chroni przed karami finansowymi ze strony UOKiK (mogącymi sięgać nawet 10% rocznego obrotu), lecz także buduje transparentność rynku i zaufanie klientów.</p>
+
+            <p>Poniżej przedstawiamy praktyczny przewodnik, jak spełnić nowe obowiązki – zarówno ręcznie, jak i w pełni automatycznie.</p>
+
+            <h2>Kogo dotyczy obowiązek raportowania?</h2>
+
+            <p>Nowe przepisy obejmują wszystkich deweloperów oraz przedsiębiorców komercyjnych, którzy prowadzą sprzedaż mieszkań lub domów jednorodzinnych. Dotyczy to również podmiotów pośredniczących, takich jak flipperzy, fundusze inwestycyjne czy spółki z o.o. sprzedające lokale.</p>
+
+            <p>Obowiązek publikacji i raportowania cen dotyczy także umów rezerwacyjnych i ofert przedsprzedaży.</p>
+
+            <h2>Etap 1. Rejestracja konta na dane.gov.pl</h2>
+
+            <p>Aby rozpocząć raportowanie cen mieszkań, należy:</p>
+
+            • Utworzyć konto firmowe na portalu dane.gov.pl<br>
+            • Zweryfikować tożsamość przedsiębiorcy (np. przez Profil Zaufany lub ePUAP)<br>
+            • Dodać źródło danych – np. system CRM, stronę internetową czy wewnętrzną bazę ofert<br>
+            • Skonfigurować metodę raportowania – ręczną lub automatyczną
+
+            <br><br>
+
+            <h2>Etap 2. Przygotowanie danych do raportu</h2>
+
+            <p>Zgłaszane dane muszą być kompletne i zgodne ze specyfikacją publikacyjną Ministerstwa. Każdy wpis powinien zawierać:</p>
+
+            • dokładny adres nieruchomości (ulica, numer, miejscowość)<br>
+            • cenę całkowitą lokalu<br>
+            • cenę za 1 m² powierzchni użytkowej<br>
+            • status oferty (np. dostępna, sprzedana, zarezerwowana)<br>
+            • datę udostępnienia lokalu<br>
+            • inne pola wymagane przez specyfikację (łącznie 58 kolumn w pliku CSV)
+
+            <br><br>
+
+            <p>Dane należy aktualizować codziennie, nawet jeśli zmiany są minimalne. W przypadku braku wartości w określonym polu dopuszczalne jest użycie symbolu zastępczego \"X\", jeśli przewiduje to dokumentacja techniczna.</p>
+
+            <h2>Etap 3. Wybór metody raportowania</h2>
+
+            <h3>1️⃣ Ręczne raportowanie (dla mniejszych firm)</h3>
+
+            <p>To rozwiązanie polecane deweloperom z niewielką liczbą ofert. Aby zgłosić dane ręcznie:</p>
+
+            • Zaloguj się do portalu dane.gov.pl<br>
+            • Przejdź do sekcji Zbiory danych → Dodaj zbiór danych<br>
+            • Wypełnij metadane, takie jak: Tytuł (np. \"Ceny ofertowe mieszkań dewelopera w 2025 r.\"), Opis (zgodny z art. 19b ust. 1 Ustawy o ochronie praw nabywcy), Częstotliwość aktualizacji: codziennie, Kategorie: gospodarka i finanse, Status: opublikowany lub szkic<br>
+            • Zapisz zbiór i dodaj do niego zasób (plik z danymi)<br>
+            • Wypełnij pola metadanych pliku, m.in. datę danych i znak umowny \"X\"
+
+            <br><br>
+
+            <p>💡 W kolejnych aktualizacjach możesz używać opcji \"Kopiuj do nowego zasobu\", by przyspieszyć publikację – wystarczy zmienić datę i wgrać nowy plik.</p>
+
+            <p><strong>Zalety:</strong> prosty start, brak konieczności integracji.<br>
+            <strong>Wady:</strong> czasochłonność i ryzyko błędów przy codziennych aktualizacjach.</p>
+
+            <h3>2️⃣ Automatyczne raportowanie (zalecane)</h3>
+
+            <p>Dla większych firm zalecana jest pełna automatyzacja procesu. Polega ona na integracji systemu sprzedażowego lub strony WWW z API publikacyjnym dane.gov.pl.</p>
+
+            <p>System automatycznie:</p>
+
+            • przygotowuje dane w wymaganym formacie<br>
+            • wykonuje walidację poprawności<br>
+            • wysyła dane po REST (JSON/XML/CSV)<br>
+            • prowadzi historię publikacji i archiwizuje wysyłki
+
+            <br><br>
+
+            <p>Takie rozwiązanie minimalizuje błędy i oszczędza czas, a dane są przesyłane codziennie – w pełni automatycznie.</p>
+
+            <h2>Etap 4. Kontrola i zgodność z przepisami</h2>
+
+            <p>Zgodność z ustawą o jawności cen mieszkań jest obowiązkowa. Portal dane.gov.pl przechowuje historię publikowanych ofert, a UOKiK może w każdej chwili skontrolować poprawność raportowania.</p>
+
+            <p>Brak publikacji lub błędne dane mogą skutkować karą finansową do 10% rocznego obrotu firmy.</p>
+
+            <p>Dlatego warto zadbać o:</p>
+
+            • codzienną synchronizację danych<br>
+            • automatyczne walidacje i raporty błędów<br>
+            • archiwizację historii zmian<br>
+            • bieżący monitoring poprawności publikacji
+
+            <br><br>
+
+            <h2>Jak działa to w praktyce – automatyzacja z DeweloperJawneCeny.pl</h2>
+
+            <p>Nasze rozwiązanie wtyczki Deweloper Jawne Ceny umożliwia pełną automatyzację raportowania do portalu dane.gov.pl. Dzięki integracji z Twoim systemem (WordPress, CRM lub dedykowany backend):</p>
+
+            • oferty mieszkań są codziennie publikowane i aktualizowane automatycznie<br>
+            • dane są walidowane pod kątem zgodności z wymogami ministerstwa<br>
+            • w panelu WordPress możesz edytować oferty i śledzić historię zmian cen<br>
+            • system pilnuje poprawnych formatów danych i sygnalizuje błędy<br>
+            • archiwizowane są logi eksportów i raporty zgodności
+
+            <br><br>
+
+            <p>To rozwiązanie eliminuje konieczność codziennej ingerencji człowieka – cały proces raportowania odbywa się w tle, w pełni zgodnie z przepisami.</p>
+
+            <h2>Checklista dla dewelopera ✅</h2>
+
+            ✅ Konto firmowe i zweryfikowane źródło danych w portalu dane.gov.pl<br>
+            ✅ Pełny zestaw wymaganych danych ofertowych<br>
+            ✅ Walidacja eksportu (CSV/XML) zakończona sukcesem<br>
+            ✅ Automatyczne harmonogramy eksportów działają codziennie<br>
+            ✅ Raporty błędów i logi działań są archiwizowane<br>
+            ✅ Metadane zbioru i zasobów uzupełnione (w tym \"znaki umowne\")<br>
+            ✅ Dla ręcznych zgłoszeń: każdy plik zawiera aktualną datę i komplet pól
+
+            <br><br>
+
+            <h2>Najczęstsze błędy i sposoby ich uniknięcia</h2>
+
+            ❌ <strong>Braki w danych</strong> – uzupełnij wszystkie obowiązkowe pola, stosuj \"X\" tylko tam, gdzie dopuszcza to specyfikacja.<br><br>
+            ❌ <strong>Błędne formaty danych</strong> – np. nieprawidłowy NIP lub kod pocztowy. Walidacja powinna wykryć błąd przed publikacją.<br><br>
+            ❌ <strong>Brak automatyzacji</strong> – im więcej ofert, tym większe ryzyko pomyłek przy ręcznym wgrywaniu.<br><br>
+            ❌ <strong>Nieprawidłowa strefa czasowa</strong> – ustaw ją globalnie w systemie, by uniknąć rozbieżności w znacznikach czasu.
+        `,
+        faq: [
+            {
+                q: "Kto dokładnie ma obowiązek raportowania cen do dane.gov.pl?",
+                a: "Obowiązek dotyczy wszystkich deweloperów, flipperów, funduszy inwestycyjnych i przedsiębiorców, którzy prowadzą komercyjną sprzedaż lokali mieszkalnych lub domów jednorodzinnych. Dotyczy to także umów rezerwacyjnych oraz ofert przedsprzedażowych, niezależnie od wielkości firmy czy liczby sprzedawanych lokali."
+            },
+            {
+                q: "Czy osoby prywatne sprzedające jedno mieszkanie też muszą raportować ceny?",
+                a: "Nie. Obowiązek dotyczy podmiotów prowadzących działalność gospodarczą w zakresie sprzedaży nieruchomości. Osoby fizyczne sprzedające własne mieszkanie (bez działalności deweloperskiej) nie są zobowiązane do raportowania danych na dane.gov.pl."
+            },
+            {
+                q: "Jak często trzeba aktualizować dane?",
+                a: "Deweloper ma obowiązek codziennej aktualizacji danych w portalu dane.gov.pl, nawet jeśli w danym dniu nie nastąpiły żadne zmiany cen. System wymaga, by każdy dzień miał przypisany aktualny zestaw danych (lub potwierdzenie braku zmian)."
+            },
+            {
+                q: "Jakie dane muszą się znaleźć w raporcie?",
+                a: "Każda publikacja musi zawierać m.in.: pełny adres lokalu (ulica, numer, miejscowość), cenę całkowitą i cenę za m², status oferty (dostępna, zarezerwowana, sprzedana), datę dostępności, identyfikator oferty w systemie, pola techniczne wymagane przez ministerstwo (łącznie 58 kolumn w pliku CSV). Dla pól, których nie można uzupełnić, dopuszczalne jest użycie wartości \"X\" (zgodnie ze specyfikacją publikacyjną)."
+            },
+            {
+                q: "Co grozi za brak raportowania cen?",
+                a: "Brak raportowania lub błędne dane mogą skutkować karą finansową do 10% rocznego obrotu przedsiębiorstwa, nałożoną przez UOKiK. Kary mogą zostać zastosowane również w przypadku spóźnionych lub niepełnych publikacji danych."
+            },
+            {
+                q: "W jakim formacie należy przekazywać dane?",
+                a: "Ministerstwo akceptuje formaty CSV, XML oraz JSON (dla integracji API). Najczęściej stosowanym rozwiązaniem jest CSV, ponieważ umożliwia prostą weryfikację danych i kompatybilność z większością systemów CRM oraz platform CMS."
+            },
+            {
+                q: "Czy można raportować dane ręcznie?",
+                a: "Tak. Ręczne raportowanie jest możliwe poprzez panel dane.gov.pl — szczególnie w przypadku mniejszych inwestycji lub firm bez własnych systemów CRM. Wystarczy przygotować plik CSV z danymi, zalogować się do portalu, dodać nowy zbiór danych i przesłać plik jako zasób."
+            },
+            {
+                q: "Jak działa automatyczne raportowanie?",
+                a: "Automatyczne raportowanie polega na integracji strony internetowej lub systemu CRM z API portalu dane.gov.pl. Dane są automatycznie generowane, walidowane i przesyłane każdego dnia. Deweloper nie musi wykonywać żadnych czynności ręcznie — system synchronizuje dane w tle, zachowując pełną zgodność z wymaganiami ministerstwa."
+            },
+            {
+                q: "Czy można zgłaszać osobno elementy dodatkowe, takie jak miejsce postojowe lub komórka lokatorska?",
+                a: "Tak. System raportowania oraz wtyczka Deweloper Jawne Ceny umożliwiają dwa tryby raportowania: osobne zgłaszanie elementów dodatkowych (np. garaż, miejsce postojowe, komórka lokatorska) lub łączenie ich w jeden raport jako składniki obligatoryjne w cenie lokalu. Dzięki temu możesz dostosować sposób raportowania do struktury Twojej inwestycji."
+            },
+            {
+                q: "Jak zweryfikować, czy raport został prawidłowo przesłany?",
+                a: "Po publikacji raportu portal dane.gov.pl udostępnia informację o statusie przesłanego pliku. Dodatkowo, nasza wtyczka generuje logi eksportów, które pokazują: datę i godzinę wysyłki, liczbę przesłanych ofert, błędy walidacji (jeśli wystąpiły), potwierdzenie publikacji."
+            },
+            {
+                q: "Czy raporty są publicznie widoczne?",
+                a: "Tak. Opublikowane dane trafiają do publicznego katalogu portalu dane.gov.pl, gdzie każdy użytkownik może je przeglądać i pobierać. To właśnie realizacja zasady jawności cen mieszkań, która ma zwiększyć przejrzystość rynku nieruchomości."
+            },
+            {
+                q: "Czy raport można poprawić po publikacji?",
+                a: "Tak, ale każda korekta wymaga ponownej publikacji całego pliku (zbioru danych) lub dodania nowego zasobu z poprawionymi informacjami. Zmienione dane są wersjonowane, a wcześniejsze raporty pozostają dostępne w historii publikacji."
+            },
+            {
+                q: "Czy można raportować dane z poziomu WordPressa?",
+                a: "Tak. Wtyczka Deweloper Jawne Ceny umożliwia bezpośrednie raportowanie z poziomu panelu WordPress. Wszystkie oferty mieszkań i domów można aktualizować w CMS, a system automatycznie generuje pliki i przesyła je do dane.gov.pl zgodnie z harmonogramem."
+            },
+            {
+                q: "Czy system Deweloper Jawne Ceny spełnia wymagania ministerstwa?",
+                a: "Tak. Nasze rozwiązanie jest w pełni zgodne ze specyfikacją Ministerstwa Rozwoju i Technologii oraz aktualnymi wytycznymi dla publikacji danych o cenach mieszkań. Każda wysyłka przechodzi walidację struktury i treści przed publikacją."
+            }
+        ]
     }
 };
