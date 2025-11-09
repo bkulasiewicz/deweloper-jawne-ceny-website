@@ -183,10 +183,10 @@ window.articlesData = {
 
             <h3>Krok 1. Instalacja wtyczki</h3>
             
-            1. Pobierz darmową wersję „DeweloperJawneCeny" z katalogu WordPress lub zakup wersję profesjonalną przez <a href="#kontakt">formularz kontaktowy</a><br>
+            1. Pobierz darmową wersję \"DeweloperJawneCeny\" z katalogu WordPress lub zakup wersję profesjonalną przez <a href="#kontakt">formularz kontaktowy</a><br>
             2. Zaloguj się do panelu WordPress<br>
-            3. W zakładce **Wtyczki > Dodaj nową** wyszukaj „DeweloperJawneCeny" lub wgraj plik ZIP (dla wersji PRO)<br>
-            4. Kliknij „Zainstaluj teraz", a następnie „Aktywuj"
+            3. W zakładce **Wtyczki > Dodaj nową** wyszukaj \"DeweloperJawneCeny\" lub wgraj plik ZIP (dla wersji PRO)<br>
+            4. Kliknij \"Zainstaluj teraz\", a następnie \"Aktywuj\"
 
             <br><br>
 
@@ -203,7 +203,7 @@ window.articlesData = {
             <h3>Krok 3. Włączenie automatyzacji</h3>
             
             1. Przejdź do zakładki Pulpit w panelu wtyczki<br>
-            2. Kliknij „Włącz automatyzację"<br>
+            2. Kliknij \"Włącz automatyzację\"<br>
             3. Od tego momentu system sam zajmie się generowaniem i publikacją plików XML/CSV
 
             <br><br>
@@ -276,7 +276,7 @@ window.articlesData = {
 
             <h2>Podsumowanie</h2>
             
-            Dzięki wtyczce DeweloperJawneCeny proces publikacji cen mieszkań w WordPress jest szybki i w pełni zautomatyzowany. Od włączenia automatyzacji w zakładce „Pulpit", przez automatyczne generowanie plików o północy, aż po publikację w zakładce „Publikacja danych" – wszystko działa bezobsługowo.
+            Dzięki wtyczce DeweloperJawneCeny proces publikacji cen mieszkań w WordPress jest szybki i w pełni zautomatyzowany. Od włączenia automatyzacji w zakładce \"Pulpit\", przez automatyczne generowanie plików o północy, aż po publikację w zakładce \"Publikacja danych\" – wszystko działa bezobsługowo.
 
             <br><br>
 
@@ -295,7 +295,7 @@ window.articlesData = {
         faq: [
             {
                 q: "Czy instalacja wtyczki jest trudna?",
-                a: "Nie, instalacja wtyczki DeweloperJawneCeny jest bardzo prosta i zajmuje zaledwie kilka minut. Wystarczy wejść do panelu WordPress, przejść do sekcji Wtyczki > Dodaj nową, wyszukać „DeweloperJawneCeny" i kliknąć Zainstaluj. Cały proces jest intuicyjny i nie wymaga specjalistycznej wiedzy IT."
+                a: "Nie, instalacja wtyczki DeweloperJawneCeny jest bardzo prosta i zajmuje zaledwie kilka minut. Wystarczy wejść do panelu WordPress, przejść do sekcji Wtyczki > Dodaj nową, wyszukać \"DeweloperJawneCeny\" i kliknąć Zainstaluj. Cały proces jest intuicyjny i nie wymaga specjalistycznej wiedzy IT."
             },
             {
                 q: "Ile czasu zajmuje pełne wdrożenie automatyzacji?",
@@ -329,7 +329,7 @@ window.articlesData = {
             • wybór typu wyświetlania ofert (tabela, lista, karty mieszkań)<br>
             • personalizację kolorów i stylów (nagłówki, statusy, przyciski, ramki)<br>
             • określanie, które informacje mają być widoczne (np. numer lokalu, metraż, cena, status)<br>
-            • dopasowanie wyglądu przycisków CTA (np. „Zarezerwuj" czy „Skontaktuj się")<br>
+            • dopasowanie wyglądu przycisków CTA (np. \"Zarezerwuj\" czy \"Skontaktuj się\")<br>
             • generowanie gotowego shortcode, który można od razu wkleić na stronę
 
             <br><br>
@@ -351,9 +351,9 @@ window.articlesData = {
 
             <p>Nowa funkcjonalność umożliwia pełną personalizację graficzną:</p>
             • ustawienia kolorów nagłówków, tła, ramki i przycisków<br>
-            • możliwość wyróżniania statusów lokali (np. „Dostępny", „Zarezerwowany", „Sprzedany") różnymi kolorami<br>
+            • możliwość wyróżniania statusów lokali (np. \"Dostępny\", \"Zarezerwowany\", \"Sprzedany\") różnymi kolorami<br>
             • wybór rozmiarów fontów i grubości obramowania<br>
-            • dopasowanie kolorystyki przycisków CTA (np. „Historia cen", „Pokaż szczegóły")
+            • dopasowanie kolorystyki przycisków CTA (np. \"Historia cen\", \"Pokaż szczegóły\")
 
             <br><br>
 
@@ -370,7 +370,7 @@ window.articlesData = {
             • cena za m²<br>
             • piętro<br>
             • liczba pokoi<br>
-            • opcja „Historia cen"
+            • opcja \"Historia cen\"
 
             <br><br>
 
@@ -425,7 +425,7 @@ window.articlesData = {
             <br><br>
 
             <p>3. Czy mogę zmienić kolory statusów lokali?<br>
-            Tak, w panelu personalizacji możesz ustawić dowolne kolory dla statusów „Dostępny", „Zarezerwowany" i „Sprzedany".</p>
+            Tak, w panelu personalizacji możesz ustawić dowolne kolory dla statusów \"Dostępny\", \"Zarezerwowany\" i \"Sprzedany\".</p>
 
             <br><br>
 
@@ -466,7 +466,7 @@ window.articlesData = {
 
             <h2>1. Jednym kliknięciem dodasz listę mieszkań lub domów</h2>
 
-            <p>Nowa funkcja „Lista zasobów" umożliwia natychmiastowe wstawienie gotowej listy mieszkań lub domów na stronę WordPress.</p>
+            <p>Nowa funkcja \"Lista zasobów\" umożliwia natychmiastowe wstawienie gotowej listy mieszkań lub domów na stronę WordPress.</p>
 
             <p>Bez dodatkowego kodowania, bez ręcznych konfiguracji. Wystarczy jedno kliknięcie, aby na stronie pojawiła się:</p>
 
@@ -486,7 +486,7 @@ window.articlesData = {
             • kolorami i typografią<br>
             • ilością kolumn i ich nazwami<br>
             • wyglądem kart i tabel<br>
-            • przyciskami (np. „Karta lokalu" czy „Historia cen")<br>
+            • przyciskami (np. \"Karta lokalu\" czy \"Historia cen\")<br>
             • modalami i efektami hover
 
             <br><br>
@@ -586,7 +586,7 @@ window.articlesData = {
 
             <p>Przed wyświetleniem zasobów na stronie należy dodać dane dostawcy, inwestycję oraz zasoby. W formularzu inwestycji znajdują się dwie sekcje, które wpływają bezpośrednio na to, jakie pola i elementy będą dostępne i wyświetlane na stronie:</p>
 
-            • Konfiguracja komponentów — zaznaczenie opcji (np. części nieruchomości, pomieszczenia przynależne, prawa do korzystania, inne świadczenia pieniężne) odblokowuje dodatkowe pola cenowe przy dodawaniu lokali/domów i determinuje, które elementy będą dostępne w formularzach zasobów. Przykład: zaznaczenie „części nieruchomości" powoduje pojawienie się pola do wprowadzenia ceny za miejsce postojowe.<br>
+            • Konfiguracja komponentów — zaznaczenie opcji (np. części nieruchomości, pomieszczenia przynależne, prawa do korzystania, inne świadczenia pieniężne) odblokowuje dodatkowe pola cenowe przy dodawaniu lokali/domów i determinuje, które elementy będą dostępne w formularzach zasobów. Przykład: zaznaczenie \"części nieruchomości\" powoduje pojawienie się pola do wprowadzenia ceny za miejsce postojowe.<br>
             • Pola marketingowe — wybór pól takich jak Piętro, Liczba pokoi, Dodatkowy opis, Ogród [m²], Plan mieszkania (PDF) włącza odpowiednie pola przy dodawaniu zasobów. Te pola służą wyłącznie do wyświetlania dodatkowych informacji na stronie (nie są raportowane do ministerstwa).
 
             <br><br>
@@ -595,7 +595,7 @@ window.articlesData = {
 
             <p>Rekomendowany sposób wstawiania oferty to bloki Gutenberg. Poniżej lista bloków i dokładne elementy konfigurowalne, które wpływają na wygląd i zawartość prezentacji.</p>
 
-            <h3>A) Blok „Lista Zasobów" (tabela lub kafelki) — możliwości konfiguracyjne:</h3>
+            <h3>A) Blok \"Lista Zasobów\" (tabela lub kafelki) — możliwości konfiguracyjne:</h3>
 
             • Typy nieruchomości: wybór rodzajów do wyświetlenia (mieszkania, domy jednorodzinne, garaże, miejsca postojowe, komórki lokatorskie, lokale usługowe).<br>
             • Sposób wyświetlania: tabela lub kafelki.<br>
@@ -605,37 +605,37 @@ window.articlesData = {
             • Filtrowanie w edytorze: ograniczenie wyświetlanych zasobów według statusu, ceny, powierzchni, pięter lub liczby pokoi w widoku edytora.<br>
             • Kolory: dostosowanie kolorów nagłówków, tekstu, podświetlenia wiersza, statusów, przycisków i okna historii cen.<br>
             • Czcionki: wybór czcionek dla nagłówków i treści.<br>
-            • Nawigacja: tryb nawigacji: brak / klikalne wiersze prowadzące do karty lokalu / przycisk „Zobacz więcej".<br>
+            • Nawigacja: tryb nawigacji: brak / klikalne wiersze prowadzące do karty lokalu / przycisk \"Zobacz więcej\".<br>
             • Sortowanie: włączenie sortowania po kliknięciu w nagłówek kolumny dla użytkowników.<br>
-            • Przyciski akcji: konfiguracja przycisków „Historia Cen" (wyświetla okno z historią zmian cen) i „Karta Lokalu" (link do planu PDF).<br>
-            • Integracja z blokiem filtrów: możliwość połączenia z blokiem „Filtry Zasobów" (patrz niżej).
+            • Przyciski akcji: konfiguracja przycisków \"Historia Cen\" (wyświetla okno z historią zmian cen) i \"Karta Lokalu\" (link do planu PDF).<br>
+            • Integracja z blokiem filtrów: możliwość połączenia z blokiem \"Filtry Zasobów\" (patrz niżej).
 
             <br><br>
 
-            <h3>B) Blok „Filtry Zasobów" — możliwości konfiguracyjne:</h3>
+            <h3>B) Blok \"Filtry Zasobów\" — możliwości konfiguracyjne:</h3>
 
             • Grupy filtrów: dodawanie sekcji (nagłówków) i przycisków filtrów (np. piętra, zakresy powierzchni).<br>
-            • Etykiety filtrów: zmiana nazw przycisków (np. „Parter", „40–50 m²").<br>
+            • Etykiety filtrów: zmiana nazw przycisków (np. \"Parter\", \"40–50 m²\").<br>
             • Warunki filtrowania: typ warunku: dokładna wartość / zakres (min–max) / minimum.<br>
-            • Kolory: ustawienia kolorów nagłówka, tła grup, podświetlenia, przycisków „Zastosuj" i „Wyczyść".<br>
+            • Kolory: ustawienia kolorów nagłówka, tła grup, podświetlenia, przycisków \"Zastosuj\" i \"Wyczyść\".<br>
             • Czcionki: wybór czcionek dla nagłówka i treści filtru.<br>
             • Odstępy: precyzyjne ustawienia odległości między filtrami, grupami i przyciskami.<br>
             • Tytuł widgetu i teksty przycisków: opcjonalny nagłówek i możliwość zmiany treści przycisków.
 
             <br><br>
 
-            <p><strong>WAŻNE:</strong> aby filtry działały z listą, w bloku „Lista Zasobów" trzeba włączyć opcję „Czytaj filtry z URL" i oba bloki muszą być na tej samej stronie. Klient wybiera filtry, a lista automatycznie się aktualizuje bez przeładowania strony.</p>
+            <p><strong>WAŻNE:</strong> aby filtry działały z listą, w bloku \"Lista Zasobów\" trzeba włączyć opcję \"Czytaj filtry z URL\" i oba bloki muszą być na tej samej stronie. Klient wybiera filtry, a lista automatycznie się aktualizuje bez przeładowania strony.</p>
 
             <br><br>
 
-            <h3>C) Blok „Szczegóły zasobu" (pojedyncze mieszkanie) — możliwości konfiguracyjne:</h3>
+            <h3>C) Blok \"Szczegóły zasobu\" (pojedyncze mieszkanie) — możliwości konfiguracyjne:</h3>
 
             • Widoczne pola: wybór danych do wyświetlenia: numer lokalu, rodzaj, powierzchnia, cena całkowita, cena za m², cena z dodatkami, status, pokoje, piętro, ogród, dodatkowy opis, plan mieszkania PDF.<br>
             • Nazwy pól: zmiana etykiet przy każdym polu.<br>
             • Kolejność pól: przeciągnij, aby ustawić kolejność wyświetlania informacji.<br>
             • Kolory: dostosowanie kolorów tła karty, tekstu, etykiet, statusów i przycisków.<br>
             • Czcionki: wybór czcionek dla nagłówków i treści.<br>
-            • Przyciski akcji: konfiguracja przycisku „Historia Cen" (tekst, kolory) i przycisku pobierania planu PDF.<br>
+            • Przyciski akcji: konfiguracja przycisku \"Historia Cen\" (tekst, kolory) i przycisku pobierania planu PDF.<br>
             • Okno historii cen: ustawienia wyglądu wyskakującego okna (tło, nagłówek, przycisk zamknięcia).<br>
             • Odstępy i rozmiary: precyzyjne ustawienie paddingu karty, marginesów i rozmiarów czcionek.
 
@@ -649,8 +649,8 @@ window.articlesData = {
 
             <p>Jeżeli strona korzysta z buildera, który nie obsługuje bloków Gutenberg, wtyczka oferuje shortcode. Shortcode odzwierciedla większość ustawień bloku Lista Zasobów i bloku Szczegóły zasobu:</p>
 
-            • Shortcode [resources_list] — w nim można dostosować: rodzaje nieruchomości, widoczne informacje (lista pól), sposób wyświetlania (tabela/kafelki), kolory, czcionki, nawigację (klikalne wiersze / przycisk „Zobacz więcej" / brak), sortowanie i filtrowanie. Generator Shortcode w menu wtyczki tworzy gotowy kod z wybranymi parametrami. (Uwaga: shortcode nie posiada zaawansowanych filtrów w panelu edytora tak jak blok Gutenberg — wyświetla dane wg ustawionych parametrów.)<br><br>
-            • Shortcode [resource_single] — karta pojedynczego lokalu; automatycznie wykrywa numer z URL (np. /mieszkania/A1). Możliwe do skonfigurowania elementy: widoczne pola, kolory karty, osobne kolory statusów („dostępny", „sprzedany", „zarezerwowany"), wygląd i tekst przycisków, odstępy i padding.
+            • Shortcode [resources_list] — w nim można dostosować: rodzaje nieruchomości, widoczne informacje (lista pól), sposób wyświetlania (tabela/kafelki), kolory, czcionki, nawigację (klikalne wiersze / przycisk \"Zobacz więcej\" / brak), sortowanie i filtrowanie. Generator Shortcode w menu wtyczki tworzy gotowy kod z wybranymi parametrami. (Uwaga: shortcode nie posiada zaawansowanych filtrów w panelu edytora tak jak blok Gutenberg — wyświetla dane wg ustawionych parametrów.)<br><br>
+            • Shortcode [resource_single] — karta pojedynczego lokalu; automatycznie wykrywa numer z URL (np. /mieszkania/A1). Możliwe do skonfigurowania elementy: widoczne pola, kolory karty, osobne kolory statusów (\"dostępny\", \"sprzedany\", \"zarezerwowany\"), wygląd i tekst przycisków, odstępy i padding.
 
             <br><br>
 
@@ -660,7 +660,7 @@ window.articlesData = {
 
             <h2>Wyświetlanie i edycja zasobów — wpływ na widok strony</h2>
 
-            <p>Zasoby dodawane w panelu (zakładka „Zasoby") są źródłem danych do wszystkich elementów widocznych na stronie. Możesz w dowolnym momencie edytować lub usuwać zasoby z poziomu karty zasobu — zmiany będą odzwierciedlone w wyświetlanych blokach/shortcode'ach zgodnie z ich konfiguracją.</p>
+            <p>Zasoby dodawane w panelu (zakładka \"Zasoby\") są źródłem danych do wszystkich elementów widocznych na stronie. Możesz w dowolnym momencie edytować lub usuwać zasoby z poziomu karty zasobu — zmiany będą odzwierciedlone w wyświetlanych blokach/shortcode'ach zgodnie z ich konfiguracją.</p>
 
             <h2>Elementy stylu interfejsu dostępne do konfiguracji (zbiór)</h2>
 
@@ -671,8 +671,8 @@ window.articlesData = {
             • nazwy i etykiety pól/kolumn<br>
             • kolejność kolumn i pól (drag & drop)<br>
             • sposób wyświetlania (tabela vs. kafelki)<br>
-            • nawigacja (klikalne wiersze / przycisk „Zobacz więcej" / brak)<br>
-            • wygląd i treść przycisków akcji („Historia Cen", „Karta Lokalu" / pobierz plan PDF)<br>
+            • nawigacja (klikalne wiersze / przycisk \"Zobacz więcej\" / brak)<br>
+            • wygląd i treść przycisków akcji (\"Historia Cen\", \"Karta Lokalu\" / pobierz plan PDF)<br>
             • odstępy/padding/marginesy i rozmiary czcionek w kartach zasobów oraz w oknie historii cen<br>
             • tytuł widgetu/tekst przycisków w bloku filtrów oraz odstępy i layout filtrów
 
