@@ -112,25 +112,6 @@ window.articlesData = {
 
             <br><br>
 
-            <h2>Najczęściej zadawane pytania</h2>
-            
-            Czy moja istniejąca strona WordPress jest kompatybilna?
-            Tak - wtyczka działa z WordPress 5.0+ i wszystkimi popularnymi motywami. Nie wymaga zmian w istniejącej stronie.
-
-            Jak długo trwa wdrożenie na WordPress?
-            1-3 dni roboczych w zależności od ilości mieszkań. Większość czasu to import i weryfikacja danych.
-
-            Czy wtyczka spowalnia stronę WordPress?
-            Nie - zoptymalizowany kod i cache sprawiają, że wtyczka nie wpływa na prędkość strony. Kompatybilna z WP Rocket, W3TC.
-
-            Czy mogę zintegrować z moim CRM/ERP?
-            Tak - wtyczka oferuje API REST, webhooks i integracje z popularnymi systemami (Salesforce, HubSpot, systemy branżowe).
-
-            Ile kosztuje utrzymanie wtyczki WordPress?
-            Od 99 PLN/miesiąc - znacznie taniej niż dedykowane rozwiązania. Brak kosztów programistów i utrzymania infrastruktury.
-
-            <br><br>
-
             <h2>Automatyzacja WordPress</h2>
 
             Wtyczka WordPress do publikacji cen mieszkań to nie tylko narzędzie do spełnienia wymogów ustawy - to strategiczna inwestycja w automatyzację procesów biznesowych Twojej firmy deweloperskiej.
@@ -144,7 +125,29 @@ window.articlesData = {
             • Przewagę konkurencyjną - profesjonalne prezentowanie oferty
 
             Rozwiązania automatyzacji na WordPress są szczególnie przydatne dla deweloperów zarządzających wieloma projektami lub dużą liczbą mieszkań. Nie czekaj na przymus - zacznij korzystać z automatyzacji już dziś.
-        `
+        `,
+        faq: [
+            {
+                q: "Czy moja istniejąca strona WordPress jest kompatybilna?",
+                a: "Tak - wtyczka działa z WordPress 5.0+ i wszystkimi popularnymi motywami. Nie wymaga zmian w istniejącej stronie."
+            },
+            {
+                q: "Jak długo trwa wdrożenie na WordPress?",
+                a: "1-3 dni roboczych w zależności od ilości mieszkań. Większość czasu to import i weryfikacja danych."
+            },
+            {
+                q: "Czy wtyczka spowalnia stronę WordPress?",
+                a: "Nie - zoptymalizowany kod i cache sprawiają, że wtyczka nie wpływa na prędkość strony. Kompatybilna z WP Rocket, W3TC."
+            },
+            {
+                q: "Czy mogę zintegrować z moim CRM/ERP?",
+                a: "Tak - wtyczka oferuje API REST, webhooks i integracje z popularnymi systemami (Salesforce, HubSpot, systemy branżowe)."
+            },
+            {
+                q: "Ile kosztuje utrzymanie wtyczki WordPress?",
+                a: "Od 99 PLN/miesiąc - znacznie taniej niż dedykowane rozwiązania. Brak kosztów programistów i utrzymania infrastruktury."
+            }
+        ]
     },
     'jak-zautomatyzowac-publikacje-cen-mieszkan-wordpress': {
         title: 'Jak zautomatyzować publikację cen mieszkań w WordPress - Instrukcja krok po kroku',
@@ -244,33 +247,6 @@ window.articlesData = {
             • Zarządy spółek deweloperskich – pewność zgodności prawnej i mniejsze ryzyko kar<br>
             • Specjaliści IT – łatwa integracja bez dodatkowych systemów<br>
             • Mniejsze spółki – oszczędność czasu i kosztów
-
-            <br><br>
-
-            <h2>Najczęściej zadawane pytania</h2>
-
-            1. Czy muszę mieć specjalistyczną wiedzę IT, aby wdrożyć wtyczkę?<br>
-            Nie. Instalacja i konfiguracja zajmuje kilka minut.
-
-            <br><br>
-
-            2. Czy mogę używać wtyczki na wielu inwestycjach jednocześnie?<br>
-            Tak, możesz dodawać wiele inwestycji i zarządzać nimi w jednym panelu, ale jedna wtyczka obsługuje jedną stronę internetową.
-
-            <br><br>
-
-            3. Co z aktualizacjami?<br>
-            Wtyczka jest aktualizowana zgodnie z nowymi wytycznymi rządowymi.
-
-            <br><br>
-
-            4. A jeśli mam już stronę w WordPress?<br>
-            Integracja nie wymaga przebudowy strony.
-
-            <br><br>
-
-            5. Co, jeśli potrzebuję pomocy przy wdrożeniu?<br>
-            Oferujemy usługę Wdrożenie Express – instalacja i konfiguracja w 24h.
 
             <br><br>
 
@@ -411,32 +387,29 @@ window.articlesData = {
             <br><br>
 
             <p>Dzięki temu prezentacja mieszkań jest nie tylko zgodna z prawem, ale również atrakcyjna i intuicyjna dla klientów.</p>
-
-            <h2>Najczęściej zadawane pytania</h2>
-
-            <p>1. Czy muszę znać HTML lub CSS, żeby skonfigurować warstwę frontendową?<br>
-            Nie, cała konfiguracja odbywa się przez intuicyjny panel – wystarczy kilka kliknięć.</p>
-
-            <br><br>
-
-            <p>2. Czy mogę przygotować kilka różnych konfiguracji dla różnych stron?<br>
-            Tak, każda konfiguracja generuje własny shortcode. Możesz wstawić różne widoki w różnych miejscach serwisu.</p>
-
-            <br><br>
-
-            <p>3. Czy mogę zmienić kolory statusów lokali?<br>
-            Tak, w panelu personalizacji możesz ustawić dowolne kolory dla statusów \"Dostępny\", \"Zarezerwowany\" i \"Sprzedany\".</p>
-
-            <br><br>
-
-            <p>4. Jak to wpływa na SEO?<br>
-            Przejrzysta prezentacja ofert poprawia czas spędzany na stronie, obniża współczynnik odrzuceń i zwiększa widoczność w Google.</p>
-
-            <br><br>
-
-            <p>5. Czy wtyczka jest zgodna z ustawą o jawności cen mieszkań?<br>
-            Tak, to jedno z jej głównych zadań – ułatwia prezentację ofert w sposób przejrzysty, zgodny z nowymi przepisami.</p>
-        `
+        `,
+        faq: [
+            {
+                q: "Czy muszę znać HTML lub CSS, żeby skonfigurować warstwę frontendową?",
+                a: "Nie, cała konfiguracja odbywa się przez intuicyjny panel – wystarczy kilka kliknięć."
+            },
+            {
+                q: "Czy mogę przygotować kilka różnych konfiguracji dla różnych stron?",
+                a: "Tak, każda konfiguracja generuje własny shortcode. Możesz wstawić różne widoki w różnych miejscach serwisu."
+            },
+            {
+                q: "Czy mogę zmienić kolory statusów lokali?",
+                a: "Tak, w panelu personalizacji możesz ustawić dowolne kolory dla statusów \"Dostępny\", \"Zarezerwowany\" i \"Sprzedany\"."
+            },
+            {
+                q: "Jak to wpływa na SEO?",
+                a: "Przejrzysta prezentacja ofert poprawia czas spędzany na stronie, obniża współczynnik odrzuceń i zwiększa widoczność w Google."
+            },
+            {
+                q: "Czy wtyczka jest zgodna z ustawą o jawności cen mieszkań?",
+                a: "Tak, to jedno z jej głównych zadań – ułatwia prezentację ofert w sposób przejrzysty, zgodny z nowymi przepisami."
+            }
+        ]
     },
     'nowe-funkcjonalnosci-wtyczki-lista-mieszkan-domow': {
         title: 'Nowe funkcjonalności wtyczki DeweloperJawneCeny – szybkie dodawanie listy mieszkań i domów do WordPressa',
