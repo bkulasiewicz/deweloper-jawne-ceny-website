@@ -1821,13 +1821,8 @@ html, body {
     padding: 30px;
     text-align: left;
     border: 2px solid #e2e8f0;
-    transition: all 0.3s ease;
-}
-
-.report-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-color: #687AE5;
+    display: flex;
+    flex-direction: column;
 }
 
 .report-header {
@@ -1843,11 +1838,6 @@ html, body {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 12px;
-}
-
-.report-badge--primary {
-    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
-    color: white;
 }
 
 .report-card h3 {
@@ -1866,7 +1856,7 @@ html, body {
 .report-card .btn {
     width: 100%;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 /* Responsive */
