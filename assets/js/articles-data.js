@@ -545,32 +545,29 @@ window.articlesData = {
             <br><br>
 
             <p>To rozwiązanie, które oszczędza czas, poprawia konwersję i zwiększa wiarygodność dewelopera.</p>
-
-            <h2>FAQ – najczęściej zadawane pytania</h2>
-
-            <p>Czy wtyczka działa na każdej stronie WordPress?<br>
-            Tak, wystarczy zainstalować ją jak standardową wtyczkę i można korzystać z bloków w edytorze Gutenberg.</p>
-
-            <br><br>
-
-            <p>Czy muszę znać się na programowaniu, żeby z niej korzystać?<br>
-            Nie. Wszystko skonfigurujesz w panelu WordPress, bez pisania kodu.</p>
-
-            <br><br>
-
-            <p>Czy wtyczka poprawi SEO mojej strony?<br>
-            Tak. Dane są renderowane po stronie serwera, co oznacza, że Google i inne wyszukiwarki łatwo je indeksują.</p>
-
-            <br><br>
-
-            <p>Czy mogę mieć osobne listy dla mieszkań i domów?<br>
-            Tak. Możesz dodać oddzielne bloki z różnymi filtrami i wyglądem.</p>
-
-            <br><br>
-
-            <p>Czy historia cen nie spowolni strony?<br>
-            Nie. Dane ładują się w tle (AJAX) tylko wtedy, gdy użytkownik kliknie przycisk.</p>
-        `
+        `,
+        faq: [
+            {
+                q: "Czy wtyczka działa na każdej stronie WordPress?",
+                a: "Tak, wystarczy zainstalować ją jak standardową wtyczkę i można korzystać z bloków w edytorze Gutenberg."
+            },
+            {
+                q: "Czy muszę znać się na programowaniu, żeby z niej korzystać?",
+                a: "Nie. Wszystko skonfigurujesz w panelu WordPress, bez pisania kodu."
+            },
+            {
+                q: "Czy wtyczka poprawi SEO mojej strony?",
+                a: "Tak. Dane są renderowane po stronie serwera, co oznacza, że Google i inne wyszukiwarki łatwo je indeksują."
+            },
+            {
+                q: "Czy mogę mieć osobne listy dla mieszkań i domów?",
+                a: "Tak. Możesz dodać oddzielne bloki z różnymi filtrami i wyglądem."
+            },
+            {
+                q: "Czy historia cen nie spowolni strony?",
+                a: "Nie. Dane ładują się w tle (AJAX) tylko wtedy, gdy użytkownik kliknie przycisk."
+            }
+        ]
     },
     'personalizacja-elementow-wyswietlania-ofert-wtyczka': {
         title: 'Personalizacja elementów wyświetlania ofert wtyczki Deweloper Jawne Ceny — co możesz skonfigurować',
