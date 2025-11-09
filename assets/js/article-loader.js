@@ -40,9 +40,28 @@ function loadArticle(articleId) {
     
     // Update article content
     document.getElementById('article-content').innerHTML = article.content;
-    
+
     // Update page title in browser
     document.title = article.title + ' - DeweloperJawneCeny';
+
+    // Render FAQ if article has it
+    const faqContainer = document.getElementById('article-faq-container');
+    if (article.faq && article.faq.length > 0) {
+        faqContainer.innerHTML = `
+            <section class="faq-section">
+                <div class="faq-container">
+                    <h2>Najczęściej zadawane pytania</h2>
+                    <div id="article-faq-list" class="faq-list"></div>
+                </div>
+            </section>
+        `;
+        // Check if renderFAQ function exists (from faq-loader.js)
+        if (typeof renderFAQ === 'function') {
+            renderFAQ(article.faq, 'article-faq-list');
+        }
+    } else {
+        faqContainer.innerHTML = '';
+    }
 }
 
 function loadRelatedArticles(currentArticleId) {

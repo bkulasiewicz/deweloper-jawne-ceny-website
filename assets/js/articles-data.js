@@ -291,7 +291,25 @@ window.articlesData = {
             <h2>Rozpocznij automatyzację już dziś</h2>
 
             Chcesz zobaczyć jak działa automatyzacja publikacji cen mieszkań w praktyce? Skontaktuj się z nami, aby obejrzeć demo wtyczki i poznać szczegóły wersji profesjonalnej. Nasi eksperci odpowiedzą na wszystkie pytania i pomogą wybrać najlepsze rozwiązanie dla Twojej firmy.
-        `
+        `,
+        faq: [
+            {
+                q: "Czy instalacja wtyczki jest trudna?",
+                a: "Nie, instalacja wtyczki DeweloperJawneCeny jest bardzo prosta i zajmuje zaledwie kilka minut. Wystarczy wejść do panelu WordPress, przejść do sekcji Wtyczki > Dodaj nową, wyszukać „DeweloperJawneCeny" i kliknąć Zainstaluj. Cały proces jest intuicyjny i nie wymaga specjalistycznej wiedzy IT."
+            },
+            {
+                q: "Ile czasu zajmuje pełne wdrożenie automatyzacji?",
+                a: "Pełne wdrożenie – od instalacji wtyczki, przez konfigurację podstawową, dodanie pierwszych zasobów, aż po włączenie automatyzacji – zajmuje <strong>około 7 minut</strong>. Wtyczka jest zaprojektowana tak, aby proces był maksymalnie szybki i prosty."
+            },
+            {
+                q: "Czy muszę mieć wiedzę techniczną do obsługi wtyczki?",
+                a: "Nie. Wtyczka została zaprojektowana z myślą o użytkownikach bez technicznego background. Panel administracyjny jest intuicyjny i zawiera szczegółowe instrukcje krok po kroku. Wszystkie funkcje są dostępne bezpośrednio z poziomu WordPress."
+            },
+            {
+                q: "Co jeśli potrzebuję pomocy przy wdrożeniu?",
+                a: "Oferujemy usługę <strong>Wdrożenie Express</strong> – instalacja i pełna konfiguracja w 24h. Nasz zespół pomoże Ci w każdym aspekcie wdrożenia, od instalacji po szkolenie z obsługi wtyczki."
+            }
+        ]
     },
     'nowa-konfiguracja-warstwy-frontendowej-wtyczka-deweloperjawneceny': {
         title: 'Nowa funkcjonalność: pełna i prosta konfiguracja warstwy frontendowej w wtyczce DeweloperJawneCeny',

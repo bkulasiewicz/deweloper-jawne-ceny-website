@@ -61,30 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            const expanded = this.getAttribute('aria-expanded') === 'true';
-            const answer = this.nextElementSibling;
-
-            // Toggle aria-expanded
-            this.setAttribute('aria-expanded', !expanded);
-
-            // Toggle answer visibility with smooth animation
-            if (expanded) {
-                // Closing
-                answer.style.maxHeight = '0';
-                setTimeout(() => {
-                    answer.hidden = true;
-                }, 400); // Match CSS transition duration
-            } else {
-                // Opening
-                answer.hidden = false;
-                // Set max-height to scrollHeight for smooth animation
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-            }
-        });
-    });
+    // FAQ accordion logic moved to faq-loader.js (reusable component)
 
     // Enhanced Mobile menu functionality
     const mobileMenuButton = document.querySelector('.mobile-menu-toggle');
