@@ -1476,13 +1476,23 @@ html, body {
         color: #687AE5;
         transform: translateX(4px);
     }
-    
+
+    /* Reset button styles in mobile menu */
     .nav__links .btn {
-        margin: 12px 24px 0;
-        justify-content: center;
-        border-radius: 8px;
+        background: none;
+        color: #2d3748;
+        box-shadow: none;
+        padding: 14px 24px;
+        font-weight: 500;
+        width: auto;
     }
-    
+
+    .nav__links .btn:hover {
+        background: rgba(104, 122, 229, 0.08);
+        color: #687AE5;
+        transform: translateX(4px);
+    }
+
     .nav-icon {
         font-size: 16px;
         opacity: 0.8;
