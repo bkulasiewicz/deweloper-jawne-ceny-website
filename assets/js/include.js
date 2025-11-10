@@ -64,8 +64,8 @@ function navigateToSection(sectionId, event) {
         // Track pricing section view in Google Analytics
         if (sectionId === 'cennik' && typeof gtag !== 'undefined') {
             gtag('event', 'view_pricing', {
-                'event_category': 'engagement',
-                'event_label': 'Pricing Section Viewed'
+                'content_type': 'pricing',
+                'section_name': 'Pricing Section'
             });
         }
 

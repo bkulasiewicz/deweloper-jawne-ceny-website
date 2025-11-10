@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
             button.addEventListener('click', function() {
                 // Track email click in Google Analytics
                 if (typeof gtag !== 'undefined') {
-                    gtag('event', 'click_email', {
-                        'event_category': 'engagement',
-                        'event_label': 'Email Contact'
+                    gtag('event', 'contact', {
+                        'method': 'email',
+                        'contact_type': 'direct_email'
                     });
                 }
                 console.log('Email contact initiated');
@@ -220,9 +220,10 @@ document.addEventListener('DOMContentLoaded', function() {
         videoOverlay.addEventListener('click', function() {
             // Track video play in Google Analytics
             if (typeof gtag !== 'undefined') {
-                gtag('event', 'video_play', {
-                    'event_category': 'engagement',
-                    'event_label': 'YouTube Demo Video'
+                gtag('event', 'video_start', {
+                    'video_title': 'Demo Video',
+                    'video_provider': 'youtube',
+                    'video_url': videoIframe.src
                 });
             }
 
@@ -248,9 +249,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Track file download in Google Analytics
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'file_download', {
-                    'event_category': 'engagement',
-                    'event_label': reportType,
-                    'file_name': fileName
+                    'file_extension': 'xml',
+                    'file_name': fileName,
+                    'link_text': reportType
                 });
             }
         });
@@ -280,10 +281,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Track different CTA buttons
             if (buttonText.includes('Wykup') || buttonText.includes('pełną wersję')) {
                 if (typeof gtag !== 'undefined') {
-                    gtag('event', 'click_cta_purchase', {
-                        'event_category': 'conversion',
-                        'event_label': 'Wykup pełną wersję',
-                        'value': 1499
+                    gtag('event', 'begin_checkout', {
+                        'currency': 'PLN',
+                        'value': 1499,
+                        'items': [{
+                            'item_name': 'DeweloperJawneCeny Plugin',
+                            'item_category': 'WordPress Plugin',
+                            'price': 1499,
+                            'quantity': 1
+                        }]
                     });
                 }
             } else if (buttonText.includes('Skontaktuj')) {

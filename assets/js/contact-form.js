@@ -17,9 +17,10 @@ function initContactForm() {
 
         // Track form submission in Google Analytics
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'submit_contact_form', {
-                'event_category': 'engagement',
-                'event_label': 'Contact Form Submission'
+            gtag('event', 'qualify_lead_question', {
+                'currency': 'PLN',
+                'value': 1499,
+                'method': 'Contact Form'
             });
         }
 
