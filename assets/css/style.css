@@ -1477,14 +1477,24 @@ html, body {
         transform: translateX(4px);
     }
 
-    /* Reset button styles in mobile menu */
+    /* Reset button styles in mobile menu to match regular links */
     .nav__links .btn {
         background: none;
         color: #2d3748;
         box-shadow: none;
         padding: 14px 24px;
         font-weight: 500;
-        width: auto;
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-align: left;
+        border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
     }
 
     .nav__links .btn:hover {
