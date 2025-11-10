@@ -55,7 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (button.href.includes('mailto:')) {
             // Track email clicks
             button.addEventListener('click', function() {
-                // Analytics tracking could go here
+                // Track email click in Google Analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click_email', {
+                        'event_category': 'engagement',
+                        'event_label': 'Email Contact'
+                    });
+                }
                 console.log('Email contact initiated');
             });
         }
@@ -212,6 +218,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (videoOverlay && videoIframe) {
         videoOverlay.addEventListener('click', function() {
+            // Track video play in Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'video_play', {
+                    'event_category': 'engagement',
+                    'event_label': 'YouTube Demo Video'
+                });
+            }
+
             // Hide overlay
             this.classList.add('hidden');
 
@@ -221,4 +235,72 @@ document.addEventListener('DOMContentLoaded', function() {
             videoIframe.src = currentSrc + separator + 'autoplay=1';
         });
     }
+
+    // Track demo report downloads
+    const downloadLinks = document.querySelectorAll('a[download]');
+    downloadLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const fileName = this.getAttribute('href').split('/').pop();
+            const reportType = fileName.includes('raport-demonstracyjny-A') ? 'Raport A' :
+                             fileName.includes('raport-demonstracyjny-B') ? 'Raport B' :
+                             'Unknown Report';
+
+            // Track file download in Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'file_download', {
+                    'event_category': 'engagement',
+                    'event_label': reportType,
+                    'file_name': fileName
+                });
+            }
+        });
+    });
+
+    // Track legal pages clicks
+    const legalLinks = document.querySelectorAll('a[href*="polityka-prywatnosci"], a[href*="warunki-wspolpracy"]');
+    legalLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const pageName = this.href.includes('polityka-prywatnosci') ? 'Polityka Prywatności' : 'Warunki Współpracy';
+
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click_legal_page', {
+                    'event_category': 'engagement',
+                    'event_label': pageName
+                });
+            }
+        });
+    });
+
+    // Track CTA button clicks
+    const ctaButtons = document.querySelectorAll('a.btn--primary, button.btn--primary');
+    ctaButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const buttonText = this.textContent.trim();
+
+            // Track different CTA buttons
+            if (buttonText.includes('Wykup') || buttonText.includes('pełną wersję')) {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click_cta_purchase', {
+                        'event_category': 'conversion',
+                        'event_label': 'Wykup pełną wersję',
+                        'value': 1499
+                    });
+                }
+            } else if (buttonText.includes('Skontaktuj')) {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click_cta_contact', {
+                        'event_category': 'engagement',
+                        'event_label': 'Skontaktuj się z nami'
+                    });
+                }
+            } else if (buttonText.includes('Prezentacja wtyczki')) {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click_demo', {
+                        'event_category': 'engagement',
+                        'event_label': 'Demo Page Navigation'
+                    });
+                }
+            }
+        });
+    });
 });

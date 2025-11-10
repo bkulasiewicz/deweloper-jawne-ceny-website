@@ -61,6 +61,14 @@ function navigateToSection(sectionId, event) {
     // Sprawdź czy element istnieje na stronie
     const element = document.getElementById(sectionId);
     if (element) {
+        // Track pricing section view in Google Analytics
+        if (sectionId === 'cennik' && typeof gtag !== 'undefined') {
+            gtag('event', 'view_pricing', {
+                'event_category': 'engagement',
+                'event_label': 'Pricing Section Viewed'
+            });
+        }
+
         // Pobierz aktualną pozycję scroll i docelową pozycję
         const headerHeight = document.querySelector('.header') ? document.querySelector('.header').offsetHeight : 80;
         const targetPosition = element.offsetTop - headerHeight - 20; // dodatkowy offset dla lepszego UX

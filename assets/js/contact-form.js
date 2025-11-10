@@ -14,7 +14,15 @@ function initContactForm() {
     console.log('Adding submit listener to contact form');
     contactForm.addEventListener('submit', function(e) {
         console.log('Form submitted via Netlify Forms');
-        
+
+        // Track form submission in Google Analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'submit_contact_form', {
+                'event_category': 'engagement',
+                'event_label': 'Contact Form Submission'
+            });
+        }
+
         const form = this;
         const submitBtn = form.querySelector('button[type="submit"]');
         const btnText = submitBtn.querySelector('.btn-text');
