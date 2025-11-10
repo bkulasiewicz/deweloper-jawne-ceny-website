@@ -1452,7 +1452,7 @@ html, body {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
-        max-height: 300px;
+        max-height: 400px;
     }
     
     .nav__links a {
@@ -1479,8 +1479,8 @@ html, body {
 
     /* Reset button styles in mobile menu to match regular links */
     .nav__links .btn {
-        background: none;
-        color: #2d3748;
+        background: none !important;
+        color: #2d3748 !important;
         box-shadow: none;
         padding: 14px 24px;
         font-weight: 500;
@@ -1490,6 +1490,7 @@ html, body {
         border-radius: 0;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         gap: 12px;
         text-align: left;
         border-bottom: 1px solid rgba(226, 232, 240, 0.5);
@@ -1498,9 +1499,13 @@ html, body {
     }
 
     .nav__links .btn:hover {
-        background: rgba(104, 122, 229, 0.08);
-        color: #687AE5;
+        background: rgba(104, 122, 229, 0.08) !important;
+        color: #687AE5 !important;
         transform: translateX(4px);
+    }
+
+    .nav__links .btn:last-child {
+        padding-bottom: 20px;
     }
 
     .nav-icon {
