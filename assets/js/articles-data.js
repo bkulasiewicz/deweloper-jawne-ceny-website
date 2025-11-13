@@ -885,5 +885,93 @@ window.articlesData = {
                 a: "Tak. Nasze rozwiązanie jest w pełni zgodne ze specyfikacją Ministerstwa Rozwoju i Technologii oraz aktualnymi wytycznymi dla publikacji danych o cenach mieszkań. Każda wysyłka przechodzi walidację struktury i treści przed publikacją."
             }
         ]
+    },
+    'instrukcja-rejestracji-profilu-dostawcy-danych-dane-gov-pl': {
+        title: 'Instrukcja rejestracji profilu Dostawcy Danych (Dewelopera) na dane.gov.pl',
+        excerpt: 'Praktyczny przewodnik krok po kroku do rejestracji profilu Dostawcy Danych na portalu dane.gov.pl. Dowiedz się, jak założyć konto i uzyskać status Dostawcy.',
+        date: '2025-11-13',
+        keywords: 'rejestracja dostawcy danych, dostawca danych dane.gov.pl, dane.gov.pl rejestracja, status dostawcy danych, jak zostać dostawcą danych, dostawca danych deweloper, nadanie statusu dostawcy danych, jak wysłać wniosek o status dostawcy danych na dane.gov.pl, jakie dane podać w zgłoszeniu dostawcy danych, jak zgłosić firmę jako dostawcę danych deweloperskich, proces rejestracji dostawcy danych krok po kroku, gdzie wysłać wniosek o status dostawcy danych',
+        category: 'Przepisy prawne & Raportowanie',
+        description: 'Kompletna instrukcja rejestracji profilu Dostawcy Danych (Dewelopera) na portalu dane.gov.pl. Przewodnik krok po kroku - od założenia konta do uzyskania statusu Dostawcy Danych.',
+        content: `
+            <p>Instrukcja rejestracji profilu Dostawcy Danych (Dewelopera) na dane.gov.pl</p>
+
+            <h2>Krok 1: Rejestracja Konta Użytkownika</h2>
+
+            <p>Aby rozpocząć proces rejestracji jako Dostawca Danych, należy najpierw utworzyć konto użytkownika na portalu dane.gov.pl:</p>
+
+            <strong>1. Wejdź na stronę:</strong> Otwórz w przeglądarce adres <a href="https://dane.gov.pl" target="_blank">dane.gov.pl</a>.<br>
+            <strong>2. Akceptacja:</strong> Zaakceptuj politykę prywatności i RODO.<br>
+            <strong>3. Rozpocznij rejestrację:</strong> Kliknij przycisk "Zarejestruj się".<br><br>
+
+            <strong>4. Podaj dane:</strong><br>
+            • Wpisz adres e-mail, do którego masz dostęp.<br>
+            • Ustal hasło, które musi mieć przynajmniej 8 znaków i zawierać małą literę, dużą literę, liczbę oraz znak specjalny (np. wykrzyknik, hashtag, znak zapytania).<br>
+            • Wpisz ponownie hasło.<br><br>
+
+            <strong>5. Zgody i założenie konta:</strong> Zaakceptuj niezbędne zgody i kliknij "Załóż konto".<br>
+            <strong>6. Aktywacja konta:</strong> Odbierz wiadomość e-mail wysłaną na podany adres i kliknij w link aktywacyjny, aby aktywować swoje konto.<br>
+            <strong>7. Logowanie:</strong> Po aktywacji zaloguj się do portalu, używając podanego adresu e-mail i hasła.
+
+            <br><br>
+
+            <h2>Krok 2: Wysłanie Wniosku o Status Dostawcy Danych</h2>
+
+            <p>Po pomyślnej rejestracji i zalogowaniu, wyślij wiadomość e-mail w celu uzyskania statusu "Dostawca Danych - Deweloper":</p>
+
+            <strong>1. Adres docelowy:</strong> Wyślij e-mail z adresu, który został użyty do rejestracji konta, na adres: <a href="mailto:kontakt@dane.gov.pl">kontakt@dane.gov.pl</a>.<br><br>
+
+            <strong>2. Temat:</strong> Wpisz temat wiadomości: <em>Status dostawcy danych - Deweloper</em>.<br><br>
+
+            <strong>3. Treść wiadomości:</strong> W mailu należy podać pełne dane dotyczące firmy (Dostawcy Danych):<br><br>
+
+            • Pełna nazwa dostawcy<br>
+            • Dane adresowe<br>
+            • Adres strony internetowej<br>
+            • Adres poczty elektronicznej (może być ogólny do firmy)<br>
+            • Numer telefonu (może być ogólny do firmy)<br>
+            • Numer faksu (jeżeli występuje)<br>
+            • REGON<br>
+            • Adres do doręczeń elektronicznych (e-doręczeń), jeżeli występuje
+
+            <br><br>
+
+            <p>Po otrzymaniu wiadomości, administratorzy portalu dane.gov.pl zweryfikują dane i nadadzą Twojemu kontu status Dostawcy Danych. Proces ten zazwyczaj trwa od kilku godzin do kilku dni roboczych.</p>
+
+            <br><br>
+
+            <h2>Podsumowanie</h2>
+
+            <p>Rejestracja profilu Dostawcy Danych na portalu dane.gov.pl to prosty proces dwuetapowy:</p>
+
+            • <strong>Etap 1:</strong> Rejestracja konta użytkownika i aktywacja przez e-mail<br>
+            • <strong>Etap 2:</strong> Wysłanie wniosku z danymi firmy na adres kontakt@dane.gov.pl
+
+            <br><br>
+
+            <p>Po uzyskaniu statusu Dostawcy Danych będziesz mógł publikować dane o cenach mieszkań zgodnie z wymogami ustawy o jawności cen mieszkań. Dzięki automatycznym rozwiązaniom, takim jak wtyczka Deweloper Jawne Ceny, cały proces raportowania może odbywać się w pełni automatycznie.</p>
+        `,
+        faq: [
+            {
+                q: "Czy muszę założyć konto, aby zostać Dostawcą Danych?",
+                a: "Tak — najpierw zakładasz i aktywujesz konto użytkownika na dane.gov.pl, dopiero potem możesz ubiegać się o status Dostawcy."
+            },
+            {
+                q: "Na jaki adres wysłać wniosek o nadanie statusu Dostawcy Danych?",
+                a: "Wniosek wysyłasz na oficjalny adres portalu: kontakt@dane.gov.pl, z tego samego e-maila, na który zarejestrowałeś konto."
+            },
+            {
+                q: "Jakie dane firmy muszę podać we wniosku?",
+                a: "Minimalnie: pełna nazwa firmy, adres, REGON, e-mail firmowy oraz telefon. Opcjonalnie: strona WWW, faks, adres e-doręczeń (jeżeli istnieje)."
+            },
+            {
+                q: "Ile trwa nadanie statusu Dostawcy Danych?",
+                a: "Zazwyczaj od kilku godzin do kilku dni roboczych — zależnie od pracy administracji."
+            },
+            {
+                q: "Czy mogę publikować dane od razu po rejestracji?",
+                a: "Nie — publikacja danych jest możliwa dopiero po otrzymaniu potwierdzenia nadania statusu Dostawcy Danych przez administratora."
+            }
+        ]
     }
 };
