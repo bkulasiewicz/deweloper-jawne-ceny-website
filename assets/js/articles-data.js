@@ -175,10 +175,10 @@ window.articlesData = {
 
             <h2>Jak zdobyć wtyczkę?</h2>
             
-            • Wersja darmowa dostępna jest w katalogu wtyczek WordPress pod nazwą DeweloperJawneCeny<br>
-            • Wersja profesjonalna (pełna automatyzacja, wsparcie, dodatkowe funkcje) dostępna jest po kontakcie przez <a href="#kontakt">formularz kontaktowy</a>
+            • <a href="https://buildwisely.eu/produkt/wersja-testowa-deweloperjawneceny/" target="_blank">Wersja testowa</a> dostępna jest w naszym sklepie BuildWisely<br>
+            • <a href="https://buildwisely.eu/produkt/licencja-deweloperjawneceny/" target="_blank">Wersja pełna</a> (pełna automatyzacja, wsparcie, dodatkowe funkcje) dostępna jest w naszym sklepie BuildWisely
 
-            Po zakupie klient otrzymuje link do pobrania wtyczki.
+            Po zakupie w sklepie otrzymujesz natychmiastowy dostęp do pobrania wtyczki.
 
             <br><br>
 
@@ -186,7 +186,7 @@ window.articlesData = {
 
             <h3>Krok 1. Instalacja wtyczki</h3>
             
-            1. Pobierz darmową wersję \"DeweloperJawneCeny\" z katalogu WordPress lub zakup wersję profesjonalną przez <a href="#kontakt">formularz kontaktowy</a><br>
+            1. Pobierz <a href="https://buildwisely.eu/produkt/wersja-testowa-deweloperjawneceny/" target="_blank">wersję testową</a> lub zakup <a href="https://buildwisely.eu/produkt/licencja-deweloperjawneceny/" target="_blank">wersję pełną</a> w naszym sklepie BuildWisely<br>
             2. Zaloguj się do panelu WordPress<br>
             3. W zakładce **Wtyczki > Dodaj nową** wyszukaj \"DeweloperJawneCeny\" lub wgraj plik ZIP (dla wersji PRO)<br>
             4. Kliknij \"Zainstaluj teraz\", a następnie \"Aktywuj\"
@@ -266,7 +266,7 @@ window.articlesData = {
 
             <h2>Rozpocznij automatyzację już dziś</h2>
 
-            Chcesz zobaczyć jak działa automatyzacja publikacji cen mieszkań w praktyce? Skontaktuj się z nami, aby obejrzeć demo wtyczki i poznać szczegóły wersji profesjonalnej. Nasi eksperci odpowiedzą na wszystkie pytania i pomogą wybrać najlepsze rozwiązanie dla Twojej firmy.
+            Chcesz zobaczyć jak działa automatyzacja publikacji cen mieszkań w praktyce? <a href="demo.html">Zobacz prezentację wtyczki</a> lub <a href="https://buildwisely.eu/produkt/wersja-testowa-deweloperjawneceny/" target="_blank">pobierz wersję testową</a> i przetestuj ją w swoim środowisku. Masz pytania? <a href="#kontakt">Skontaktuj się z nami</a> - chętnie pomożemy.
         `,
         faq: [
             {

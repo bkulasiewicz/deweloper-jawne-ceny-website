@@ -7,6 +7,10 @@ window.faqData = {
     // Homepage FAQ
     homepage: [
         {
+            q: "Czy jest dostępna darmowa wersja testowa?",
+            a: "Tak! Możesz pobrać <strong>darmową wersję testową</strong> wtyczki i przetestować ją przed zakupem pełnej wersji. Wersję testową znajdziesz w <a href='https://buildwisely.eu/produkt/wersja-testowa-deweloperjawneceny/' target='_blank'>naszym sklepie</a>."
+        },
+        {
             q: "Jak przebiega instalacja i konfiguracja wtyczki?",
             a: "Wtyczka zawiera bardzo szczegółową instrukcję krok po kroku, która prowadzi przez cały proces instalacji, konfiguracji oraz uruchomienia automatycznej publikacji cen mieszkań na stronie dewelopera. Instrukcja jest przygotowana z myślą o WordPressie i nie wymaga wsparcia działu IT."
         },
@@ -36,7 +40,7 @@ window.faqData = {
         },
         {
             q: "Czy mogę przetestować wtyczkę bez ryzyka?",
-            a: "Tak. Oferujemy <strong>14 dni gwarancji satysfakcji</strong>. Jeśli w tym czasie uznasz, że wtyczka nie spełnia oczekiwań, możesz otrzymać pełny zwrot."
+            a: "Tak! Możesz pobrać <strong>darmową wersję testową</strong> przed zakupem. Dodatkowo po zakupie pełnej wersji oferujemy <strong>14 dni gwarancji satysfakcji</strong>. Jeśli w tym czasie uznasz, że wtyczka nie spełnia oczekiwań, możesz otrzymać pełny zwrot."
         },
         {
             q: "Jak zgłosić chęć zwrotu?",

@@ -38,7 +38,7 @@ function initContactForm() {
         // Show submitting message
         formMessage.innerHTML = `
             <div class="alert alert--info">
-                <strong>📧 Dziękujemy! Wkrótce prześlemy Ci link do zakupu pełnej wersji.</strong>
+                <strong>📧 Dziękujemy! Odpowiemy na Twoje pytanie jak najszybciej.</strong>
             </div>
         `;
         
