@@ -306,6 +306,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         'event_label': 'Demo Page Navigation'
                     });
                 }
+            } else if (buttonText.includes('Pobierz wersję testową')) {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click_trial_download', {
+                        'event_category': 'engagement',
+                        'event_label': 'Trial Version Download',
+                        'value': 0
+                    });
+                }
             }
         });
     });
