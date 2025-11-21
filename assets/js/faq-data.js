@@ -35,10 +35,6 @@ window.faqData = {
             a: "Licencja jest przypisana do konkretnej domeny i nie podlega przeniesieniu na inną stronę."
         },
         {
-            q: "Czy wtyczka będzie aktualizowana?",
-            a: "Tak. Wszystkie aktualizacje techniczne oraz związane ze zmianami przepisów są wliczone w cenę. Dzięki temu wtyczka pozostaje zgodna z obowiązującymi wymaganiami prawnymi bez dodatkowych opłat."
-        },
-        {
             q: "Czy mogę przetestować wtyczkę bez ryzyka?",
             a: "Tak! Możesz pobrać <strong>darmową wersję testową</strong> przed zakupem. Dodatkowo po zakupie pełnej wersji oferujemy <strong>14 dni gwarancji satysfakcji</strong>. Jeśli w tym czasie uznasz, że wtyczka nie spełnia oczekiwań, możesz otrzymać pełny zwrot."
         },
