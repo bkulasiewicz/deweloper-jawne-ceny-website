@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ustawa o Jawności Cen Mieszkań 2025 - Wtyczka WordPress | DeweloperJawneCeny</title>
-    <meta name="description" content="➤ Automatyzacja zgodności z ustawą o jawności cen mieszkań dla deweloperów. Wtyczka WordPress. 1499 zł netto jednorazowo - bez abonamentów. Zgodny z przepisami UOKiK.">
+    <meta name="description" content="➤ Automatyzacja zgodności z ustawą o jawności cen mieszkań dla deweloperów. Wtyczka WordPress od 65 zł/mies. Zgodny z przepisami UOKiK.">
     <meta name="keywords" content="ustawa o jawności cen mieszkań, wtyczka wordpress, deweloper, automatyzacja, zgodność prawna">
     
     <!-- Canonical URL -->
@@ -46,12 +46,29 @@
       "url": "https://www.deweloperjawneceny.pl/",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "WordPress",
-      "offers": {
-        "@type": "Offer",
-        "price": "1499",
-        "priceCurrency": "PLN",
-        "availability": "https://schema.org/InStock"
-      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Licencja 12 miesięcy",
+          "price": "996",
+          "priceCurrency": "PLN",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Licencja 30 miesięcy",
+          "price": "1950",
+          "priceCurrency": "PLN",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Licencja Lifetime",
+          "price": "2844",
+          "priceCurrency": "PLN",
+          "availability": "https://schema.org/InStock"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "DeweloperJawneCeny",
@@ -73,7 +90,7 @@
                     Wtyczka <span class="highlight">WordPress</span> do <span class="highlight">automatycznej</span> publikacji cen mieszkań zgodnie z <span class="highlight">ustawą</span>
                 </h1>
                 <div class="hero__cta">
-                    <a href="https://buildwisely.eu/produkt/licencja-deweloperjawneceny/" class="btn btn--primary btn--large">Wykup pełną wersję</a>
+                    <a href="#cennik" class="btn btn--primary btn--large" onclick="navigateToSection('cennik', event)">Wykup pełną wersję</a>
                     <a href="#funkcje" class="btn btn--secondary btn--large" onclick="navigateToSection('funkcje', event)"><span>Zobacz funkcje</span></a>
                 </div>
                 <div class="hero__badge">
@@ -183,39 +200,78 @@
     <!-- Pricing Section -->
     <section id="cennik" class="pricing">
         <div class="container">
-            <h2 class="section-title">Prosty cennik</h2>
-            <p class="section-subtitle">Płacisz raz, używasz bez limitu. Brak abonamentów.</p>
+            <h2 class="section-title">Wybierz licencję</h2>
+            <p class="section-subtitle">Wybierz okres licencji dopasowany do Twoich potrzeb.</p>
 
-            <div class="pricing__grid" style="display: flex; justify-content: center;">
-                <div class="pricing__card pricing__card--featured" style="max-width: 550px; margin: 0 auto;">
-                    <div class="card__badge">Jedyna opcja</div>
+            <div class="pricing__grid">
+                <!-- Karta 1: 12 miesięcy -->
+                <div class="pricing__card">
                     <div class="card__header">
-                        <h3>Zautomatyzuj publikację cen zgodnie z ustawą w 7 minut.</h3>
-                        <p class="card__description">Jednorazowa instalacja, zgodność z wymogami prawnymi i pełna historia zmian — bez abonamentu.</p>
+                        <h3>12 miesięcy</h3>
                     </div>
                     <div class="card__price">
-                        <span class="price__amount">1499 zł <span style="font-size: 18px; font-weight: 400;">netto</span></span>
-                        <span class="price__details">Płatność jednorazowa • Licencja na 1 domenę / 1 instalację WordPress</span>
+                        <span class="price__amount">83 zł</span>
+                        <span class="price__period">netto / miesiąc</span>
+                        <span class="price__details">996 zł netto łącznie • Licencja na 1 domenę</span>
                     </div>
                     <div class="card__features">
-                        <ul class="features-list--two-columns">
+                        <ul>
                             <li>✅ Zgodność z ustawą</li>
                             <li>✅ Automatyczna publikacja</li>
                             <li>✅ Historia zmian cen</li>
-                            <li>✅ WordPress-native panel</li>
                             <li>✅ Personalizacja wyglądu</li>
                             <li>✅ Nielimitowane zasoby</li>
-                            <li>✅ Szybka konfiguracja (7 minut)</li>
-                            <li>✅ Bez abonamentu</li>
                             <li>✅ 14 dni gwarancji satysfakcji</li>
                         </ul>
                     </div>
-                    <div style="margin: 20px 0; padding: 16px; color: #6b7280; font-size: 14px; line-height: 1.6; text-align: center;">
-                        <strong>W przeliczeniu to najtańsze rozwiązanie na rynku.</strong><br>
-                        Przy 20 miesiącach raportowania cen koszt wtyczki to zaledwie 74,95 zł/mies.,<br>
-                        podczas gdy inne wtyczki abonamentowe kosztują ok. 149 zł netto za miesiąc.
+                    <a href="https://buildwisely.eu/produkt/licencja-na-12-miesiecy-deweloperjawneceny" class="btn btn--primary btn--large card__cta">Wykup licencję</a>
+                </div>
+
+                <!-- Karta 2: 30 miesięcy (WYRÓŻNIONA) -->
+                <div class="pricing__card pricing__card--featured">
+                    <div class="card__badge">Najlepsza wartość</div>
+                    <div class="card__header">
+                        <h3>30 miesięcy</h3>
                     </div>
-                    <a href="https://buildwisely.eu/produkt/licencja-deweloperjawneceny/" class="btn btn--primary btn--large" style="width: 100%; justify-content: center; margin-top: 20px;">Wykup pełną wersję</a>
+                    <div class="card__price">
+                        <span class="price__amount">65 zł</span>
+                        <span class="price__period">netto / miesiąc</span>
+                        <span class="price__details">1950 zł netto łącznie • Licencja na 1 domenę</span>
+                    </div>
+                    <div class="card__features">
+                        <ul>
+                            <li>✅ Zgodność z ustawą</li>
+                            <li>✅ Automatyczna publikacja</li>
+                            <li>✅ Historia zmian cen</li>
+                            <li>✅ Personalizacja wyglądu</li>
+                            <li>✅ Nielimitowane zasoby</li>
+                            <li>✅ 14 dni gwarancji satysfakcji</li>
+                        </ul>
+                    </div>
+                    <a href="https://buildwisely.eu/produkt/licencja-na-30-miesiecy-deweloperjawneceny" class="btn btn--primary btn--large card__cta">Wykup licencję</a>
+                </div>
+
+                <!-- Karta 3: Lifetime -->
+                <div class="pricing__card">
+                    <div class="card__header">
+                        <h3>Lifetime</h3>
+                    </div>
+                    <div class="card__price">
+                        <span class="price__amount">2844 zł</span>
+                        <span class="price__period">netto jednorazowo</span>
+                        <span class="price__details">Zwraca się po 44 miesiącach • Licencja na 1 domenę</span>
+                    </div>
+                    <div class="card__features">
+                        <ul>
+                            <li>✅ Zgodność z ustawą</li>
+                            <li>✅ Automatyczna publikacja</li>
+                            <li>✅ Historia zmian cen</li>
+                            <li>✅ Personalizacja wyglądu</li>
+                            <li>✅ Nielimitowane zasoby</li>
+                            <li>✅ 14 dni gwarancji satysfakcji</li>
+                        </ul>
+                    </div>
+                    <a href="https://buildwisely.eu/produkt/licencja-lifetime-deweloperjawneceny" class="btn btn--primary btn--large card__cta">Wykup licencję</a>
                 </div>
             </div>
 

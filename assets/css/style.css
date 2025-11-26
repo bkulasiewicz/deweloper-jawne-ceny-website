@@ -973,6 +973,12 @@ html, body {
     padding: 32px;
     position: relative;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__card .card__cta {
+    margin-top: auto;
 }
 
 .pricing__card:hover {
@@ -1027,6 +1033,13 @@ html, body {
 .price__period {
     color: #718096;
     font-size: 16px;
+}
+
+.price__details {
+    display: block;
+    color: #718096;
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 .card__features {
