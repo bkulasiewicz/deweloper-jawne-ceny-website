@@ -755,10 +755,12 @@ html, body {
     color: #4a5568;
     cursor: pointer;
     transition: background 0.3s ease;
+    text-decoration: none;
 }
 
 .preview-btn:hover {
     background: #e2e8f0;
+    text-decoration: none;
 }
 
 .section-title {
@@ -908,6 +910,153 @@ html, body {
 .pricing {
     padding: 80px 0;
     background: white;
+}
+
+/* Pricing Box - wspólny kontener */
+.pricing__box {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid #e2e8f0;
+}
+
+.pricing__cards-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #718096;
+    margin-bottom: 24px;
+}
+
+/* Pricing Features - 2 columns x 3 rows */
+.pricing__features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 18px 180px;
+    margin-top: 30px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
+    justify-content: center;
+}
+
+.pricing__feature-item {
+    font-size: 15px;
+    color: #4a5568;
+    padding: 6px 0;
+}
+
+/* Compact Pricing Cards */
+.pricing__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.pricing__card-compact {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pricing__card-compact:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing__card-compact--featured {
+    border-color: #687AE5;
+    transform: scale(1.03);
+}
+
+.pricing__card-compact--featured:hover {
+    transform: scale(1.03) translateY(-4px);
+}
+
+.card-compact__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #687AE5 0%, #764FA7 100%);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.card-compact__header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #2d3748;
+}
+
+.card-compact__price {
+    margin-bottom: 12px;
+}
+
+.card-compact__price .price__amount {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.card-compact__price .price__period {
+    display: block;
+    color: #718096;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.card-compact__desc {
+    font-size: 13px;
+    color: #718096;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-compact__cta {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Small button variant */
+.btn--small {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Mobile responsive for new pricing */
+@media (max-width: 768px) {
+    .pricing__box {
+        padding: 24px 20px;
+        margin: 0 auto 40px;
+    }
+
+    .pricing__features-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .pricing__cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .pricing__card-compact--featured {
+        transform: none;
+    }
+
+    .pricing__card-compact--featured:hover {
+        transform: translateY(-4px);
+    }
 }
 
 /* Card description styling */

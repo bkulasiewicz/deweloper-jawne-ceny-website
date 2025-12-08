@@ -109,8 +109,12 @@
                         <h3>DeweloperJawneCeny</h3>
                         <div class="preview-stats">
                             <div class="stat">
-                                <span class="stat__number">1732</span>
+                                <span class="stat__number">2691</span>
                                 <span class="stat__label">Zgłaszanych lokali</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">117</span>
+                                <span class="stat__label">Inwestycji</span>
                             </div>
                             <div class="stat">
                                 <span class="stat__number">✅</span>
@@ -118,7 +122,7 @@
                             </div>
                         </div>
                         <div class="preview-actions" style="justify-content: flex-end;">
-                            <button class="preview-btn">Dodaj lokal</button>
+                            <a href="#cennik" class="preview-btn" onclick="navigateToSection('cennik', event)">Dodaj lokal</a>
                         </div>
                     </div>
                 </div>
@@ -200,78 +204,61 @@
     <!-- Pricing Section -->
     <section id="cennik" class="pricing">
         <div class="container">
-            <h2 class="section-title">Wybierz licencję</h2>
-            <p class="section-subtitle">Wybierz okres licencji dopasowany do Twoich potrzeb.</p>
+            <!-- Wspólny kontener: karty zakupowe + cechy -->
+            <div class="pricing__box">
+                <p class="pricing__cards-subtitle">Wybierz okres licencji dopasowany do Twoich potrzeb.</p>
 
-            <div class="pricing__grid">
-                <!-- Karta 1: 12 miesięcy -->
-                <div class="pricing__card">
-                    <div class="card__header">
-                        <h3>12 miesięcy</h3>
+                <!-- Kompaktowe karty zakupowe -->
+                <div class="pricing__cards">
+                    <!-- Karta 1: 12 miesięcy -->
+                    <div class="pricing__card-compact">
+                        <div class="card-compact__header">
+                            <h3>12 miesięcy</h3>
+                        </div>
+                        <div class="card-compact__price">
+                            <span class="price__amount">83 zł</span>
+                            <span class="price__period">netto / miesiąc</span>
+                        </div>
+                        <p class="card-compact__desc">996 zł netto łącznie • Licencja na 1 domenę</p>
+                        <a href="https://buildwisely.eu/produkt/licencja-na-12-miesiecy-deweloperjawneceny" class="btn btn--primary btn--small card-compact__cta">Wykup licencję</a>
                     </div>
-                    <div class="card__price">
-                        <span class="price__amount">83 zł</span>
-                        <span class="price__period">netto / miesiąc</span>
-                        <span class="price__details">996 zł netto łącznie • Licencja na 1 domenę</span>
+
+                    <!-- Karta 2: 30 miesięcy (WYRÓŻNIONA) -->
+                    <div class="pricing__card-compact pricing__card-compact--featured">
+                        <div class="card-compact__badge">Najlepsza wartość</div>
+                        <div class="card-compact__header">
+                            <h3>30 miesięcy</h3>
+                        </div>
+                        <div class="card-compact__price">
+                            <span class="price__amount">65 zł</span>
+                            <span class="price__period">netto / miesiąc</span>
+                        </div>
+                        <p class="card-compact__desc">1950 zł netto łącznie • Licencja na 1 domenę</p>
+                        <a href="https://buildwisely.eu/produkt/licencja-na-30-miesiecy-deweloperjawneceny" class="btn btn--primary btn--small card-compact__cta">Wykup licencję</a>
                     </div>
-                    <div class="card__features">
-                        <ul>
-                            <li>✅ Zgodność z ustawą</li>
-                            <li>✅ Automatyczna publikacja</li>
-                            <li>✅ Historia zmian cen</li>
-                            <li>✅ Personalizacja wyglądu</li>
-                            <li>✅ Nielimitowane zasoby</li>
-                            <li>✅ 14 dni gwarancji satysfakcji</li>
-                        </ul>
+
+                    <!-- Karta 3: Lifetime -->
+                    <div class="pricing__card-compact">
+                        <div class="card-compact__header">
+                            <h3>Lifetime</h3>
+                        </div>
+                        <div class="card-compact__price">
+                            <span class="price__amount">2844 zł</span>
+                            <span class="price__period">netto jednorazowo</span>
+                        </div>
+                        <p class="card-compact__desc">Zwraca się po 44 miesiącach • Licencja na 1 domenę</p>
+                        <a href="https://buildwisely.eu/produkt/licencja-lifetime-deweloperjawneceny" class="btn btn--primary btn--small card-compact__cta">Wykup licencję</a>
                     </div>
-                    <a href="https://buildwisely.eu/produkt/licencja-na-12-miesiecy-deweloperjawneceny" class="btn btn--primary btn--large card__cta">Wykup licencję</a>
                 </div>
 
-                <!-- Karta 2: 30 miesięcy (WYRÓŻNIONA) -->
-                <div class="pricing__card pricing__card--featured">
-                    <div class="card__badge">Najlepsza wartość</div>
-                    <div class="card__header">
-                        <h3>30 miesięcy</h3>
-                    </div>
-                    <div class="card__price">
-                        <span class="price__amount">65 zł</span>
-                        <span class="price__period">netto / miesiąc</span>
-                        <span class="price__details">1950 zł netto łącznie • Licencja na 1 domenę</span>
-                    </div>
-                    <div class="card__features">
-                        <ul>
-                            <li>✅ Zgodność z ustawą</li>
-                            <li>✅ Automatyczna publikacja</li>
-                            <li>✅ Historia zmian cen</li>
-                            <li>✅ Personalizacja wyglądu</li>
-                            <li>✅ Nielimitowane zasoby</li>
-                            <li>✅ 14 dni gwarancji satysfakcji</li>
-                        </ul>
-                    </div>
-                    <a href="https://buildwisely.eu/produkt/licencja-na-30-miesiecy-deweloperjawneceny" class="btn btn--primary btn--large card__cta">Wykup licencję</a>
-                </div>
-
-                <!-- Karta 3: Lifetime -->
-                <div class="pricing__card">
-                    <div class="card__header">
-                        <h3>Lifetime</h3>
-                    </div>
-                    <div class="card__price">
-                        <span class="price__amount">2844 zł</span>
-                        <span class="price__period">netto jednorazowo</span>
-                        <span class="price__details">Zwraca się po 44 miesiącach • Licencja na 1 domenę</span>
-                    </div>
-                    <div class="card__features">
-                        <ul>
-                            <li>✅ Zgodność z ustawą</li>
-                            <li>✅ Automatyczna publikacja</li>
-                            <li>✅ Historia zmian cen</li>
-                            <li>✅ Personalizacja wyglądu</li>
-                            <li>✅ Nielimitowane zasoby</li>
-                            <li>✅ 14 dni gwarancji satysfakcji</li>
-                        </ul>
-                    </div>
-                    <a href="https://buildwisely.eu/produkt/licencja-lifetime-deweloperjawneceny" class="btn btn--primary btn--large card__cta">Wykup licencję</a>
+                <!-- Cechy - 2 kolumny x 3 wiersze -->
+                <div class="pricing__features-grid">
+                    <div class="pricing__feature-item">✅ Zgodność z ustawą</div>
+                    <div class="pricing__feature-item">✅ Automatyczna publikacja</div>
+                    <div class="pricing__feature-item">✅ Historia zmian cen</div>
+                    <div class="pricing__feature-item">✅ Personalizacja wyglądu</div>
+                    <div class="pricing__feature-item">✅ Nielimitowane zasoby</div>
+                    <div class="pricing__feature-item">✅ 14 dni gwarancji satysfakcji</div>
                 </div>
             </div>
 
