@@ -71,7 +71,7 @@ function generateFaqHtml(faq) {
                         <span>${escapeHtml(item.q)}</span>
                         <span class="faq-icon">+</span>
                     </button>
-                    <div class="faq-answer" id="faq-answer-${i}">
+                    <div class="faq-answer" id="faq-answer-${i}" hidden>
                         <p>${item.a}</p>
                     </div>
                 </div>`).join('\n');

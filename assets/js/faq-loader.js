@@ -125,3 +125,25 @@ function generateFAQSchema(faqData, schemaId) {
     // Inject into <head>
     document.head.appendChild(scriptTag);
 }
+
+/**
+ * Auto-initialize FAQ accordion for static/pre-rendered FAQ sections
+ * This runs on DOMContentLoaded for pages with pre-rendered FAQ HTML
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if there's a pre-rendered FAQ container (from SSR articles)
+    const staticFaqContainer = document.getElementById('article-faq-container');
+    if (staticFaqContainer) {
+        // Initialize accordion for pre-rendered FAQ
+        const faqList = staticFaqContainer.querySelector('.faq-list');
+        if (faqList) {
+            initializeFAQAccordion('article-faq-container');
+        }
+    }
+
+    // Also check for main page FAQ
+    const mainFaqList = document.getElementById('faq-list');
+    if (mainFaqList && mainFaqList.children.length > 0) {
+        initializeFAQAccordion('faq-list');
+    }
+});
