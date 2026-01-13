@@ -1,12 +1,7 @@
 // Simple include functionality for HTML
 document.addEventListener('DOMContentLoaded', function() {
-    // Determine base path for includes
-    const currentPath = window.location.pathname;
-    let includesPath = 'includes/';
-    
-    if (currentPath.includes('/artykuly/')) {
-        includesPath = '../includes/';
-    }
+    // Use absolute paths for includes (works on all pages)
+    const includesPath = '/includes/';
 
     // Load header
     const headerPlaceholder = document.getElementById('header-placeholder');
@@ -93,8 +88,8 @@ function navigateToSection(sectionId, event) {
             closeMobileMenuSmoothly();
         }, 800);
     } else {
-        // Element nie istnieje - przekieruj na index.html
-        window.location.href = 'index.html#' + sectionId;
+        // Element nie istnieje - przekieruj na index.html (absolute path)
+        window.location.href = '/#' + sectionId;
         // Menu will close when page changes
         setTimeout(() => {
             closeMobileMenuSmoothly();
@@ -106,13 +101,8 @@ function navigateToPage(pageName) {
     // Ustaw backup timer
     setupMenuCloseBackup();
 
-    // Start navigation immediately
+    // Use absolute paths
     const currentPath = window.location.pathname;
-    let basePath = '';
-
-    if (currentPath.includes('/artykuly/')) {
-        basePath = '../';
-    }
 
     // Jeśli próbujemy przejść na index.html i już jesteśmy na index.html
     if (pageName === 'index.html' && (currentPath === '/index.html' || currentPath === '/' || currentPath.endsWith('/deweloper-jawne-ceny-website/') || currentPath.endsWith('/deweloper-jawne-ceny-website/index.html'))) {
@@ -127,7 +117,8 @@ function navigateToPage(pageName) {
         return;
     }
 
-    window.location.href = basePath + pageName;
+    // Use absolute path for navigation
+    window.location.href = '/' + pageName;
 
     // Close menu quickly since page will change anyway (200ms)
     setTimeout(() => {
