@@ -1,0 +1,19 @@
+{
+  "name": "deweloper-jawne-ceny-website",
+  "version": "1.0.0",
+  "description": "Strona informacyjna DeweloperJawneCeny.pl z pre-renderowanymi artykulami",
+  "scripts": {
+    "build": "node build-articles.js",
+    "clean": "rm -rf artykuly/*/index.html",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "deweloper",
+    "jawne-ceny",
+    "mieszkania",
+    "ustawa"
+  ],
+  "author": "DeweloperJawneCeny",
+  "license": "UNLICENSED",
+  "private": true
+}

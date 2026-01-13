@@ -16,7 +16,7 @@ function loadArticle(articleId) {
     
     // If article doesn't exist, redirect to articles page
     if (!article) {
-        window.location.href = 'artykuly.html';
+        window.location.href = '/artykuly/';
         return;
     }
     
@@ -27,8 +27,8 @@ function loadArticle(articleId) {
     document.getElementById('og-title').setAttribute('content', article.title);
     document.getElementById('og-description').setAttribute('content', article.description);
     
-    // Update canonical URL
-    document.getElementById('canonical-url').setAttribute('href', `https://www.deweloperjawneceny.pl/artykul.html?id=${articleId}`);
+    // Update canonical URL (new static URL format)
+    document.getElementById('canonical-url').setAttribute('href', `https://www.deweloperjawneceny.pl/artykuly/${articleId}/`);
     
     // Update breadcrumb
     document.getElementById('breadcrumb-title').textContent = article.title;
@@ -77,7 +77,7 @@ function loadRelatedArticles(currentArticleId) {
         const article = window.articlesData[articleId];
         relatedHTML += `
             <div class="related-card">
-                <h3><a href="artykul.html?id=${articleId}">${article.title}</a></h3>
+                <h3><a href="/artykuly/${articleId}/">${article.title}</a></h3>
                 <p>${article.description.substring(0, 120)}...</p>
                 <div class="article-meta">
                     <span class="article-date">${article.date}</span>
@@ -91,7 +91,7 @@ function loadRelatedArticles(currentArticleId) {
     if (relatedHTML === '') {
         relatedHTML = `
             <div class="related-card">
-                <h3><a href="artykuly.html">Zobacz wszystkie artykuły</a></h3>
+                <h3><a href="/artykuly/">Zobacz wszystkie artykuły</a></h3>
                 <p>Sprawdź naszą pełną bazę wiedzy o automatyzacji zgodności prawnej.</p>
             </div>
         `;

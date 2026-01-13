@@ -1,13 +1,25 @@
 [build]
   publish = "."
+  command = "npm run build"
+
+# Redirect starych URL artykulow na nowe (301 - permanent)
+[[redirects]]
+  from = "/artykul.html"
+  to = "/artykuly/:id/"
+  query = {id = ":id"}
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/artykul"
-  to = "/artykul.html"
-  status = 200
+  to = "/artykuly/:id/"
+  query = {id = ":id"}
+  status = 301
+  force = true
 
+# Czyste URL bez .html
 [[redirects]]
-  from = "/artykuly" 
+  from = "/artykuly"
   to = "/artykuly.html"
   status = 200
 
@@ -16,9 +28,17 @@
   to = "/demo.html"
   status = 200
 
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
+
+# Cache dla artykulow (statyczne pliki)
+[[headers]]
+  for = "/artykuly/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+    X-Robots-Tag = "index, follow"

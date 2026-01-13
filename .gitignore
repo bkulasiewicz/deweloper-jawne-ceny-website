@@ -43,3 +43,6 @@ node_modules/
 *.tmp
 *.temp
 /tmp/
+
+# Generated articles (built during Netlify deploy)
+/artykuly/*/index.html

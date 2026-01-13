@@ -27,7 +27,7 @@ function loadArticlesList() {
         const formattedDate = `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
         
         articlesHTML += `
-            <a href="artykul.html?id=${article.id}" class="article-item-link">
+            <a href="/artykuly/${article.id}/" class="article-item-link">
                 <article class="article-item">
                     <h2>${article.title}</h2>
                     <p>${article.excerpt}</p>

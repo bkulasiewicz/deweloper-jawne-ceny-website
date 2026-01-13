@@ -10,19 +10,25 @@ Oficjalna strona internetowa pluginu WordPress **DeweloperJawneCeny** do automat
 
 ```
 /
-├── index.html          # Strona główna
-├── demo.html           # Demonstracja pluginu
-├── artykuly.html       # Lista artykułów
-├── artykul.html        # Szablon artykułu
-├── assets/             # CSS, JS, obrazy
+├── index.html              # Strona główna
+├── demo.html               # Demonstracja pluginu
+├── artykuly.html           # Lista artykułów
+├── artykuly/               # Statyczne artykuły (SSR)
+│   └── {slug}/index.html   # Wygenerowane strony artykułów
+├── templates/              # Szablony do generowania
+│   └── article.html        # Szablon artykułu
+├── assets/                 # CSS, JS, obrazy
 │   ├── css/
 │   ├── js/
+│   │   └── articles-data.js # Źródło danych artykułów
 │   └── images/
-├── includes/           # Komponenty HTML
+├── includes/               # Komponenty HTML
 │   ├── header.html
 │   └── footer.html
-├── artykuly/           # Artykuły (dane JSON)
-└── netlify.toml        # Konfiguracja Netlify
+├── build-articles.js       # Skrypt generujący statyczne artykuły
+├── package.json            # Konfiguracja Node.js
+├── sitemap.xml             # Sitemap (auto-generowany)
+└── netlify.toml            # Konfiguracja Netlify
 ```
 
 ## 🎯 Funkcjonalności
@@ -33,12 +39,25 @@ Oficjalna strona internetowa pluginu WordPress **DeweloperJawneCeny** do automat
 - **Cennik** z planami Free i Professional
 - **Newsletter** i kontakt
 
-## 📊 SEO
+## 📊 SEO & LLM Visibility
 
+- **Pre-rendered artykuły (SSR)** - pełna treść widoczna w HTML bez JavaScript
+- **Statyczne URL-e**: `/artykuly/{slug}/` zamiast dynamicznych parametrów
 - Optymalizacja pod kluczowe frazy: "ustawa jawność cen mieszkań", "wtyczka wordpress deweloper"
-- Strukturowane dane Schema.org
+- Strukturowane dane Schema.org (Article + FAQPage)
 - Open Graph meta tags
 - Szybkie ładowanie i Core Web Vitals
+- **LLM-friendly** - treść dostępna dla ChatGPT, Perplexity, Gemini
+
+## 🔨 Build
+
+Artykuły są generowane podczas builda:
+
+```bash
+npm run build    # Generuje statyczne strony artykułów
+npm run clean    # Czyści wygenerowane pliki
+npm run rebuild  # Czyści i generuje od nowa
+```
 
 ## 🚀 Deployment
 
