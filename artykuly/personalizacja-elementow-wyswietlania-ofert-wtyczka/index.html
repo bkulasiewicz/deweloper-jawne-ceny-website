@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO - unikalne dla kazdego artykulu -->
+    <title>Personalizacja elementów wyświetlania ofert wtyczki Deweloper Jawne Ceny — co możesz skonfigurować | DeweloperJawneCeny</title>
+    <meta name="description" content="Pełny przewodnik po personalizacji elementów wyświetlania ofert w wtyczce DeweloperJawneCeny. Bloki Gutenberg, shortcodes, filtry i konfiguracja bez kodowania.">
+    <meta name="keywords" content="personalizacja wtyczki DeweloperJawneCeny, konfiguracja bloków Gutenberg mieszkania, shortcode WordPress nieruchomości, filtry zasobów WordPress, pola marketingowe wtyczka, personalizacja tabel mieszkań, konfiguracja komponentów WordPress, bloki Gutenberg nieruchomości, dostosowanie wyświetlania ofert, wtyczka WordPress dla deweloperów, prezentacja inwestycji na stronie dewelopera, konfiguracja wtyczki Deweloper Jawne Ceny, personalizacja ofert mieszkań WordPress, filtry ofert mieszkań WordPress, lista mieszkań na stronie dewelopera, historia zmian cen mieszkań WordPress, jak dodać inwestycję w wtyczce Deweloper Jawne Ceny, jak wyświetlić listę mieszkań i domów na stronie WordPress, filtry mieszkań bez przeładowania strony WordPress, jak zintegrować ofertę deweloperską z Elementorem lub Divi, jak dostosować kolory i czcionki oferty w WordPress, wtyczka WordPress zgodna z ustawą o jawności cen mieszkań, automatyczne raportowanie cen mieszkań dane.gov.pl, prezentacja mieszkań z planem PDF i historią cen, konfiguracja bloku lista zasobów w wtyczce deweloperskiej, jak zgłaszać miejsca postojowe i garaże w ofertach WordPress">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Personalizacja elementów wyświetlania ofert wtyczki Deweloper Jawne Ceny — co możesz skonfigurować">
+    <meta property="og:description" content="Pełny przewodnik po personalizacji elementów wyświetlania ofert w wtyczce DeweloperJawneCeny. Bloki Gutenberg, shortcodes, filtry i konfiguracja bez kodowania.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.deweloperjawneceny.pl/artykuly/personalizacja-elementow-wyswietlania-ofert-wtyczka/">
+    <meta property="og:site_name" content="DeweloperJawneCeny">
+
+    <!-- Article metadata -->
+    <meta property="article:published_time" content="2025-10-23">
+    <meta property="article:section" content="WordPress &amp; Konfiguracja">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.deweloperjawneceny.pl/artykuly/personalizacja-elementow-wyswietlania-ofert-wtyczka/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/android-chrome-512x512.png">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Personalizacja elementów wyświetlania ofert wtyczki Deweloper Jawne Ceny — co możesz skonfigurować",
+        "description": "Pełny przewodnik po personalizacji elementów wyświetlania ofert w wtyczce DeweloperJawneCeny. Bloki Gutenberg, shortcodes, filtry i konfiguracja bez kodowania.",
+        "datePublished": "2025-10-23",
+        "dateModified": "2025-10-23",
+        "author": {
+            "@type": "Organization",
+            "name": "DeweloperJawneCeny",
+            "url": "https://www.deweloperjawneceny.pl"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "DeweloperJawneCeny",
+            "url": "https://www.deweloperjawneceny.pl"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.deweloperjawneceny.pl/artykuly/personalizacja-elementow-wyswietlania-ofert-wtyczka/"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Jak dodać inwestycję w wtyczce Deweloper Jawne Ceny krok po kroku?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aby rozpocząć pracę, dodaj w panelu dane dostawcy, inwestycję oraz zasoby. W formularzu inwestycji skonfiguruj: Komponenty (np. części nieruchomości, miejsca postojowe, garaże) — wpływają na pola cenowe i raportowanie, Pola marketingowe (np. ogród, plan PDF, liczba pokoi) — widoczne w ofercie, ale nie raportowane do ministerstwa. Po zapisaniu inwestycji możesz od razu tworzyć listy ofert i karty mieszkań."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Jak wyświetlić listę mieszkań lub domów na stronie WordPress?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Do prezentacji oferty użyj bloku \"Lista Zasobów\" (w edytorze Gutenberg) lub shortcode [resources_list]. Możesz wybrać: typy nieruchomości (mieszkania, domy, garaże, komórki lokatorskie), sposób prezentacji (tabela lub kafelki), kolumny i etykiety pól, kolory, czcionki i wygląd przycisków. Lista aktualizuje się automatycznie po każdej zmianie w panelu wtyczki."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Jak skonfigurować filtry ofert mieszkań, żeby działały dynamicznie?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Wstaw blok \"Filtry Zasobów\" na tej samej stronie co lista mieszkań. Włącz w ustawieniach listy opcję \"Czytaj filtry z URL\" — dzięki temu filtry będą aktualizować ofertę bez przeładowania strony. Możesz też stworzyć własne przyciski (np. \"Parter\", \"3 pokoje\", \"40–60 m²\") i grupy filtrów, które użytkownik może łączyć."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Jak dostosować wygląd oferty deweloperskiej do szaty graficznej mojej strony?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Wtyczka umożliwia pełną personalizację interfejsu: kolory nagłówków, tekstu, statusów i przycisków, czcionki dla nagłówków i treści, kolejność kolumn i pól (drag & drop), etykiety nazw pól i przycisków. Dzięki temu możesz dopasować wygląd oferty do projektu swojej strony lub brandingu inwestycji – bez programisty."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Czy mogę połączyć wtyczkę z Elementorem, Divi lub ACF?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak. Wtyczka Deweloper Jawne Ceny jest kompatybilna z popularnymi builderami. Możesz użyć shortcode'ów: [resources_list] – do listy mieszkań, [resource_single] – do pojedynczej karty lokalu. Generator shortcode w panelu tworzy gotowy kod z parametrami (typ nieruchomości, wygląd, kolory)."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Jak dodać plan mieszkania PDF lub dodatkowy opis w ofercie?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Włącz w formularzu inwestycji pole marketingowe \"Plan mieszkania (PDF)\" i \"Dodatkowy opis\". Po ich aktywacji przy dodawaniu zasobu pojawią się pola do wgrania pliku PDF i wpisania opisu. Na stronie możesz wyświetlać je w kolumnie tabeli, w kafelku lub na karcie mieszkania (blok \"Szczegóły Zasobu\")."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Czy mogę osobno zgłaszać elementy takie jak garaże, komórki lokatorskie i miejsca postojowe?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak — wtyczka obsługuje dwa tryby raportowania: oddzielny (każdy element jako osobny zasób), łączony (np. mieszkanie + miejsce postojowe w jednej ofercie). Dzięki temu możesz zachować pełną zgodność z ustawą o jawności cen mieszkań, niezależnie od struktury inwestycji."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Jak działa historia zmian cen mieszkań w wtyczce?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "W bloku \"Lista Zasobów\" i \"Szczegóły Zasobu\" możesz włączyć przycisk \"Historia Cen\". Po kliknięciu użytkownik zobaczy wyskakujące okno z wykresem lub listą zmian cen danego lokalu. To rozwiązanie zwiększa wiarygodność oferty i wspiera transparentność wymaganą przez przepisy."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Jakie korzyści daje personalizacja oferty dla dewelopera?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Personalizacja oferty: zwiększa konwersję dzięki dopasowaniu prezentacji do marki, poprawia czytelność i doświadczenie użytkownika (UX), ułatwia raportowanie danych do dane.gov.pl, pozwala tworzyć strony inwestycji bez udziału programisty. Dzięki temu deweloper szybciej aktualizuje ofertę i zyskuje profesjonalny wizerunek online."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Czy wtyczka Deweloper Jawne Ceny pomaga spełnić wymogi ustawy o jawności cen mieszkań?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak. Wtyczka wspiera zarówno publikację ofert na stronie, jak i przygotowanie danych do raportowania na dane.gov.pl. Pola cenowe i komponenty są zgodne z wymogami ministerstwa, a historia cen umożliwia dokumentowanie zmian w czasie. To rozwiązanie łączy funkcjonalność sprzedażową z pełną zgodnością prawną."
+            }
+        }
+    ]
+}
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FD09Q6E775"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FD09Q6E775');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Article -->
+    <article class="article-page">
+        <div class="container">
+            <div class="article-header">
+                <div class="breadcrumb">
+                    <a href="/">Strona glowna</a> / <a href="/artykuly/">Artykuly</a> / <span>Personalizacja elementów wyświetlania ofert wty...</span>
+                </div>
+                <h1>Personalizacja elementów wyświetlania ofert wtyczki Deweloper Jawne Ceny — co możesz skonfigurować</h1>
+                <div class="article-meta">
+                    <span class="article-date">23 pazdziernika 2025</span>
+                    <span class="article-category">WordPress &amp; Konfiguracja</span>
+                </div>
+            </div>
+
+            <div class="article-content" id="article-content">
+                <p>Wtyczka Deweloper Jawne Ceny udostępnia zestaw narzędzi pozwalających precyzyjnie kontrolować elementy prezentacji inwestycji i poszczególnych lokali na stronie internetowej. Poniżej opisane są wszystkie możliwości personalizacji dostępne w panelu wtyczki zgodnie z instrukcją obsługi.</p>
+
+            <h2>Konfiguracja przed publikacją — znaczenie ustawień inwestycji</h2>
+
+            <p>Przed wyświetleniem zasobów na stronie należy dodać dane dostawcy, inwestycję oraz zasoby. W formularzu inwestycji znajdują się dwie sekcje, które wpływają bezpośrednio na to, jakie pola i elementy będą dostępne i wyświetlane na stronie:</p>
+
+            • Konfiguracja komponentów — zaznaczenie opcji (np. części nieruchomości, pomieszczenia przynależne, prawa do korzystania, inne świadczenia pieniężne) odblokowuje dodatkowe pola cenowe przy dodawaniu lokali/domów i determinuje, które elementy będą dostępne w formularzach zasobów. Przykład: zaznaczenie "części nieruchomości" powoduje pojawienie się pola do wprowadzenia ceny za miejsce postojowe.<br>
+            • Pola marketingowe — wybór pól takich jak Piętro, Liczba pokoi, Dodatkowy opis, Ogród [m²], Plan mieszkania (PDF) włącza odpowiednie pola przy dodawaniu zasobów. Te pola służą wyłącznie do wyświetlania dodatkowych informacji na stronie (nie są raportowane do ministerstwa).
+
+            <br><br>
+
+            <h2>Bloki Gutenberg — gdzie i jakie elementy możesz personalizować</h2>
+
+            <p>Rekomendowany sposób wstawiania oferty to bloki Gutenberg. Poniżej lista bloków i dokładne elementy konfigurowalne, które wpływają na wygląd i zawartość prezentacji.</p>
+
+            <h3>A) Blok "Lista Zasobów" (tabela lub kafelki) — możliwości konfiguracyjne:</h3>
+
+            • Typy nieruchomości: wybór rodzajów do wyświetlenia (mieszkania, domy jednorodzinne, garaże, miejsca postojowe, komórki lokatorskie, lokale usługowe).<br>
+            • Sposób wyświetlania: tabela lub kafelki.<br>
+            • Widoczne kolumny / pola: wybór pól do pokazania (numer lokalu, rodzaj, powierzchnia, pokoje, piętro, cena całkowita, cena za m², cena z dodatkami, status, ogród, dodatkowy opis, plan mieszkania PDF).<br>
+            • Nazwy kolumn: możliwość zmiany etykiet nagłówków kolumn.<br>
+            • Kolejność kolumn: przeciągnij, aby ustawić kolejność kolumn.<br>
+            • Filtrowanie w edytorze: ograniczenie wyświetlanych zasobów według statusu, ceny, powierzchni, pięter lub liczby pokoi w widoku edytora.<br>
+            • Kolory: dostosowanie kolorów nagłówków, tekstu, podświetlenia wiersza, statusów, przycisków i okna historii cen.<br>
+            • Czcionki: wybór czcionek dla nagłówków i treści.<br>
+            • Nawigacja: tryb nawigacji: brak / klikalne wiersze prowadzące do karty lokalu / przycisk "Zobacz więcej".<br>
+            • Sortowanie: włączenie sortowania po kliknięciu w nagłówek kolumny dla użytkowników.<br>
+            • Przyciski akcji: konfiguracja przycisków "Historia Cen" (wyświetla okno z historią zmian cen) i "Karta Lokalu" (link do planu PDF).<br>
+            • Integracja z blokiem filtrów: możliwość połączenia z blokiem "Filtry Zasobów" (patrz niżej).
+
+            <br><br>
+
+            <h3>B) Blok "Filtry Zasobów" — możliwości konfiguracyjne:</h3>
+
+            • Grupy filtrów: dodawanie sekcji (nagłówków) i przycisków filtrów (np. piętra, zakresy powierzchni).<br>
+            • Etykiety filtrów: zmiana nazw przycisków (np. "Parter", "40–50 m²").<br>
+            • Warunki filtrowania: typ warunku: dokładna wartość / zakres (min–max) / minimum.<br>
+            • Kolory: ustawienia kolorów nagłówka, tła grup, podświetlenia, przycisków "Zastosuj" i "Wyczyść".<br>
+            • Czcionki: wybór czcionek dla nagłówka i treści filtru.<br>
+            • Odstępy: precyzyjne ustawienia odległości między filtrami, grupami i przyciskami.<br>
+            • Tytuł widgetu i teksty przycisków: opcjonalny nagłówek i możliwość zmiany treści przycisków.
+
+            <br><br>
+
+            <p><strong>WAŻNE:</strong> aby filtry działały z listą, w bloku "Lista Zasobów" trzeba włączyć opcję "Czytaj filtry z URL" i oba bloki muszą być na tej samej stronie. Klient wybiera filtry, a lista automatycznie się aktualizuje bez przeładowania strony.</p>
+
+            <br><br>
+
+            <h3>C) Blok "Szczegóły zasobu" (pojedyncze mieszkanie) — możliwości konfiguracyjne:</h3>
+
+            • Widoczne pola: wybór danych do wyświetlenia: numer lokalu, rodzaj, powierzchnia, cena całkowita, cena za m², cena z dodatkami, status, pokoje, piętro, ogród, dodatkowy opis, plan mieszkania PDF.<br>
+            • Nazwy pól: zmiana etykiet przy każdym polu.<br>
+            • Kolejność pól: przeciągnij, aby ustawić kolejność wyświetlania informacji.<br>
+            • Kolory: dostosowanie kolorów tła karty, tekstu, etykiet, statusów i przycisków.<br>
+            • Czcionki: wybór czcionek dla nagłówków i treści.<br>
+            • Przyciski akcji: konfiguracja przycisku "Historia Cen" (tekst, kolory) i przycisku pobierania planu PDF.<br>
+            • Okno historii cen: ustawienia wyglądu wyskakującego okna (tło, nagłówek, przycisk zamknięcia).<br>
+            • Odstępy i rozmiary: precyzyjne ustawienie paddingu karty, marginesów i rozmiarów czcionek.
+
+            <br><br>
+
+            <p><strong>WAŻNE:</strong> blok automatycznie wykrywa numer lokalu z adresu URL (np. /mieszkania/A1 → wyświetli dane lokalu A1).</p>
+
+            <br><br>
+
+            <h2>Shortcode — personalizacja dla stron z builderami (Divi, Elementor, ACF)</h2>
+
+            <p>Jeżeli strona korzysta z buildera, który nie obsługuje bloków Gutenberg, wtyczka oferuje shortcode. Shortcode odzwierciedla większość ustawień bloku Lista Zasobów i bloku Szczegóły zasobu:</p>
+
+            • Shortcode [resources_list] — w nim można dostosować: rodzaje nieruchomości, widoczne informacje (lista pól), sposób wyświetlania (tabela/kafelki), kolory, czcionki, nawigację (klikalne wiersze / przycisk "Zobacz więcej" / brak), sortowanie i filtrowanie. Generator Shortcode w menu wtyczki tworzy gotowy kod z wybranymi parametrami. (Uwaga: shortcode nie posiada zaawansowanych filtrów w panelu edytora tak jak blok Gutenberg — wyświetla dane wg ustawionych parametrów.)<br><br>
+            • Shortcode [resource_single] — karta pojedynczego lokalu; automatycznie wykrywa numer z URL (np. /mieszkania/A1). Możliwe do skonfigurowania elementy: widoczne pola, kolory karty, osobne kolory statusów ("dostępny", "sprzedany", "zarezerwowany"), wygląd i tekst przycisków, odstępy i padding.
+
+            <br><br>
+
+            <h2>Pola marketingowe jako źródło dodatkowych elementów wyświetlanych</h2>
+
+            <p>W formularzu inwestycji aktywujesz pola marketingowe (Piętro, Liczba pokoi, Dodatkowy opis, Ogród [m²], Plan mieszkania PDF). Po ich zaznaczeniu te pola stają się dostępnymi elementami do pokazania w tabelach, kafelkach i kartach lokali — to bezpośredni sposób na rozbudowanie widoku oferty bez modyfikacji kodu.</p>
+
+            <h2>Wyświetlanie i edycja zasobów — wpływ na widok strony</h2>
+
+            <p>Zasoby dodawane w panelu (zakładka "Zasoby") są źródłem danych do wszystkich elementów widocznych na stronie. Możesz w dowolnym momencie edytować lub usuwać zasoby z poziomu karty zasobu — zmiany będą odzwierciedlone w wyświetlanych blokach/shortcode'ach zgodnie z ich konfiguracją.</p>
+
+            <h2>Elementy stylu interfejsu dostępne do konfiguracji (zbiór)</h2>
+
+            <p>Na podstawie instrukcji, elementy, które można personalizować bezpośrednio w panelu wtyczki lub w Generatorze Shortcode, to m.in.:</p>
+
+            • kolory nagłówków, tekstu, statusów, przycisków i okien<br>
+            • czcionki dla nagłówków i treści<br>
+            • nazwy i etykiety pól/kolumn<br>
+            • kolejność kolumn i pól (drag & drop)<br>
+            • sposób wyświetlania (tabela vs. kafelki)<br>
+            • nawigacja (klikalne wiersze / przycisk "Zobacz więcej" / brak)<br>
+            • wygląd i treść przycisków akcji ("Historia Cen", "Karta Lokalu" / pobierz plan PDF)<br>
+            • odstępy/padding/marginesy i rozmiary czcionek w kartach zasobów oraz w oknie historii cen<br>
+            • tytuł widgetu/tekst przycisków w bloku filtrów oraz odstępy i layout filtrów
+
+            <br><br>
+
+            <h2>Podsumowanie — kto zyska na personalizacji i jak ją wykorzystać</h2>
+
+            <p>Deweloperzy i twórcy stron mogą wykorzystać sekcję Konfiguracja komponentów oraz Pola marketingowe w formularzu inwestycji, by odblokować i włączyć konkretne pola widoczne później na stronie. Dzięki konfigurowalnym blokom Gutenberg oraz shortcode'om można precyzyjnie określić, które elementy wyświetlać, w jakiej kolejności i w jakim stylu, bez konieczności ingerencji w kod źródłowy. Filtry zasobów w połączeniu z opcją „Czytaj filtry z URL" umożliwiają tworzenie stron z predefiniowanymi widokami filtrów, które automatycznie aktualizują listę zasobów bez przeładowania strony.</p>
+
+            <br><br>
+
+            <p>Dzięki pełnej kontroli nad personalizacją, każdy deweloper może stworzyć unikalne doświadczenie użytkownika, które nie tylko spełnia wymogi ustawy o jawności cen mieszkań, ale również wyróżnia się na tle konkurencji profesjonalnym wyglądem i funkcjonalnością.</p>
+            </div>
+
+            <!-- Article FAQ Section -->
+            
+            <div class="article-faq" id="article-faq-container">
+                <h2>Najczesciej zadawane pytania</h2>
+                <div class="faq-list">
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-0">
+                        <span>Jak dodać inwestycję w wtyczce Deweloper Jawne Ceny krok po kroku?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-0">
+                        <p>Aby rozpocząć pracę, dodaj w panelu dane dostawcy, inwestycję oraz zasoby. W formularzu inwestycji skonfiguruj: Komponenty (np. części nieruchomości, miejsca postojowe, garaże) — wpływają na pola cenowe i raportowanie, Pola marketingowe (np. ogród, plan PDF, liczba pokoi) — widoczne w ofercie, ale nie raportowane do ministerstwa. Po zapisaniu inwestycji możesz od razu tworzyć listy ofert i karty mieszkań.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span>Jak wyświetlić listę mieszkań lub domów na stronie WordPress?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1">
+                        <p>Do prezentacji oferty użyj bloku "Lista Zasobów" (w edytorze Gutenberg) lub shortcode [resources_list]. Możesz wybrać: typy nieruchomości (mieszkania, domy, garaże, komórki lokatorskie), sposób prezentacji (tabela lub kafelki), kolumny i etykiety pól, kolory, czcionki i wygląd przycisków. Lista aktualizuje się automatycznie po każdej zmianie w panelu wtyczki.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span>Jak skonfigurować filtry ofert mieszkań, żeby działały dynamicznie?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2">
+                        <p>Wstaw blok "Filtry Zasobów" na tej samej stronie co lista mieszkań. Włącz w ustawieniach listy opcję "Czytaj filtry z URL" — dzięki temu filtry będą aktualizować ofertę bez przeładowania strony. Możesz też stworzyć własne przyciski (np. "Parter", "3 pokoje", "40–60 m²") i grupy filtrów, które użytkownik może łączyć.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span>Jak dostosować wygląd oferty deweloperskiej do szaty graficznej mojej strony?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3">
+                        <p>Wtyczka umożliwia pełną personalizację interfejsu: kolory nagłówków, tekstu, statusów i przycisków, czcionki dla nagłówków i treści, kolejność kolumn i pól (drag & drop), etykiety nazw pól i przycisków. Dzięki temu możesz dopasować wygląd oferty do projektu swojej strony lub brandingu inwestycji – bez programisty.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span>Czy mogę połączyć wtyczkę z Elementorem, Divi lub ACF?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4">
+                        <p>Tak. Wtyczka Deweloper Jawne Ceny jest kompatybilna z popularnymi builderami. Możesz użyć shortcode'ów: [resources_list] – do listy mieszkań, [resource_single] – do pojedynczej karty lokalu. Generator shortcode w panelu tworzy gotowy kod z parametrami (typ nieruchomości, wygląd, kolory).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span>Jak dodać plan mieszkania PDF lub dodatkowy opis w ofercie?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5">
+                        <p>Włącz w formularzu inwestycji pole marketingowe "Plan mieszkania (PDF)" i "Dodatkowy opis". Po ich aktywacji przy dodawaniu zasobu pojawią się pola do wgrania pliku PDF i wpisania opisu. Na stronie możesz wyświetlać je w kolumnie tabeli, w kafelku lub na karcie mieszkania (blok "Szczegóły Zasobu").</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                        <span>Czy mogę osobno zgłaszać elementy takie jak garaże, komórki lokatorskie i miejsca postojowe?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-6">
+                        <p>Tak — wtyczka obsługuje dwa tryby raportowania: oddzielny (każdy element jako osobny zasób), łączony (np. mieszkanie + miejsce postojowe w jednej ofercie). Dzięki temu możesz zachować pełną zgodność z ustawą o jawności cen mieszkań, niezależnie od struktury inwestycji.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                        <span>Jak działa historia zmian cen mieszkań w wtyczce?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-7">
+                        <p>W bloku "Lista Zasobów" i "Szczegóły Zasobu" możesz włączyć przycisk "Historia Cen". Po kliknięciu użytkownik zobaczy wyskakujące okno z wykresem lub listą zmian cen danego lokalu. To rozwiązanie zwiększa wiarygodność oferty i wspiera transparentność wymaganą przez przepisy.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                        <span>Jakie korzyści daje personalizacja oferty dla dewelopera?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-8">
+                        <p>Personalizacja oferty: zwiększa konwersję dzięki dopasowaniu prezentacji do marki, poprawia czytelność i doświadczenie użytkownika (UX), ułatwia raportowanie danych do dane.gov.pl, pozwala tworzyć strony inwestycji bez udziału programisty. Dzięki temu deweloper szybciej aktualizuje ofertę i zyskuje profesjonalny wizerunek online.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+                        <span>Czy wtyczka Deweloper Jawne Ceny pomaga spełnić wymogi ustawy o jawności cen mieszkań?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-9">
+                        <p>Tak. Wtyczka wspiera zarówno publikację ofert na stronie, jak i przygotowanie danych do raportowania na dane.gov.pl. Pola cenowe i komponenty są zgodne z wymogami ministerstwa, a historia cen umożliwia dokumentowanie zmian w czasie. To rozwiązanie łączy funkcjonalność sprzedażową z pełną zgodnością prawną.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Contact Section -->
+    <div id="contact-placeholder"></div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="/assets/js/include.js"></script>
+    <script src="/assets/js/faq-loader.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
