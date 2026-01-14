@@ -141,9 +141,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Also check for main page FAQ
-    const mainFaqList = document.getElementById('faq-list');
-    if (mainFaqList && mainFaqList.children.length > 0) {
-        initializeFAQAccordion('faq-list');
-    }
+    // Note: Main page FAQ ('faq-list') is initialized by renderFAQ() call in index.html
+    // No need to initialize it here to avoid duplicate event listeners
 });
