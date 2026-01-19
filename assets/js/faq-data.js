@@ -16,7 +16,7 @@ window.faqData = {
         },
         {
             q: "Jak połączyć wtyczkę z serwisem dane.gov.pl?",
-            a: "Proces integracji z serwisem dane.gov.pl opisaliśmy w instrukcji dołączonej do wtyczki. Wystarczy wprowadzić wymagane dane i kluczowe ustawienia zgodne z wytycznymi ministerstwa, a wtyczka automatycznie zajmie się przekazywaniem informacji o cenach."
+            a: "Cały proces został szczegółowo rozpisany krok po kroku w instrukcji."
         },
         {
             q: "Ile czasu zajmuje pierwsza konfiguracja?",
@@ -24,7 +24,7 @@ window.faqData = {
         },
         {
             q: "Jak działa płatność?",
-            a: "Płacisz raz <strong>1499 zł netto</strong> za aktywację wtyczki na swojej stronie WordPress. Brak abonamentów, opłat miesięcznych i dodatkowych kosztów."
+            a: "Wybierasz jedną z trzech opcji licencji: <strong>12 miesięcy</strong> (996 zł netto), <strong>30 miesięcy</strong> (1950 zł netto) lub <strong>Lifetime</strong> (2844 zł netto). Płatność jednorazowa, bez abonamentów i ukrytych kosztów. Każda licencja obejmuje jedną domenę."
         },
         {
             q: "Czy mogę używać wtyczki na wielu stronach?",
